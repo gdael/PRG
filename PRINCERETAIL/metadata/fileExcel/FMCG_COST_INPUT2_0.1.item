@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:FileExcelConnection xmi:id="_0-RC4NJgEe-0juM5TYgezA" name="FMCG_COST_INPUT2" dataPackage="_0-RC4dJgEe-0juM5TYgezA" Server="Localhost 127.0.0.1" FilePath="E:/Talend/Clients/PRG/FTP Folder/INPUT/PRICE_COST/O1TF-#345679-REG PRICE UPDATE-REBISCO-20250113.xlsx" Encoding="UTF-8" UseHeader="true" HeaderValue="1" FirstLineCaption="true" SheetName="Transformation Criteria &amp; Req" firstColumn="1" thousandSeparator="','" decimalSeparator="'.'" sheetList="Input4_Vendor &amp; Location:w&#xA;">
+    <sheetColumns>A</sheetColumns>
+    <sheetColumns>B</sheetColumns>
+    <sheetColumns>C</sheetColumns>
+    <sheetColumns>D</sheetColumns>
+    <sheetColumns>E</sheetColumns>
+    <sheetColumns>F</sheetColumns>
+  </TalendMetadata:FileExcelConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_0-RC4dJgEe-0juM5TYgezA" name="default" dataManager="_0-RC4NJgEe-0juM5TYgezA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_0-RC4tJgEe-0juM5TYgezA" id="_Rsf-YNJgEe-0juM5TYgezA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0-RC49JgEe-0juM5TYgezA" label="Vendor" length="3" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0-RC5NJgEe-0juM5TYgezA" label="Location" length="5" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

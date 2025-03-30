@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Project xmi:id="_x504gQOXEfC_Q_LZcmPi9g" label="PrinceRetail" language="java" technicalLabel="PRINCERETAIL" author="_x504ggOXEfC_Q_LZcmPi9g" productVersion="Qlik Talend Cloud Enterprise Edition-8.0.1.20250218_0945-patch" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.com/gdael/PRG.git&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DQ" itemsRelationVersion="1.3" bigData="false">
+    <componentsSettings xmi:id="_MwWJ0AOqEfC_Q_LZcmPi9g" name="DI|tAmazonMysqlInput" family="Cloud/Amazon/MySQL (Deprecated)"/>
+    <componentsSettings xmi:id="_MwWJ0QOqEfC_Q_LZcmPi9g" name="DI|tAmazonMysqlCommit" family="Databases/DB Specifics/Amazon/MySQL (Deprecated)"/>
+    <componentsSettings xmi:id="_MwWJ0gOqEfC_Q_LZcmPi9g" name="DI|tSAPIDocInput" family="Business/SAP"/>
+    <componentsSettings xmi:id="_MwWJ0wOqEfC_Q_LZcmPi9g" name="DI|tAmazonMysqlRow" family="Cloud/Amazon/MySQL (Deprecated)"/>
+    <componentsSettings xmi:id="_MwWJ1AOqEfC_Q_LZcmPi9g" name="DI|tHashInput" family="Technical"/>
+    <componentsSettings xmi:id="_MwWJ1QOqEfC_Q_LZcmPi9g" name="DI|tSAPHanaUnload" family="Databases/DB Specifics/SAP Hana"/>
+    <componentsSettings xmi:id="_MwWJ1gOqEfC_Q_LZcmPi9g" name="DI|tArrayIn" family="Technical"/>
+    <componentsSettings xmi:id="_MwWJ1wOqEfC_Q_LZcmPi9g" name="DI|tHashOutput" family="Technical"/>
+    <componentsSettings xmi:id="_MwWJ2AOqEfC_Q_LZcmPi9g" name="DI|tAmazonMysqlOutput" family="Databases/DB Specifics/Amazon/MySQL (Deprecated)"/>
+    <componentsSettings xmi:id="_MwWJ2QOqEfC_Q_LZcmPi9g" name="DI|tAmazonMysqlRollback" family="Cloud/Amazon/MySQL (Deprecated)"/>
+    <componentsSettings xmi:id="_MwWJ2gOqEfC_Q_LZcmPi9g" name="DI|tAccessBulkExec" family="Databases/DB Specifics/Access"/>
+    <componentsSettings xmi:id="_MwWJ2wOqEfC_Q_LZcmPi9g" name="DI|tAmazonMysqlClose" family="Cloud/Amazon/MySQL (Deprecated)"/>
+    <componentsSettings xmi:id="_MwWw4AOqEfC_Q_LZcmPi9g" name="DI|tAmazonMysqlRow" family="Databases/DB Specifics/Amazon/MySQL (Deprecated)"/>
+    <componentsSettings xmi:id="_MwWw4QOqEfC_Q_LZcmPi9g" name="DI|tAmazonMysqlRollback" family="Databases/DB Specifics/Amazon/MySQL (Deprecated)"/>
+    <componentsSettings xmi:id="_MwWw4gOqEfC_Q_LZcmPi9g" name="DI|tAccessOutputBulkExec" family="Databases/DB Specifics/Access"/>
+    <componentsSettings xmi:id="_MwWw4wOqEfC_Q_LZcmPi9g" name="DI|tAmazonMysqlConnection" family="Cloud/Amazon/MySQL (Deprecated)"/>
+    <componentsSettings xmi:id="_MwWw5AOqEfC_Q_LZcmPi9g" name="DI|tAmazonMysqlInput" family="Databases/DB Specifics/Amazon/MySQL (Deprecated)"/>
+    <componentsSettings xmi:id="_MwWw5QOqEfC_Q_LZcmPi9g" name="DI|tAmazonMysqlCommit" family="Cloud/Amazon/MySQL (Deprecated)"/>
+    <componentsSettings xmi:id="_MwWw5gOqEfC_Q_LZcmPi9g" name="DI|tAmazonMysqlConnection" family="Databases/DB Specifics/Amazon/MySQL (Deprecated)"/>
+    <componentsSettings xmi:id="_MwWw5wOqEfC_Q_LZcmPi9g" name="DI|tAmazonMysqlClose" family="Databases/DB Specifics/Amazon/MySQL (Deprecated)"/>
+    <componentsSettings xmi:id="_MwWw6AOqEfC_Q_LZcmPi9g" name="DI|tAmazonMysqlOutput" family="Cloud/Amazon/MySQL (Deprecated)"/>
+    <componentsSettings xmi:id="_MwWw6QOqEfC_Q_LZcmPi9g" name="DI|tArray" family="Technical"/>
+    <componentsSettings xmi:id="_NClJUAOqEfC_Q_LZcmPi9g" name="SPARK|tAvroMap" family="Processing"/>
+    <componentsSettings xmi:id="_NS0kwAOqEfC_Q_LZcmPi9g" name="SPARKSTREAMING|tAvroMap" family="Processing"/>
+    <componentsSettings xmi:id="_NigmkAOqEfC_Q_LZcmPi9g" name="CAMEL|cAWSMQBroker" family="AWS"/>
+    <componentsSettings xmi:id="_NigmkQOqEfC_Q_LZcmPi9g" name="CAMEL|cAWSMQBroker" family="Connectivity/Messaging"/>
+    <componentsSettings xmi:id="_NigmkgOqEfC_Q_LZcmPi9g" name="CAMEL|cAzureStorageBlob" family="Azure"/>
+    <componentsSettings xmi:id="_NigmkwOqEfC_Q_LZcmPi9g" name="CAMEL|cAzureStorageBlob" family="Connectivity/File"/>
+    <migrationTask xmi:id="_x68S0AOXEfC_Q_LZcmPi9g" id="org.talend.repository.model.migration.CheckProductVersionMigrationTask" breaks="7.1.0" version="7.1.1"/>
+  </TalendProperties:Project>
+  <TalendProperties:User xmi:id="_x504ggOXEfC_Q_LZcmPi9g" login="glenn.dael@mtc.com.ph_nfr" firstName="Glenn Marvin" lastName="Dael" type="DQ"/>
+  <TalendProperties:User xmi:id="_6saIcAOXEfC_Q_LZcmPi9g" login="ivan.mangubat@mtc.com.ph_nfr" firstName="Ivan" lastName="Mangubat" type="DQ"/>
+</xmi:XMI>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_KNnU8OzNEe-3ZrdJPdP_ZQ" confirmationNeeded="false" hide="false" name="Default">
+  <contextParameter xmi:id="_cz6hsOzNEe-3ZrdJPdP_ZQ" comment="" name="UserEmail" prompt="UserEmail?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="glenn.dael@mtc.com.ph"/>
+  <contextParameter xmi:id="_cz6hsezNEe-3ZrdJPdP_ZQ" comment="" name="Token" prompt="Token?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="3PbUVgy-SIaoAoMyz0A82lUR2US6AzUZLBQAcDV6o_ZNPlgtumjHs5WNyD8LWksE"/>
+  <contextParameter xmi:id="_cz6hsuzNEe-3ZrdJPdP_ZQ" comment="" name="TDS_URL" prompt="TDS_URL?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="https://tds.ap.cloud.talend.com/data-stewardship/"/>
+  <contextParameter xmi:id="_cz6hs-zNEe-3ZrdJPdP_ZQ" comment="" name="TDP_URL" prompt="TDP_URL?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+</talendfile:ContextType>

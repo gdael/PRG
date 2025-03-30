@@ -1,0 +1,162 @@
+{
+  "itemId" : "_SPz2RfVuEe-FSNYKalylzg",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_EjETMNrVEe-BIfLt3KD4dA",
+    "parameterList" : [ {
+      "id" : "_EkOw09rVEe-BIfLt3KD4dA",
+      "name" : "Archived_Folder"
+    }, {
+      "id" : "_EkOw1NrVEe-BIfLt3KD4dA",
+      "name" : "Input_Error_Folder_FMCG"
+    }, {
+      "id" : "_EkOw0drVEe-BIfLt3KD4dA",
+      "name" : "Input_Folder_FMCG"
+    }, {
+      "id" : "_EkOw0trVEe-BIfLt3KD4dA",
+      "name" : "Output_Folder_FMCG"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_QXraoNreEe-BIfLt3KD4dA",
+    "parameterList" : [ {
+      "id" : "_BQBLsN-DEe-wee1JR2_-cw",
+      "name" : "Email_File"
+    }, {
+      "id" : "_QYIGk9reEe-BIfLt3KD4dA",
+      "name" : "Email_From"
+    }, {
+      "id" : "_5RqE0dreEe-BIfLt3KD4dA",
+      "name" : "Email_Password"
+    }, {
+      "id" : "_QYIGktreEe-BIfLt3KD4dA",
+      "name" : "Email_Port"
+    }, {
+      "id" : "_QYIGkdreEe-BIfLt3KD4dA",
+      "name" : "Email_Server"
+    }, {
+      "id" : "_5RqE0NreEe-BIfLt3KD4dA",
+      "name" : "Email_Username"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_KMghsOzNEe-3ZrdJPdP_ZQ",
+    "parameterList" : [ {
+      "id" : "_cz6hs-zNEe-3ZrdJPdP_ZQ",
+      "name" : "TDP_URL"
+    }, {
+      "id" : "_cz6hsuzNEe-3ZrdJPdP_ZQ",
+      "name" : "TDS_URL"
+    }, {
+      "id" : "_cz6hsezNEe-3ZrdJPdP_ZQ",
+      "name" : "Token"
+    }, {
+      "id" : "_cz6hsOzNEe-3ZrdJPdP_ZQ",
+      "name" : "UserEmail"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_J8hz4NbzEe-4XYPM5vW39g",
+    "parameterList" : [ {
+      "id" : "_J88DkdbzEe-4XYPM5vW39g",
+      "name" : "DQS_Database"
+    }, {
+      "id" : "_J88qpdbzEe-4XYPM5vW39g",
+      "name" : "DQS_Port"
+    }, {
+      "id" : "_J88qodbzEe-4XYPM5vW39g",
+      "name" : "DQS_Login"
+    }, {
+      "id" : "_J88qotbzEe-4XYPM5vW39g",
+      "name" : "DQS_Password"
+    }, {
+      "id" : "_J88qpNbzEe-4XYPM5vW39g",
+      "name" : "DQS_Schema"
+    }, {
+      "id" : "_J88qo9bzEe-4XYPM5vW39g",
+      "name" : "DQS_Server"
+    }, {
+      "id" : "_J88qoNbzEe-4XYPM5vW39g",
+      "name" : "DQS_AdditionalParams"
+    } ]
+  }, {
+    "contextName" : "Production",
+    "repoId" : "_EjETMNrVEe-BIfLt3KD4dA",
+    "parameterList" : [ {
+      "id" : "_EkOw09rVEe-BIfLt3KD4dA",
+      "name" : "Archived_Folder"
+    }, {
+      "id" : "_EkOw1NrVEe-BIfLt3KD4dA",
+      "name" : "Input_Error_Folder_FMCG"
+    }, {
+      "id" : "_EkOw0drVEe-BIfLt3KD4dA",
+      "name" : "Input_Folder_FMCG"
+    }, {
+      "id" : "_EkOw0trVEe-BIfLt3KD4dA",
+      "name" : "Output_Folder_FMCG"
+    } ]
+  }, {
+    "contextName" : "Production",
+    "repoId" : "_QXraoNreEe-BIfLt3KD4dA",
+    "parameterList" : [ {
+      "id" : "_BQBLsN-DEe-wee1JR2_-cw",
+      "name" : "Email_File"
+    }, {
+      "id" : "_QYIGk9reEe-BIfLt3KD4dA",
+      "name" : "Email_From"
+    }, {
+      "id" : "_5RqE0dreEe-BIfLt3KD4dA",
+      "name" : "Email_Password"
+    }, {
+      "id" : "_QYIGktreEe-BIfLt3KD4dA",
+      "name" : "Email_Port"
+    }, {
+      "id" : "_QYIGkdreEe-BIfLt3KD4dA",
+      "name" : "Email_Server"
+    }, {
+      "id" : "_5RqE0NreEe-BIfLt3KD4dA",
+      "name" : "Email_Username"
+    } ]
+  }, {
+    "contextName" : "Production",
+    "repoId" : "_KMghsOzNEe-3ZrdJPdP_ZQ",
+    "parameterList" : [ {
+      "id" : "_cz6hs-zNEe-3ZrdJPdP_ZQ",
+      "name" : "TDP_URL"
+    }, {
+      "id" : "_cz6hsuzNEe-3ZrdJPdP_ZQ",
+      "name" : "TDS_URL"
+    }, {
+      "id" : "_cz6hsezNEe-3ZrdJPdP_ZQ",
+      "name" : "Token"
+    }, {
+      "id" : "_cz6hsOzNEe-3ZrdJPdP_ZQ",
+      "name" : "UserEmail"
+    } ]
+  }, {
+    "contextName" : "Production",
+    "repoId" : "_J8hz4NbzEe-4XYPM5vW39g",
+    "parameterList" : [ {
+      "id" : "_J88DkdbzEe-4XYPM5vW39g",
+      "name" : "DQS_Database"
+    }, {
+      "id" : "_J88qoNbzEe-4XYPM5vW39g",
+      "name" : "DQS_AdditionalParams"
+    }, {
+      "id" : "_J88qodbzEe-4XYPM5vW39g",
+      "name" : "DQS_Login"
+    }, {
+      "id" : "_J88qotbzEe-4XYPM5vW39g",
+      "name" : "DQS_Password"
+    }, {
+      "id" : "_J88qo9bzEe-4XYPM5vW39g",
+      "name" : "DQS_Server"
+    }, {
+      "id" : "_J88qpNbzEe-4XYPM5vW39g",
+      "name" : "DQS_Schema"
+    }, {
+      "id" : "_J88qpdbzEe-4XYPM5vW39g",
+      "name" : "DQS_Port"
+    } ]
+  } ]
+}

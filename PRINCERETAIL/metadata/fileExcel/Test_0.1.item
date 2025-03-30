@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:FileExcelConnection xmi:id="_ddKaEPMPEe-YmIWjZShZ2w" name="Test" dataPackage="_ddKaEfMPEe-YmIWjZShZ2w" Server="Localhost 127.0.0.1" FilePath="E:/Talend/Clients/PRG/FTP Folder/INPUT/PRICE_COST/CHILD COST/O1TF-#345679-REG PRICE &amp; COST UPDATE-REBISCO-099.xlsx" Encoding="UTF-8" UseHeader="true" HeaderValue="1" FirstLineCaption="true" SheetName="Transformation Criteria &amp; Req" firstColumn="1" thousandSeparator="','" decimalSeparator="'.'" sheetList=" Input1_UPC:w&#xA;">
+    <sheetColumns>A</sheetColumns>
+    <sheetColumns>B</sheetColumns>
+    <sheetColumns>C</sheetColumns>
+    <sheetColumns>D</sheetColumns>
+    <sheetColumns>E</sheetColumns>
+    <sheetColumns>F</sheetColumns>
+  </TalendMetadata:FileExcelConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_ddKaEfMPEe-YmIWjZShZ2w" name="default" dataManager="_ddKaEPMPEe-YmIWjZShZ2w">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_ddKaEvMPEe-YmIWjZShZ2w" id="_cdn6kPMNEe-YmIWjZShZ2w" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ddKaE_MPEe-YmIWjZShZ2w" label="Barcode" length="12" talendType="id_Long" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ddKaFPMPEe-YmIWjZShZ2w" label="Case_Cost" length="9" precision="6" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ddKaFfMPEe-YmIWjZShZ2w" label="Child_SRP" length="4" precision="3" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

@@ -1,0 +1,27 @@
+package routines;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoUnit;
+
+public class DateDifferenceCalculator {
+
+    public static long getDaysDifference(String eventStartingDate) {
+        try {
+            // Define the date format (adjust the format if needed)
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+            
+            // Parse the event starting date
+            LocalDate eventDate = LocalDate.parse(eventStartingDate, formatter);
+            
+            // Get the current date
+            LocalDate currentDate = LocalDate.now();
+            
+            // Calculate the difference in days
+            return ChronoUnit.DAYS.between(currentDate, eventDate);
+        } catch (Exception e) {
+            // Handle parsing errors or invalid input
+            System.err.println("Invalid date: " + eventStartingDate);
+            return Long.MIN_VALUE; // Use a special value to indicate error
+        }
+    }
+}

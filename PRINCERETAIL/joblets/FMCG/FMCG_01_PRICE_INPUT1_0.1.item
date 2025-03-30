@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:TalendProperties="http://www.talend.org/properties" xmlns:model="http://www.talend.com/joblet.ecore">
+  <model:JobletProcess defaultContext="Default" jobType="Standard">
+    <context confirmationNeeded="false" hide="false" name="Default"/>
+    <parameters>
+      <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+      <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+      <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+      <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+      <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="false" show="false"/>
+      <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="false" show="false"/>
+      <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false" show="false"/>
+      <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000" show="false"/>
+      <elementParameter field="CHECK" name="STARTABLE" value="true"/>
+      <elementParameter field="ICON_SELECTION" name="ICONSELECTION" value=""/>
+      <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false" show="false"/>
+      <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+      <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+      <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;E:/Talend/Studio/Talend-Studio-20240527_1700-V8.0.1-LBP/workspace/in.csv&quot;" show="false"/>
+      <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;" show="false"/>
+      <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+      <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+      <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="ORACLE_18" show="false"/>
+      <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+      <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:WBeysywfHlF1LMrB/iGzKoTce+KE/FEUBap8U0oL" show="false"/>
+      <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+      <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+      <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+      <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="true" show="false"/>
+      <elementParameter field="CHECK" name="DISABLE_INFO" value="true" show="false"/>
+      <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+      <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+      <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+      <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+      <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+      <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+      <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+      <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+      <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+      <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+      <routinesParameter id="_S5eksNxtEe-rfJMsajuUsg" name="DateDifferenceCalculator"/>
+    </parameters>
+    <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="320" posY="160">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_2" show="false"/>
+      <elementParameter field="EXTERNAL" name="MAP" value=""/>
+      <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+      <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+      <elementParameter field="IMAGE" name="PREVIEW" value="_HfdzgN9iEe-wee1JR2_-cw-tMap_2-PREVIEW.bmp"/>
+      <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+      <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+      <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+      <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+      <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+      <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+      <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="RESULT_1">
+        <column comment="" key="false" length="30" name="Event_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="1" name="Event_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Character" usefulColumn="true"/>
+        <column comment="" key="false" length="1" name="Event_Reason" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="1" name="Track_History" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="1" name="_Based_on__Price_Level" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="5" name="_Based_on__Price_Location" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="1" name="_Based_on__Price" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="1" name="_Based_on__Cost" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Character" usefulColumn="true"/>
+        <column comment="" key="false" length="1" name="Event_Level" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="28" name="Event_Starting_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="End_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="1" name="Notify_Days" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="true" length="50" name="STORE_CODE" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="STATUS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="5" name="INPUT_3_Store" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      </metadata>
+      <nodeData xsi:type="TalendMapper:MapperData">
+        <uiProperties shellMaximized="true"/>
+        <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+        <outputTables sizeState="INTERMEDIATE" name="RESULT_1">
+          <mapperTableEntries name="Event_Description" expression="row1.Event_Description " type="id_String" nullable="true"/>
+          <mapperTableEntries name="Event_Type" expression="row1.Event_Type " type="id_Character" nullable="true"/>
+          <mapperTableEntries name="Event_Reason" expression="row1.Event_Reason " type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="Track_History" expression="row1.Track_History " type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="_Based_on__Price_Level" expression="row1._Based_on__Price_Level " type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="_Based_on__Price_Location" expression="row1._Based_on__Price_Location " type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="_Based_on__Price" expression="row1._Based_on__Price " type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="_Based_on__Cost" expression="row1._Based_on__Cost " type="id_Character" nullable="true"/>
+          <mapperTableEntries name="Event_Level" expression="row1.Event_Level " type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="Event_Starting_Date" expression="row1.Event_Starting_Date " type="id_String" nullable="true"/>
+          <mapperTableEntries name="End_Date" expression="row1.End_Date " type="id_String" nullable="true"/>
+          <mapperTableEntries name="Notify_Days" expression="row1.Notify_Days " type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="STORE_CODE" expression="row2.STORE_CODE " type="id_String"/>
+          <mapperTableEntries name="STATUS" expression="row2.STATUS " type="id_String" nullable="true"/>
+          <mapperTableEntries name="INPUT_3_Store" expression="row3.Store " type="id_Integer" nullable="true"/>
+        </outputTables>
+        <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+          <mapperTableEntries name="Event_Description" type="id_String" nullable="true"/>
+          <mapperTableEntries name="Event_Type" type="id_Character" nullable="true"/>
+          <mapperTableEntries name="Event_Reason" type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="Track_History" type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="_Based_on__Price_Level" type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="_Based_on__Price_Location" type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="_Based_on__Price" type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="_Based_on__Cost" type="id_Character" nullable="true"/>
+          <mapperTableEntries name="Event_Level" type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="Event_Starting_Date" type="id_String" nullable="true"/>
+          <mapperTableEntries name="End_Date" type="id_String" nullable="true"/>
+          <mapperTableEntries name="Notify_Days" type="id_Integer" nullable="true"/>
+        </inputTables>
+        <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+          <mapperTableEntries name="STORE_CODE" expression="row1._Based_on__Price_Location.toString()" type="id_String" operator="="/>
+          <mapperTableEntries name="STORE_DESC" type="id_String" nullable="true"/>
+          <mapperTableEntries name="STORE_TYPE" type="id_String" nullable="true"/>
+          <mapperTableEntries name="FINANCE_STORE_TYPE" type="id_String" nullable="true"/>
+          <mapperTableEntries name="TRF_REGION" type="id_String" nullable="true"/>
+          <mapperTableEntries name="AREA" type="id_String" nullable="true"/>
+          <mapperTableEntries name="REGION" type="id_String" nullable="true"/>
+          <mapperTableEntries name="PROVINCE" type="id_String" nullable="true"/>
+          <mapperTableEntries name="DATE_OPENED" type="id_String" nullable="true"/>
+          <mapperTableEntries name="AREA_MANAGER" type="id_String" nullable="true"/>
+          <mapperTableEntries name="REGION_MANAGER" type="id_String" nullable="true"/>
+          <mapperTableEntries name="SR_SOM_MANAGER" type="id_String" nullable="true"/>
+          <mapperTableEntries name="SERVING_DC" type="id_String" nullable="true"/>
+          <mapperTableEntries name="MAIN_CUSTOMER_SEGMENT_CLASSIFICATION" type="id_String" nullable="true"/>
+          <mapperTableEntries name="STATUS" type="id_String" nullable="true"/>
+          <mapperTableEntries name="LOAD_DATE" type="id_Date" nullable="true"/>
+          <mapperTableEntries name="Subsidiary_Code" type="id_String" nullable="true"/>
+          <mapperTableEntries name="Region_Code" type="id_String" nullable="true"/>
+          <mapperTableEntries name="Area_Code" type="id_String" nullable="true"/>
+          <mapperTableEntries name="Manthan_Area" type="id_String" nullable="true"/>
+          <mapperTableEntries name="Manthan_Region" type="id_String" nullable="true"/>
+        </inputTables>
+        <inputTables sizeState="INTERMEDIATE" name="row3" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+          <mapperTableEntries name="Store" expression="row1._Based_on__Price_Location" type="id_Integer" nullable="true"/>
+        </inputTables>
+      </nodeData>
+    </node>
+    <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="600" posY="160">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+      <elementParameter field="EXTERNAL" name="MAP" value=""/>
+      <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+      <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+      <elementParameter field="IMAGE" name="PREVIEW" value="_HfdzgN9iEe-wee1JR2_-cw-tMap_1-PREVIEW.bmp"/>
+      <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+      <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+      <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+      <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+      <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+      <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+      <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="PRICE_INPUT_REPORT">
+        <column comment="" key="false" length="30" name="Event_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="1" name="Event_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Character" usefulColumn="true"/>
+        <column comment="" key="false" length="1" name="Event_Reason" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="1" name="Track_History" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="1" name="_Based_on__Price_Level" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="5" name="_Based_on__Price_Location" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="1" name="_Based_on__Price" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="1" name="_Based_on__Cost" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Character" usefulColumn="true"/>
+        <column comment="" key="false" length="1" name="Event_Level" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="28" name="Event_Starting_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="End_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="1" name="Notify_Days" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+        <column comment="" defaultValue="" key="false" length="-1" name="is_Event_Description_Valid" nullable="false" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+        <column comment="" defaultValue="" key="false" length="-1" name="is_Event_Type_Valid" nullable="false" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+        <column comment="" defaultValue="" key="false" length="-1" name="is_Event_Reason_Valid" nullable="false" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+        <column comment="" defaultValue="" key="false" length="-1" name="is_Track_History_Valid" nullable="false" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+        <column comment="" defaultValue="" key="false" length="-1" name="is_BoPL_Valid" nullable="false" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+        <column comment="" defaultValue="" key="false" length="-1" name="is_BoP_Valid" nullable="false" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+        <column comment="" defaultValue="" key="false" length="-1" name="is_BoC_Valid" nullable="false" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+        <column comment="" defaultValue="" key="false" length="-1" name="is_Event_Level_Valid" nullable="false" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="is_ESD_Valid" nullable="false" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="vESD_Format" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" defaultValue="" key="false" length="-1" name="vESD_Compare" nullable="false" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="vESD_Compare_Valid" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" defaultValue="" key="false" length="-1" name="vESD_Date_Difference" nullable="false" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+        <column comment="" defaultValue="" key="false" length="-1" name="is_ESD_Valid_1" nullable="false" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+        <column comment="" defaultValue="" key="false" length="-1" name="is_End_Date_Valid" nullable="false" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="is_Notify_Day_Valid" nullable="false" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+        <column comment="" defaultValue="" key="false" length="-1" name="is_BoP_Location_Valid" nullable="false" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      </metadata>
+      <metadata connector="FLOW" name="PRICE_INPUT_STATUS">
+        <column comment="" key="false" length="-1" name="STATUS" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      </metadata>
+      <metadata connector="FLOW" name="PRICE_INPUT_HEADER">
+        <column comment="" key="false" length="30" name="Event_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="1" name="Event_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Character" usefulColumn="true"/>
+        <column comment="" key="false" length="1" name="Event_Reason" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="1" name="Track_History" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="1" name="_Based_on__Price_Level" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="5" name="_Based_on__Price_Location" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="1" name="_Based_on__Price" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="1" name="_Based_on__Cost" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Character" usefulColumn="true"/>
+        <column comment="" key="false" length="1" name="Event_Level" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="28" name="Event_Starting_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="End_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="1" name="Notify_Days" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      </metadata>
+      <nodeData xsi:type="TalendMapper:MapperData">
+        <uiProperties shellMaximized="true"/>
+        <varTables sizeState="INTERMEDIATE" name="Var">
+          <mapperTableEntries name="is_Event_Description_Valid" expression="RESULT_1.Event_Description != null &amp;&amp; &#xD;&#xA;RESULT_1.Event_Description.length() &lt;= 30 &amp;&amp;&#xD;&#xA;!RESULT_1.Event_Description.matches(&quot;.*[@#$%^&amp;*()/+:;,?|&lt;>\&quot;%].*&quot;) &amp;&amp;&#xD;&#xA;RESULT_1.Event_Description.equals(RESULT_1.Event_Description.toUpperCase()) &amp;&amp;&#xA;&#xA;RESULT_1.Event_Description.matches(&quot;^[A-Z0-9_%-]+(?:-[A-Z0-9]+)+-\\d{3}-[A-Z0-9]{1,3}-[A-Z]-\\d{2,3}$&quot;);&#xA;&#xD;&#xA;//row1.Event_Description.matches(&quot;^[A-Z]+(-[A-Z]+)*-\\d{3}-[A-Z]\\d{2}-R-\\d{3}$&quot;) " type="id_Boolean"/>
+          <mapperTableEntries name="is_Event_Type_Valid" expression="RESULT_1.Event_Type != null &amp;&amp; RESULT_1.Event_Type.equals('R') " type="id_Boolean"/>
+          <mapperTableEntries name="is_Event_Reason_Valid" expression="(RESULT_1.Event_Reason != null &amp;&amp; RESULT_1.Event_Description != null) &amp;&amp;&#xD;&#xA;(&#xD;&#xA;    (RESULT_1.Event_Reason == 1 &amp;&amp; RESULT_1.Event_Description.contains(&quot;CV&quot;)) ||&#xD;&#xA;    ((RESULT_1.Event_Reason == 3 || RESULT_1.Event_Reason == 6) &amp;&amp; RESULT_1.Event_Description.contains(&quot;PU&quot;)) ||&#xD;&#xA;    ((RESULT_1.Event_Reason == 5 || RESULT_1.Event_Reason == 8) &amp;&amp; RESULT_1.Event_Description.contains(&quot;BD&quot;)) ||&#xD;&#xA;    (RESULT_1.Event_Reason == 9 &amp;&amp; RESULT_1.Event_Description.contains(&quot;IP&quot;)) ||&#xD;&#xA;    (RESULT_1.Event_Reason == 7 &amp;&amp; (&#xD;&#xA;        RESULT_1.Event_Description.contains(&quot;SPS&quot;) ||&#xD;&#xA;        RESULT_1.Event_Description.contains(&quot;BR&quot;) ||&#xD;&#xA;        RESULT_1.Event_Description.contains(&quot;PD&quot;) ||&#xD;&#xA;        RESULT_1.Event_Description.contains(&quot;CP&quot;)&#xD;&#xA;    ))&#xD;&#xA;) " type="id_Boolean"/>
+          <mapperTableEntries name="is_Track_History_Valid" expression="RESULT_1.Track_History != null &amp;&amp; RESULT_1.Track_History==0 " type="id_Boolean"/>
+          <mapperTableEntries name="is_BoPL_Valid" expression="RESULT_1._Based_on__Price_Level != null &amp;&amp; RESULT_1._Based_on__Price_Level==3 " type="id_Boolean"/>
+          <mapperTableEntries name="is_BoP_Valid" expression="RESULT_1._Based_on__Price !=null &amp;&amp; RESULT_1._Based_on__Price ==3 " type="id_Boolean"/>
+          <mapperTableEntries name="is_BoC_Valid" expression="RESULT_1._Based_on__Cost != null &amp;&amp;&#xD;&#xA;RESULT_1._Based_on__Cost.equals('L') " type="id_Boolean"/>
+          <mapperTableEntries name="is_Event_Level_Valid" expression="RESULT_1.Event_Level != null &amp;&amp; RESULT_1.Event_Level==3 " type="id_Boolean"/>
+          <mapperTableEntries name="is_ESD_Format_Valid" expression="RESULT_1.Event_Starting_Date != null &amp;&amp;&#xD;&#xA;RESULT_1.Event_Starting_Date.matches(&quot;^(0?[1-9]|1[0-2])/(0?[1-9]|[12][0-9]|3[01])/[0-9]{4}$&quot;) " type="id_Boolean"/>
+          <mapperTableEntries name="vESD_Format" expression="(Var.is_ESD_Format_Valid &amp;&amp; RESULT_1.Event_Starting_Date != null &amp;&amp; !RESULT_1.Event_Starting_Date.isEmpty()) ? &#xD;&#xA;    TalendDate.formatDate(&quot;MM/dd/yyyy&quot;, TalendDate.parseDate(&quot;M/d/yyyy&quot;, RESULT_1.Event_Starting_Date)) &#xD;&#xA;    : null&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;/*&#xD;&#xA;Var.is_ESD_Format_Valid &amp;&amp; RESULT_1.Event_Starting_Date != null ? &#xD;&#xD;&#xA;    TalendDate.formatDate(&quot;MM/dd/yyyy&quot;, TalendDate.parseDate(&quot;EEE MMM dd HH:mm:ss z yyyy&quot;, RESULT_1.Event_Starting_Date)) &#xD;&#xD;&#xA;    : null */ " type="id_String"/>
+          <mapperTableEntries name="vESD_Compare" expression="TalendDate.compareDate(&#xD;&#xA;    TalendDate.parseDate(&quot;MM/dd/yyyy&quot;, Var.vESD_Format), &#xD;&#xA;    TalendDate.getCurrentDate()&#xD;&#xA;) " type="id_Integer"/>
+          <mapperTableEntries name="vESD_Compare_Valid" expression="Var.vESD_Compare > 0 ? &quot;Valid&quot; : &quot;Invalid&quot; " type="id_String"/>
+          <mapperTableEntries name="vESD_Date_Difference" expression="Var.vESD_Format != null ? &#xD;&#xA;    TalendDate.diffDate(&#xD;&#xA;        TalendDate.parseDate(&quot;MM/dd/yyyy&quot;, Var.vESD_Format), &#xD;&#xA;        TalendDate.getCurrentDate(), &#xD;&#xA;        &quot;dd&quot;&#xD;&#xA;    )+1     : null " type="id_Long"/>
+          <mapperTableEntries name="is_ESD_Valid" expression="Var.is_ESD_Format_Valid  &amp;&amp; Var.vESD_Compare_Valid.equals(&quot;Valid&quot;) " type="id_Boolean"/>
+          <mapperTableEntries name="is_End_Date_Valid" expression="RESULT_1.End_Date == null" type="id_Boolean"/>
+          <mapperTableEntries name="is_Notify_Day_Valid" expression="(RESULT_1.Notify_Days != null &amp;&amp; &#xD;&#xA;    ((long) RESULT_1.Notify_Days == Var.vESD_Date_Difference)) " type="id_Boolean"/>
+          <mapperTableEntries name="is_BoP_Location_Valid" expression="RESULT_1.STORE_CODE != null &amp;&amp; RESULT_1.STATUS.equalsIgnoreCase(&quot;ACTIVE&quot;) " type="id_Boolean"/>
+        </varTables>
+        <outputTables sizeState="INTERMEDIATE" name="PRICE_INPUT_REPORT">
+          <mapperTableEntries name="Event_Description" expression="row1.Event_Description " type="id_String" nullable="true"/>
+          <mapperTableEntries name="Event_Type" expression="row1.Event_Type " type="id_Character" nullable="true"/>
+          <mapperTableEntries name="Event_Reason" expression="row1.Event_Reason " type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="Track_History" expression="row1.Track_History " type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="_Based_on__Price_Level" expression="row1._Based_on__Price_Level " type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="_Based_on__Price_Location" expression="row1._Based_on__Price_Location " type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="_Based_on__Price" expression="row1._Based_on__Price " type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="_Based_on__Cost" expression="row1._Based_on__Cost " type="id_Character" nullable="true"/>
+          <mapperTableEntries name="Event_Level" expression="row1.Event_Level " type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="Event_Starting_Date" expression="row1.Event_Starting_Date " type="id_String" nullable="true"/>
+          <mapperTableEntries name="End_Date" expression="row1.End_Date " type="id_String" nullable="true"/>
+          <mapperTableEntries name="Notify_Days" expression="row1.Notify_Days " type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="is_Event_Description_Valid" expression="Var.is_Event_Description_Valid " type="id_Boolean"/>
+          <mapperTableEntries name="is_Event_Type_Valid" expression="Var.is_Event_Type_Valid " type="id_Boolean"/>
+          <mapperTableEntries name="is_Event_Reason_Valid" expression="Var.is_Event_Reason_Valid " type="id_Boolean"/>
+          <mapperTableEntries name="is_Track_History_Valid" expression="Var.is_Track_History_Valid " type="id_Boolean"/>
+          <mapperTableEntries name="is_BoPL_Valid" expression="Var.is_BoPL_Valid " type="id_Boolean"/>
+          <mapperTableEntries name="is_BoP_Valid" expression="Var.is_BoP_Valid " type="id_Boolean"/>
+          <mapperTableEntries name="is_BoC_Valid" expression="Var.is_BoC_Valid " type="id_Boolean"/>
+          <mapperTableEntries name="is_Event_Level_Valid" expression="Var.is_Event_Level_Valid " type="id_Boolean"/>
+          <mapperTableEntries name="is_ESD_Valid" expression="Var.is_ESD_Format_Valid " type="id_Boolean"/>
+          <mapperTableEntries name="vESD_Format" expression="Var.vESD_Format " type="id_String"/>
+          <mapperTableEntries name="vESD_Compare" expression="Var.vESD_Compare " type="id_Integer"/>
+          <mapperTableEntries name="vESD_Compare_Valid" expression="Var.vESD_Compare_Valid " type="id_String"/>
+          <mapperTableEntries name="vESD_Date_Difference" expression="Var.vESD_Date_Difference " type="id_Long"/>
+          <mapperTableEntries name="is_ESD_Valid_1" expression="Var.is_ESD_Valid " type="id_Boolean"/>
+          <mapperTableEntries name="is_End_Date_Valid" expression="Var.is_End_Date_Valid " type="id_Boolean"/>
+          <mapperTableEntries name="is_Notify_Day_Valid" expression="Var.is_Notify_Day_Valid " type="id_Boolean"/>
+          <mapperTableEntries name="is_BoP_Location_Valid" expression="Var.is_BoP_Location_Valid " type="id_Boolean"/>
+        </outputTables>
+        <outputTables sizeState="INTERMEDIATE" name="PRICE_INPUT_STATUS">
+          <mapperTableEntries name="STATUS" expression="Var.is_Event_Description_Valid  &amp;&amp;&#xD;&#xA; Var.is_Event_Type_Valid  &amp;&amp;&#xD;&#xA; Var.is_Event_Reason_Valid  &amp;&amp;&#xD;&#xA; Var.is_Track_History_Valid  &amp;&amp;&#xD;&#xA; Var.is_BoPL_Valid  &amp;&amp;&#xD;&#xA; Var.is_BoP_Valid  &amp;&amp;&#xD;&#xA; Var.is_BoC_Valid  &amp;&amp;&#xD;&#xA; Var.is_ESD_Valid  &amp;&amp;&#xA;  Var.is_Event_Level_Valid &amp;&amp;&#xD;&#xA; Var.is_End_Date_Valid  &amp;&amp;&#xA;  Var.is_BoP_Location_Valid &amp;&amp;&#xD;&#xA; Var.is_Notify_Day_Valid?0:1 " type="id_Integer" nullable="true"/>
+        </outputTables>
+        <outputTables sizeState="INTERMEDIATE" name="PRICE_INPUT_HEADER">
+          <mapperTableEntries name="Event_Description" expression="RESULT_1.Event_Description " type="id_String" nullable="true"/>
+          <mapperTableEntries name="Event_Type" expression="RESULT_1.Event_Type " type="id_Character" nullable="true"/>
+          <mapperTableEntries name="Event_Reason" expression="RESULT_1.Event_Reason " type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="Track_History" expression="RESULT_1.Track_History " type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="_Based_on__Price_Level" expression="RESULT_1._Based_on__Price_Level " type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="_Based_on__Price_Location" expression="RESULT_1._Based_on__Price_Location " type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="_Based_on__Price" expression="RESULT_1._Based_on__Price " type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="_Based_on__Cost" expression="RESULT_1._Based_on__Cost " type="id_Character" nullable="true"/>
+          <mapperTableEntries name="Event_Level" expression="RESULT_1.Event_Level " type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="Event_Starting_Date" expression="RESULT_1.Event_Starting_Date " type="id_String" nullable="true"/>
+          <mapperTableEntries name="End_Date" expression="RESULT_1.End_Date " type="id_String" nullable="true"/>
+          <mapperTableEntries name="Notify_Days" expression="RESULT_1.Notify_Days " type="id_Integer" nullable="true"/>
+        </outputTables>
+        <inputTables sizeState="INTERMEDIATE" name="RESULT_1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+          <mapperTableEntries name="Event_Description" type="id_String" nullable="true"/>
+          <mapperTableEntries name="Event_Type" type="id_Character" nullable="true"/>
+          <mapperTableEntries name="Event_Reason" type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="Track_History" type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="_Based_on__Price_Level" type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="_Based_on__Price_Location" type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="_Based_on__Price" type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="_Based_on__Cost" type="id_Character" nullable="true"/>
+          <mapperTableEntries name="Event_Level" type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="Event_Starting_Date" type="id_String" nullable="true"/>
+          <mapperTableEntries name="End_Date" type="id_String" nullable="true"/>
+          <mapperTableEntries name="Notify_Days" type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="STORE_CODE" type="id_String"/>
+          <mapperTableEntries name="STATUS" type="id_String" nullable="true"/>
+          <mapperTableEntries name="INPUT_3_Store" type="id_Integer" nullable="true"/>
+        </inputTables>
+      </nodeData>
+    </node>
+    <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="INPUT_1" offsetLabelX="0" offsetLabelY="0" source="INPUT_1" target="tMap_2">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+    </connection>
+    <connection connectorName="FLOW" label="RESULT_1" lineStyle="0" metaname="RESULT_1" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tMap_1">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="RESULT_1" show="false"/>
+    </connection>
+    <connection connectorName="FLOW" label="PRICE_INPUT_REPORT" lineStyle="0" metaname="PRICE_INPUT_REPORT" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_1" target="OUTPUT_1">
+      <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+        <elementValue elementRef="TRACE_COLUMN" value="is_ESD_Valid" id="0"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+        <elementValue elementRef="TRACE_COLUMN" value="vESD_Format" id="3"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="4"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="5"/>
+        <elementValue elementRef="TRACE_COLUMN" value="vESD_Compare" id="6"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="7"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="8"/>
+        <elementValue elementRef="TRACE_COLUMN" value="vESD_Compare_Valid" id="9"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="10"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="11"/>
+        <elementValue elementRef="TRACE_COLUMN" value="vESD_Date_Difference" id="12"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="13"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="14"/>
+        <elementValue elementRef="TRACE_COLUMN" value="is_ESD_Valid_1" id="15"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="16"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="17"/>
+        <elementValue elementRef="TRACE_COLUMN" value="is_Notify_Day_Valid" id="18"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="19"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="20"/>
+        <elementValue elementRef="TRACE_COLUMN" value="is_End_Date_Valid" id="21"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="22"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="23"/>
+        <elementValue elementRef="TRACE_COLUMN" value="is_Event_Level_Valid" id="24"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="25"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="26"/>
+        <elementValue elementRef="TRACE_COLUMN" value="is_BoP_Location_Valid" id="27"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="28"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="29"/>
+      </elementParameter>
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="PRICE_INPUT_REPORT" show="false"/>
+    </connection>
+    <connection connectorName="FLOW" label="PRICE_INPUT_STATUS" lineStyle="0" metaname="PRICE_INPUT_STATUS" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_1" target="OUTPUT_2">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="PRICE_INPUT_STATUS" show="false"/>
+    </connection>
+    <connection connectorName="FLOW" label="PRICE_INPUT_HEADER" lineStyle="0" metaname="PRICE_INPUT_HEADER" offsetLabelX="0" offsetLabelY="0" outputId="3" source="tMap_1" target="OUTPUT_3">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="PRICE_INPUT_HEADER" show="false"/>
+    </connection>
+    <connection connectorName="FLOW" label="row2" lineStyle="8" metaname="INPUT_2" offsetLabelX="0" offsetLabelY="0" source="INPUT_2" target="tMap_2">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+    </connection>
+    <connection connectorName="FLOW" label="row3" lineStyle="8" metaname="INPUT_3" offsetLabelX="0" offsetLabelY="0" source="INPUT_3" target="tMap_2">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+    </connection>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="INPUT_1" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="255;255;255" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;0;0"/>
+    </subjob>
+    <jobletNodes componentName="INPUT" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="120" posY="160" input="true">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="INPUT_1"/>
+      <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+      <elementParameter field="CHECK" name="START" value="true" show="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+      <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+      <elementParameter field="MEMO" name="COMMENT" value=""/>
+      <metadata connector="FLOW" name="INPUT_1">
+        <column comment="" key="false" length="30" name="Event_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="1" name="Event_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Character" usefulColumn="true"/>
+        <column comment="" key="false" length="1" name="Event_Reason" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="1" name="Track_History" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="1" name="_Based_on__Price_Level" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="5" name="_Based_on__Price_Location" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="1" name="_Based_on__Price" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="1" name="_Based_on__Cost" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Character" usefulColumn="true"/>
+        <column comment="" key="false" length="1" name="Event_Level" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="28" name="Event_Starting_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="End_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="1" name="Notify_Days" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      </metadata>
+    </jobletNodes>
+    <jobletNodes componentName="INPUT" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="240" posY="320" input="true">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="INPUT_2"/>
+      <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+      <elementParameter field="CHECK" name="START" value="false" show="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="DW_LOCATION"/>
+      <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+      <elementParameter field="MEMO" name="COMMENT" value=""/>
+      <metadata connector="FLOW" name="INPUT_2">
+        <column comment="" key="true" length="50" name="STORE_CODE" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="STORE_DESC" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="STORE_TYPE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="FINANCE_STORE_TYPE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="TRF_REGION" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="AREA" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="REGION" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="PROVINCE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="DATE_OPENED" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="AREA_MANAGER" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="REGION_MANAGER" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="SR_SOM_MANAGER" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="SERVING_DC" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="MAIN_CUSTOMER_SEGMENT_CLASSIFICATION" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="STATUS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" defaultValue="'getdate()'" key="false" length="27" name="LOAD_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="7" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="Subsidiary_Code" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="Region_Code" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="Area_Code" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="Manthan_Area" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="Manthan_Region" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+      </metadata>
+    </jobletNodes>
+    <jobletNodes componentName="INPUT" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="400" posY="320" input="true">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="INPUT_3"/>
+      <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+      <elementParameter field="CHECK" name="START" value="false" show="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="PRICE_INPUT_3"/>
+      <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+      <elementParameter field="MEMO" name="COMMENT" value=""/>
+      <metadata connector="FLOW" name="INPUT_3">
+        <column comment="" key="false" length="5" name="Store" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      </metadata>
+    </jobletNodes>
+    <jobletNodes componentName="OUTPUT" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="840" posY="160">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="OUTPUT_1"/>
+      <elementParameter field="CHECK" name="STARTABLE" value="false" show="false"/>
+      <elementParameter field="CHECK" name="START" value="false" show="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="PRICE_INPUT_1_REPORT"/>
+      <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+      <elementParameter field="MEMO" name="COMMENT" value=""/>
+      <metadata connector="FLOW" name="OUTPUT_1">
+        <column comment="" key="false" length="30" name="Event_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="1" name="Event_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Character" usefulColumn="true"/>
+        <column comment="" key="false" length="1" name="Event_Reason" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="1" name="Track_History" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="1" name="_Based_on__Price_Level" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="5" name="_Based_on__Price_Location" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="1" name="_Based_on__Price" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="1" name="_Based_on__Cost" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Character" usefulColumn="true"/>
+        <column comment="" key="false" length="1" name="Event_Level" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="28" name="Event_Starting_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="End_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="1" name="Notify_Days" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+        <column comment="" defaultValue="" key="false" length="-1" name="is_Event_Description_Valid" nullable="false" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+        <column comment="" defaultValue="" key="false" length="-1" name="is_Event_Type_Valid" nullable="false" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+        <column comment="" defaultValue="" key="false" length="-1" name="is_Event_Reason_Valid" nullable="false" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+        <column comment="" defaultValue="" key="false" length="-1" name="is_Track_History_Valid" nullable="false" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+        <column comment="" defaultValue="" key="false" length="-1" name="is_BoPL_Valid" nullable="false" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+        <column comment="" defaultValue="" key="false" length="-1" name="is_BoP_Valid" nullable="false" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+        <column comment="" defaultValue="" key="false" length="-1" name="is_BoC_Valid" nullable="false" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+        <column comment="" defaultValue="" key="false" length="-1" name="is_Event_Level_Valid" nullable="false" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="is_ESD_Valid" nullable="false" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="vESD_Format" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" defaultValue="" key="false" length="-1" name="vESD_Compare" nullable="false" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="vESD_Compare_Valid" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" defaultValue="" key="false" length="-1" name="vESD_Date_Difference" nullable="false" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+        <column comment="" defaultValue="" key="false" length="-1" name="is_ESD_Valid_1" nullable="false" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+        <column comment="" defaultValue="" key="false" length="-1" name="is_End_Date_Valid" nullable="false" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="is_Notify_Day_Valid" nullable="false" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+        <column comment="" defaultValue="" key="false" length="-1" name="is_BoP_Location_Valid" nullable="false" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      </metadata>
+    </jobletNodes>
+    <jobletNodes componentName="OUTPUT" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="840" posY="280">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="OUTPUT_2"/>
+      <elementParameter field="CHECK" name="STARTABLE" value="false" show="false"/>
+      <elementParameter field="CHECK" name="START" value="false" show="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="PRICE_INPUT_1_STATUS"/>
+      <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+      <elementParameter field="MEMO" name="COMMENT" value=""/>
+      <metadata connector="FLOW" name="OUTPUT_2">
+        <column comment="" key="false" length="-1" name="STATUS" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      </metadata>
+    </jobletNodes>
+    <jobletNodes componentName="OUTPUT" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="840" posY="440">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="OUTPUT_3"/>
+      <elementParameter field="CHECK" name="STARTABLE" value="false" show="false"/>
+      <elementParameter field="CHECK" name="START" value="false" show="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="PRICE_INPUT_HEADER"/>
+      <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+      <elementParameter field="MEMO" name="COMMENT" value=""/>
+      <metadata connector="FLOW" name="OUTPUT_3">
+        <column comment="" key="false" length="30" name="Event_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="1" name="Event_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Character" usefulColumn="true"/>
+        <column comment="" key="false" length="1" name="Event_Reason" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="1" name="Track_History" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="1" name="_Based_on__Price_Level" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="5" name="_Based_on__Price_Location" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="1" name="_Based_on__Price" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="1" name="_Based_on__Cost" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Character" usefulColumn="true"/>
+        <column comment="" key="false" length="1" name="Event_Level" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="28" name="Event_Starting_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="End_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="1" name="Notify_Days" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      </metadata>
+    </jobletNodes>
+  </model:JobletProcess>
+  <TalendProperties:ByteArray/>
+</xmi:XMI>

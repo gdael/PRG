@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:FileExcelConnection xmi:id="_GKpwANJZEe-0juM5TYgezA" name="FMCG_COST_INPUT1" dataPackage="_GKpwAdJZEe-0juM5TYgezA" Server="Localhost 127.0.0.1" FilePath="E:/Talend/Clients/PRG/FTP Folder/INPUT/PRICE_COST/O1TF-#345679-REG PRICE UPDATE-REBISCO-20250113.xlsx" Encoding="UTF-8" UseHeader="true" HeaderValue="1" FirstLineCaption="true" SheetName="Input5_Cost_Event_Header" firstColumn="1" thousandSeparator="','" decimalSeparator="'.'" sheetList="Input5_Cost_Event_Header:w&#xA;">
+    <sheetColumns>A</sheetColumns>
+    <sheetColumns>B</sheetColumns>
+    <sheetColumns>C</sheetColumns>
+    <sheetColumns>D</sheetColumns>
+    <sheetColumns>E</sheetColumns>
+    <sheetColumns>F</sheetColumns>
+    <sheetColumns>G</sheetColumns>
+    <sheetColumns>H</sheetColumns>
+    <sheetColumns>I</sheetColumns>
+  </TalendMetadata:FileExcelConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_GKpwAdJZEe-0juM5TYgezA" name="default" dataManager="_GKpwANJZEe-0juM5TYgezA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_GKpwAtJZEe-0juM5TYgezA" id="_6TEeANJYEe-0juM5TYgezA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GKpwA9JZEe-0juM5TYgezA" label="Event_Description" length="21" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GKpwBNJZEe-0juM5TYgezA" label="Event_Vendor" length="3" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GKpwBdJZEe-0juM5TYgezA" label="Event_Type" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GKpwBtJZEe-0juM5TYgezA" label="Event_Reason" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GKpwB9JZEe-0juM5TYgezA" label="_Based_On__Cost_Level" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GKpwCNJZEe-0juM5TYgezA" label="_Based_On__Cost_Location" length="5" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GKpwCdJZEe-0juM5TYgezA" label="Event_Level" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GKpwCtJZEe-0juM5TYgezA" label="Event_Starting_date" length="28" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GKpwC9JZEe-0juM5TYgezA" label="Event_Ending_date" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

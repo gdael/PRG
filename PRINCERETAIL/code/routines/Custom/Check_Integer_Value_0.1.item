@@ -1,0 +1,16 @@
+package routines;
+
+
+import java.lang.NumberFormatException;
+
+public class Check_Integer_Value {
+
+    public static boolean isValidInteger(String input) {
+        try {
+            Integer.parseInt(input);
+            return true; // Input is a valid integer
+        } catch (NumberFormatException e) {
+            return false; // Input is not a valid integer
+        }
+    }
+}

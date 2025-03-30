@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:FileExcelConnection xmi:id="_MBznkN1EEe-Y-_r363hDVg" name="FMCG_Email_List" dataPackage="_MBznkd1EEe-Y-_r363hDVg" Server="Localhost 127.0.0.1" FilePath="E:/Talend/Clients/PRG/FTP Folder/Email.xlsx" Encoding="UTF-8" UseHeader="true" HeaderValue="1" FirstLineCaption="true" SheetName="Sheet1" firstColumn="1" thousandSeparator="','" decimalSeparator="'.'" selectAllSheets="true" sheetList="Sheet1:w&#xA;">
+    <sheetColumns>A</sheetColumns>
+    <sheetColumns>B</sheetColumns>
+    <sheetColumns>C</sheetColumns>
+    <sheetColumns>D</sheetColumns>
+  </TalendMetadata:FileExcelConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_MBznkd1EEe-Y-_r363hDVg" name="default" dataManager="_MBznkN1EEe-Y-_r363hDVg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_MBznkt1EEe-Y-_r363hDVg" id="_8nGNEN1DEe-Y-_r363hDVg" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_MBznk91EEe-Y-_r363hDVg" label="Analyst_Code" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_MBznlN1EEe-Y-_r363hDVg" label="Analyst_Name" length="25" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_MBznld1EEe-Y-_r363hDVg" label="Email" length="29" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_MBznlt1EEe-Y-_r363hDVg" label="CC" length="20" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

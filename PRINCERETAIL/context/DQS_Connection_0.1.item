@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_J88DkNbzEe-4XYPM5vW39g" confirmationNeeded="false" hide="false" name="Default">
+  <contextParameter xmi:id="_J88DkdbzEe-4XYPM5vW39g" comment="" name="DQS_Database" prompt="DQS_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="DQS"/>
+  <contextParameter xmi:id="_J88qoNbzEe-4XYPM5vW39g" comment="" name="DQS_AdditionalParams" prompt="DQS_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_J88qodbzEe-4XYPM5vW39g" comment="" name="DQS_Login" prompt="DQS_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="DQS_TSA"/>
+  <contextParameter xmi:id="_J88qotbzEe-4XYPM5vW39g" comment="" name="DQS_Password" prompt="DQS_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:Cr3LihgaK7VfMCDNWe/Rd8YDLpXJVZfWEr+QX48PGU/mNk0R8Pc="/>
+  <contextParameter xmi:id="_J88qo9bzEe-4XYPM5vW39g" comment="" name="DQS_Server" prompt="DQS_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="10.0.2.64"/>
+  <contextParameter xmi:id="_J88qpNbzEe-4XYPM5vW39g" comment="" name="DQS_Schema" prompt="DQS_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_J88qpdbzEe-4XYPM5vW39g" comment="" name="DQS_Port" prompt="DQS_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433"/>
+</talendfile:ContextType>

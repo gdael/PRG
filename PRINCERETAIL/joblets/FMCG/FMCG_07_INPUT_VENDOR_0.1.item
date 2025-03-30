@@ -1,0 +1,1194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:TalendProperties="http://www.talend.org/properties" xmlns:model="http://www.talend.com/joblet.ecore">
+  <model:JobletProcess defaultContext="Default" jobType="Standard">
+    <context confirmationNeeded="false" hide="false" name="Default"/>
+    <parameters>
+      <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+      <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+      <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+      <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+      <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="false" show="false"/>
+      <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="false" show="false"/>
+      <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false" show="false"/>
+      <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000" show="false"/>
+      <elementParameter field="CHECK" name="STARTABLE" value="true"/>
+      <elementParameter field="ICON_SELECTION" name="ICONSELECTION" value=""/>
+      <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false" show="false"/>
+      <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+      <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+      <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;E:/Talend/Studio/Talend-Studio-20240527_1700-V8.0.1-LBP/workspace/in.csv&quot;" show="false"/>
+      <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;" show="false"/>
+      <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+      <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+      <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="ORACLE_18" show="false"/>
+      <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+      <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:EAPoqnsOlmkJvdkSkFcF9nTfMuzdW1iW8fKIJVtc" show="false"/>
+      <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+      <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+      <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+      <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="true" show="false"/>
+      <elementParameter field="CHECK" name="DISABLE_INFO" value="true" show="false"/>
+      <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+      <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+      <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+      <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+      <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+      <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+      <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+      <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+      <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+      <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    </parameters>
+    <node componentName="tUniqRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="280" posY="160">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tUniqRow_1" show="false"/>
+      <elementParameter field="TABLE" name="UNIQUE_KEY">
+        <elementValue elementRef="SCHEMA_COLUMN" value="Vendor" id="0"/>
+        <elementValue elementRef="KEY_ATTRIBUTE" value="true" id="1"/>
+        <elementValue elementRef="CASE_SENSITIVE" value="false" id="2"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="Location" id="3"/>
+        <elementValue elementRef="KEY_ATTRIBUTE" value="true" id="4"/>
+        <elementValue elementRef="CASE_SENSITIVE" value="false" id="5"/>
+      </elementParameter>
+      <elementParameter field="CHECK" name="ONLY_ONCE_EACH_DUPLICATED_KEY" value="false"/>
+      <elementParameter field="CHECK" name="IS_VIRTUAL_COMPONENT" value="false"/>
+      <elementParameter field="OPENED_LIST" name="BUFFER_SIZE" value="M" show="false"/>
+      <elementParameter field="DIRECTORY" name="TEMP_DIRECTORY" value="" show="false"/>
+      <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tUniqRow_1">
+        <column comment="" key="false" length="3" name="Vendor" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="5" name="Location" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      </metadata>
+      <metadata connector="UNIQUE" name="UNIQUE">
+        <column comment="" key="false" length="3" name="Vendor" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="5" name="Location" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      </metadata>
+      <metadata connector="DUPLICATE" name="DUPLICATE">
+        <column comment="" key="false" length="3" name="Vendor" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="5" name="Location" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="440" posY="160">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+      <elementParameter field="EXTERNAL" name="MAP" value=""/>
+      <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+      <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+      <elementParameter field="IMAGE" name="PREVIEW" value="_1NULIOzxEe-3ZrdJPdP_ZQ-tMap_1-PREVIEW.bmp"/>
+      <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+      <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+      <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+      <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+      <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+      <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+      <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="RESULT_1">
+        <column comment="" key="false" length="3" name="Vendor" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="5" name="Location" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="6" name="APSUPP_VENDOR" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="APSUPP_STATUS" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="35" name="APSUPP_NAME" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+      </metadata>
+      <nodeData xsi:type="TalendMapper:MapperData">
+        <uiProperties/>
+        <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+        <outputTables sizeState="INTERMEDIATE" name="RESULT_1">
+          <mapperTableEntries name="Vendor" expression="row2.Vendor " type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="Location" expression="row2.Location " type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="APSUPP_VENDOR" expression="row3.ASNUM " type="id_String"/>
+          <mapperTableEntries name="APSUPP_STATUS" expression="row3.PONOT1 " type="id_String"/>
+          <mapperTableEntries name="APSUPP_NAME" expression="row3.ASNAME " type="id_String"/>
+        </outputTables>
+        <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+          <mapperTableEntries name="Vendor" type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="Location" type="id_Integer" nullable="true"/>
+        </inputTables>
+        <inputTables sizeState="INTERMEDIATE" name="row3" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+          <mapperTableEntries name="ASNUM" expression="row2.Vendor !=null?row2.Vendor.toString():null" type="id_String" operator="="/>
+          <mapperTableEntries name="ASNAME" type="id_String"/>
+          <mapperTableEntries name="ASADAD" type="id_String"/>
+          <mapperTableEntries name="ASALPH" type="id_String"/>
+          <mapperTableEntries name="ASSTAT" type="id_String"/>
+          <mapperTableEntries name="ASTYPE" type="id_String"/>
+          <mapperTableEntries name="ASBOYN" type="id_String"/>
+          <mapperTableEntries name="ASAUTO" type="id_String"/>
+          <mapperTableEntries name="ASCNUM" type="id_BigDecimal"/>
+          <mapperTableEntries name="ASCLRK" type="id_BigDecimal"/>
+          <mapperTableEntries name="ASDFAC" type="id_BigDecimal"/>
+          <mapperTableEntries name="ASSTR" type="id_BigDecimal"/>
+          <mapperTableEntries name="ASVOTH" type="id_BigDecimal"/>
+          <mapperTableEntries name="ASBUYR" type="id_String"/>
+          <mapperTableEntries name="ASCUST" type="id_String"/>
+          <mapperTableEntries name="PONOT1" type="id_String"/>
+          <mapperTableEntries name="PONOT2" type="id_String"/>
+          <mapperTableEntries name="PONOT3" type="id_String"/>
+          <mapperTableEntries name="RCNOT1" type="id_String"/>
+          <mapperTableEntries name="RCNOT2" type="id_String"/>
+          <mapperTableEntries name="RCNOT3" type="id_String"/>
+          <mapperTableEntries name="BYNOT1" type="id_String"/>
+          <mapperTableEntries name="BYNOT2" type="id_String"/>
+          <mapperTableEntries name="BYNOT3" type="id_String"/>
+          <mapperTableEntries name="ASRVFR" type="id_BigDecimal"/>
+          <mapperTableEntries name="ASLEAD" type="id_BigDecimal"/>
+          <mapperTableEntries name="ASTLT" type="id_BigDecimal"/>
+          <mapperTableEntries name="ASTRMS" type="id_BigDecimal"/>
+          <mapperTableEntries name="ASTIND" type="id_String"/>
+          <mapperTableEntries name="ASPUSH" type="id_BigDecimal"/>
+          <mapperTableEntries name="ASTDSC" type="id_String"/>
+          <mapperTableEntries name="ASFPCD" type="id_String"/>
+          <mapperTableEntries name="ASFALP" type="id_BigDecimal"/>
+          <mapperTableEntries name="ASFALN" type="id_BigDecimal"/>
+          <mapperTableEntries name="ASFOBC" type="id_String"/>
+          <mapperTableEntries name="ASSHP1" type="id_String"/>
+          <mapperTableEntries name="ASSHP2" type="id_String"/>
+          <mapperTableEntries name="ASSHPP" type="id_String"/>
+          <mapperTableEntries name="ASSHPC" type="id_String"/>
+          <mapperTableEntries name="ASMINC" type="id_String"/>
+          <mapperTableEntries name="ASMINA" type="id_BigDecimal"/>
+          <mapperTableEntries name="ASTRKP" type="id_BigDecimal"/>
+          <mapperTableEntries name="ASTRKA" type="id_BigDecimal"/>
+          <mapperTableEntries name="ASTARP" type="id_BigDecimal"/>
+          <mapperTableEntries name="ASSTOP" type="id_BigDecimal"/>
+          <mapperTableEntries name="ASSKID" type="id_BigDecimal"/>
+          <mapperTableEntries name="ASOTHQ" type="id_BigDecimal"/>
+          <mapperTableEntries name="ASOTHP" type="id_BigDecimal"/>
+          <mapperTableEntries name="ASRTCD" type="id_String"/>
+          <mapperTableEntries name="ASVOLP" type="id_BigDecimal"/>
+          <mapperTableEntries name="ASVOLN" type="id_BigDecimal"/>
+          <mapperTableEntries name="ASREBP" type="id_BigDecimal"/>
+          <mapperTableEntries name="ASREBN" type="id_BigDecimal"/>
+          <mapperTableEntries name="ASALLP" type="id_BigDecimal"/>
+          <mapperTableEntries name="ASALLN" type="id_BigDecimal"/>
+          <mapperTableEntries name="AS1099" type="id_String"/>
+          <mapperTableEntries name="ASPCCD" type="id_String"/>
+          <mapperTableEntries name="ASOTHN" type="id_String"/>
+          <mapperTableEntries name="ASRAYN" type="id_String"/>
+          <mapperTableEntries name="ASCURC" type="id_String"/>
+          <mapperTableEntries name="ASTAXC" type="id_String"/>
+          <mapperTableEntries name="ASSTYN" type="id_String"/>
+          <mapperTableEntries name="ASTTPC" type="id_BigDecimal"/>
+          <mapperTableEntries name="ASTTDC" type="id_String"/>
+          <mapperTableEntries name="ASTTPU" type="id_BigDecimal"/>
+          <mapperTableEntries name="ASTTDU" type="id_String"/>
+          <mapperTableEntries name="ASTLPC" type="id_BigDecimal"/>
+          <mapperTableEntries name="ASTLDC" type="id_String"/>
+          <mapperTableEntries name="ASTLPU" type="id_BigDecimal"/>
+          <mapperTableEntries name="ASTLDU" type="id_String"/>
+          <mapperTableEntries name="ASLINM" type="id_String"/>
+          <mapperTableEntries name="ASTTNC" type="id_BigDecimal"/>
+          <mapperTableEntries name="ASTTND" type="id_String"/>
+          <mapperTableEntries name="ASGSTR" type="id_String"/>
+          <mapperTableEntries name="ASGSTN" type="id_String"/>
+          <mapperTableEntries name="ASFRTF" type="id_String"/>
+          <mapperTableEntries name="ASALWF" type="id_String"/>
+          <mapperTableEntries name="ASHSHQ" type="id_String"/>
+          <mapperTableEntries name="ASLNOG" type="id_String"/>
+          <mapperTableEntries name="ASLUOE" type="id_String"/>
+          <mapperTableEntries name="ASLSOP" type="id_String"/>
+          <mapperTableEntries name="ASMTCH" type="id_String"/>
+          <mapperTableEntries name="ASCAUT" type="id_String"/>
+          <mapperTableEntries name="ASTAXD" type="id_String"/>
+          <mapperTableEntries name="ASALLC" type="id_String"/>
+          <mapperTableEntries name="ASMCHT" type="id_String"/>
+          <mapperTableEntries name="ASALLR" type="id_String"/>
+          <mapperTableEntries name="ASBLLD" type="id_BigDecimal"/>
+          <mapperTableEntries name="ASBPOT" type="id_String"/>
+          <mapperTableEntries name="ASBUMT" type="id_String"/>
+          <mapperTableEntries name="ASINAL" type="id_BigDecimal"/>
+          <mapperTableEntries name="ASIARP" type="id_String"/>
+          <mapperTableEntries name="ASLOCN" type="id_BigDecimal"/>
+          <mapperTableEntries name="ASSNDY" type="id_BigDecimal"/>
+          <mapperTableEntries name="ASAMTH" type="id_String"/>
+          <mapperTableEntries name="ARTVAP" type="id_String"/>
+          <mapperTableEntries name="ADFTRM" type="id_String"/>
+          <mapperTableEntries name="LOAD_DATE" type="id_Date" nullable="true"/>
+          <mapperTableEntries name="UPDATE_DATE" type="id_Date" nullable="true"/>
+          <mapperTableEntries name="DELETE_FLAG" type="id_String" nullable="true"/>
+          <mapperTableEntries name="DELETE_DATE" type="id_Date" nullable="true"/>
+        </inputTables>
+      </nodeData>
+    </node>
+    <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="640" posY="160">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_2" show="false"/>
+      <elementParameter field="EXTERNAL" name="MAP" value=""/>
+      <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+      <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+      <elementParameter field="IMAGE" name="PREVIEW" value="_1NULIOzxEe-3ZrdJPdP_ZQ-tMap_2-PREVIEW.bmp"/>
+      <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+      <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+      <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+      <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+      <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+      <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+      <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="RESULT_2">
+        <column comment="" key="false" length="3" name="Vendor" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="5" name="Location" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="6" name="APSUPP_VENDOR" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="35" name="APSUPP_NAME" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="APSUPP_STATUS" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="true" length="50" name="DW_LOCATION_STORE_CODE" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="DW_LOCATION_STATUS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+      </metadata>
+      <nodeData xsi:type="TalendMapper:MapperData">
+        <uiProperties/>
+        <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+        <outputTables sizeState="INTERMEDIATE" name="RESULT_2">
+          <mapperTableEntries name="Vendor" expression="RESULT_1.Vendor " type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="Location" expression="RESULT_1.Location " type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="APSUPP_VENDOR" expression="RESULT_1.APSUPP_VENDOR " type="id_String"/>
+          <mapperTableEntries name="APSUPP_NAME" expression="RESULT_1.APSUPP_NAME " type="id_String"/>
+          <mapperTableEntries name="APSUPP_STATUS" expression="RESULT_1.APSUPP_STATUS " type="id_String"/>
+          <mapperTableEntries name="DW_LOCATION_STORE_CODE" expression="row4.STORE_CODE " type="id_String"/>
+          <mapperTableEntries name="DW_LOCATION_STATUS" expression="row4.STATUS " type="id_String" nullable="true"/>
+        </outputTables>
+        <inputTables sizeState="INTERMEDIATE" name="RESULT_1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+          <mapperTableEntries name="Vendor" type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="Location" type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="APSUPP_VENDOR" type="id_String"/>
+          <mapperTableEntries name="APSUPP_STATUS" type="id_String"/>
+          <mapperTableEntries name="APSUPP_NAME" type="id_String"/>
+        </inputTables>
+        <inputTables sizeState="INTERMEDIATE" name="row4" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+          <mapperTableEntries name="STORE_CODE" expression="RESULT_1.Location !=null?RESULT_1.Location.toString():null" type="id_String"/>
+          <mapperTableEntries name="STORE_DESC" type="id_String" nullable="true"/>
+          <mapperTableEntries name="STORE_TYPE" type="id_String" nullable="true"/>
+          <mapperTableEntries name="FINANCE_STORE_TYPE" type="id_String" nullable="true"/>
+          <mapperTableEntries name="TRF_REGION" type="id_String" nullable="true"/>
+          <mapperTableEntries name="AREA" type="id_String" nullable="true"/>
+          <mapperTableEntries name="REGION" type="id_String" nullable="true"/>
+          <mapperTableEntries name="PROVINCE" type="id_String" nullable="true"/>
+          <mapperTableEntries name="DATE_OPENED" type="id_String" nullable="true"/>
+          <mapperTableEntries name="AREA_MANAGER" type="id_String" nullable="true"/>
+          <mapperTableEntries name="REGION_MANAGER" type="id_String" nullable="true"/>
+          <mapperTableEntries name="SR_SOM_MANAGER" type="id_String" nullable="true"/>
+          <mapperTableEntries name="SERVING_DC" type="id_String" nullable="true"/>
+          <mapperTableEntries name="MAIN_CUSTOMER_SEGMENT_CLASSIFICATION" type="id_String" nullable="true"/>
+          <mapperTableEntries name="STATUS" type="id_String" nullable="true"/>
+          <mapperTableEntries name="LOAD_DATE" type="id_Date" nullable="true"/>
+          <mapperTableEntries name="Subsidiary_Code" type="id_String" nullable="true"/>
+          <mapperTableEntries name="Region_Code" type="id_String" nullable="true"/>
+          <mapperTableEntries name="Area_Code" type="id_String" nullable="true"/>
+          <mapperTableEntries name="Manthan_Area" type="id_String" nullable="true"/>
+          <mapperTableEntries name="Manthan_Region" type="id_String" nullable="true"/>
+        </inputTables>
+      </nodeData>
+    </node>
+    <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="800" posY="160">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_3" show="false"/>
+      <elementParameter field="EXTERNAL" name="MAP" value=""/>
+      <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+      <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+      <elementParameter field="IMAGE" name="PREVIEW" value="_1NULIOzxEe-3ZrdJPdP_ZQ-tMap_3-PREVIEW.bmp"/>
+      <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+      <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+      <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+      <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+      <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+      <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+      <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="INPUT_VENDOR_STATUS">
+        <column comment="" key="false" length="-1" name="STATUS" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      </metadata>
+      <metadata connector="FLOW" name="REPORT">
+        <column comment="" key="false" length="3" name="Vendor" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="5" name="Location" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="6" name="APSUPP_VENDOR" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="35" name="APSUPP_NAME" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="APSUPP_STATUS" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="true" length="50" name="DW_LOCATION_STORE_CODE" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="DW_LOCATION_STATUS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" defaultValue="" key="false" length="-1" name="is_Vendor_Valid" nullable="false" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+        <column comment="" defaultValue="" key="false" length="-1" name="is_Location_Valid" nullable="false" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      </metadata>
+      <nodeData xsi:type="TalendMapper:MapperData">
+        <uiProperties shellMaximized="true"/>
+        <varTables sizeState="INTERMEDIATE" name="Var">
+          <mapperTableEntries name="is_Vendor_Valid" expression="RESULT_2.APSUPP_VENDOR !=null &amp;&amp;&#xD;&#xA;!RESULT_2.APSUPP_NAME.isEmpty() &amp;&amp; &#xD;&#xD;&#xA;!RESULT_2.APSUPP_NAME.startsWith(&quot;IA&quot;) &amp;&amp; &#xD;&#xD;&#xA;!RESULT_2.APSUPP_STATUS.toUpperCase().contains(&quot;INACTIVE&quot;) &amp;&amp; &#xD;&#xD;&#xA;!RESULT_2.APSUPP_STATUS.toUpperCase().contains(&quot;IN-ACTIVE&quot;) &amp;&amp; &#xD;&#xD;&#xA;!RESULT_2.APSUPP_STATUS.toUpperCase().contains(&quot;IN ACTIVE&quot;) &amp;&amp; &#xD;&#xD;&#xA;!RESULT_2.APSUPP_STATUS.toUpperCase().contains(&quot;INACTIVE&quot;) &amp;&amp; &#xD;&#xD;&#xA;!RESULT_2.APSUPP_STATUS.toUpperCase().contains(&quot;IN-ACTIVE&quot;) &amp;&amp; &#xD;&#xD;&#xA;!RESULT_2.APSUPP_STATUS.toUpperCase().contains(&quot;IN ACTIVE&quot;) " type="id_Boolean"/>
+          <mapperTableEntries name="is_Location_Valid" expression="RESULT_2.DW_LOCATION_STORE_CODE != null &amp;&amp;&#xD;&#xA;!( &quot;INACTIVE&quot;.equalsIgnoreCase(RESULT_2.DW_LOCATION_STATUS) || &#xD;&#xA;   &quot;DAMAGE&quot;.equalsIgnoreCase(RESULT_2.DW_LOCATION_STATUS) || &#xD;&#xA;   &quot;CLOSED&quot;.equalsIgnoreCase(RESULT_2.DW_LOCATION_STATUS) &#xD;&#xA;) " type="id_Boolean"/>
+        </varTables>
+        <outputTables sizeState="INTERMEDIATE" name="INPUT_VENDOR_STATUS">
+          <mapperTableEntries name="STATUS" expression="Var.is_Vendor_Valid &amp;&amp;&#xD;&#xA;Var.is_Location_Valid ?0:1 " type="id_Integer" nullable="true"/>
+        </outputTables>
+        <outputTables sizeState="INTERMEDIATE" name="REPORT">
+          <mapperTableEntries name="Vendor" expression="RESULT_2.Vendor " type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="Location" expression="RESULT_2.Location " type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="APSUPP_VENDOR" expression="RESULT_2.APSUPP_VENDOR " type="id_String"/>
+          <mapperTableEntries name="APSUPP_NAME" expression="RESULT_2.APSUPP_NAME " type="id_String"/>
+          <mapperTableEntries name="APSUPP_STATUS" expression="RESULT_2.APSUPP_STATUS " type="id_String"/>
+          <mapperTableEntries name="DW_LOCATION_STORE_CODE" expression="RESULT_2.DW_LOCATION_STORE_CODE " type="id_String"/>
+          <mapperTableEntries name="DW_LOCATION_STATUS" expression="RESULT_2.DW_LOCATION_STATUS " type="id_String" nullable="true"/>
+          <mapperTableEntries name="is_Vendor_Valid" expression="Var.is_Vendor_Valid " type="id_Boolean"/>
+          <mapperTableEntries name="is_Location_Valid" expression="Var.is_Location_Valid " type="id_Boolean"/>
+        </outputTables>
+        <inputTables sizeState="INTERMEDIATE" name="RESULT_2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+          <mapperTableEntries name="Vendor" type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="Location" type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="APSUPP_VENDOR" type="id_String"/>
+          <mapperTableEntries name="APSUPP_NAME" type="id_String"/>
+          <mapperTableEntries name="APSUPP_STATUS" type="id_String"/>
+          <mapperTableEntries name="DW_LOCATION_STORE_CODE" type="id_String"/>
+          <mapperTableEntries name="DW_LOCATION_STATUS" type="id_String" nullable="true"/>
+        </inputTables>
+      </nodeData>
+    </node>
+    <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="INPUT_1" offsetLabelX="0" offsetLabelY="0" source="INPUT_1" target="tUniqRow_1">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+    </connection>
+    <connection connectorName="UNIQUE" label="row2" lineStyle="0" metaname="UNIQUE" offsetLabelX="0" offsetLabelY="0" source="tUniqRow_1" target="tMap_1">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+    </connection>
+    <connection connectorName="FLOW" label="RESULT_1" lineStyle="0" metaname="RESULT_1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tMap_2">
+      <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+        <elementValue elementRef="TRACE_COLUMN" value="APSUPP_NAME" id="0"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+      </elementParameter>
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="RESULT_1" show="false"/>
+    </connection>
+    <connection connectorName="FLOW" label="RESULT_2" lineStyle="0" metaname="RESULT_2" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tMap_3">
+      <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+        <elementValue elementRef="TRACE_COLUMN" value="APSUPP_NAME" id="0"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+      </elementParameter>
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="RESULT_2" show="false"/>
+    </connection>
+    <connection connectorName="FLOW" label="INPUT_VENDOR_STATUS" lineStyle="0" metaname="INPUT_VENDOR_STATUS" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_3" target="OUTPUT_1">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="INPUT_VENDOR_STATUS" show="false"/>
+    </connection>
+    <connection connectorName="FLOW" label="REPORT" lineStyle="0" metaname="REPORT" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_3" target="OUTPUT_2">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="REPORT" show="false"/>
+    </connection>
+    <connection connectorName="FLOW" label="row3" lineStyle="8" metaname="INPUT_2" offsetLabelX="0" offsetLabelY="0" source="INPUT_2" target="tMap_1">
+      <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+        <elementValue elementRef="TRACE_COLUMN" value="ASTTPC" id="0"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASGSTR" id="3"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="4"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="5"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASSKID" id="6"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="7"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="8"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASGSTN" id="9"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="10"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="11"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASCLRK" id="12"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="13"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="14"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASTLPU" id="15"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="16"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="17"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASALPH" id="18"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="19"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="20"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASTTPU" id="21"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="22"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="23"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASRAYN" id="24"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="25"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="26"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASIARP" id="27"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="28"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="29"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASHSHQ" id="30"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="31"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="32"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASCUST" id="33"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="34"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="35"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASNAME" id="36"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="37"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="38"/>
+        <elementValue elementRef="TRACE_COLUMN" value="BYNOT2" id="39"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="40"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="41"/>
+        <elementValue elementRef="TRACE_COLUMN" value="BYNOT3" id="42"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="43"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="44"/>
+        <elementValue elementRef="TRACE_COLUMN" value="BYNOT1" id="45"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="46"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="47"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASMINA" id="48"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="49"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="50"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASTRKA" id="51"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="52"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="53"/>
+        <elementValue elementRef="TRACE_COLUMN" value="AS1099" id="54"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="55"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="56"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASADAD" id="57"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="58"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="59"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASMINC" id="60"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="61"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="62"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASSTAT" id="63"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="64"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="65"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASSTR" id="66"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="67"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="68"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASFALP" id="69"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="70"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="71"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASLEAD" id="72"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="73"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="74"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASTRKP" id="75"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="76"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="77"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASFALN" id="78"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="79"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="80"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASCAUT" id="81"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="82"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="83"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASTARP" id="84"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="85"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="86"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASTLPC" id="87"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="88"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="89"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASFPCD" id="90"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="91"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="92"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASOTHQ" id="93"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="94"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="95"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASBUYR" id="96"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="97"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="98"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASAMTH" id="99"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="100"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="101"/>
+        <elementValue elementRef="TRACE_COLUMN" value="RCNOT1" id="102"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="103"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="104"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASNUM" id="105"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="106"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="107"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASTDSC" id="108"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="109"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="110"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASREBP" id="111"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="112"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="113"/>
+        <elementValue elementRef="TRACE_COLUMN" value="RCNOT2" id="114"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="115"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="116"/>
+        <elementValue elementRef="TRACE_COLUMN" value="RCNOT3" id="117"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="118"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="119"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASREBN" id="120"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="121"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="122"/>
+        <elementValue elementRef="TRACE_COLUMN" value="PONOT1" id="123"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="124"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="125"/>
+        <elementValue elementRef="TRACE_COLUMN" value="PONOT3" id="126"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="127"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="128"/>
+        <elementValue elementRef="TRACE_COLUMN" value="PONOT2" id="129"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="130"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="131"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASFOBC" id="132"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="133"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="134"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASPCCD" id="135"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="136"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="137"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASTRMS" id="138"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="139"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="140"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ARTVAP" id="141"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="142"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="143"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASAUTO" id="144"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="145"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="146"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASLSOP" id="147"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="148"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="149"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASOTHN" id="150"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="151"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="152"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASOTHP" id="153"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="154"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="155"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASBPOT" id="156"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="157"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="158"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASALLN" id="159"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="160"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="161"/>
+        <elementValue elementRef="TRACE_COLUMN" value="UPDATE_DATE" id="162"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="163"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="164"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASVOLN" id="165"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="166"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="167"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASSHP2" id="168"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="169"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="170"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASTLDC" id="171"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="172"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="173"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASSHP1" id="174"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="175"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="176"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASVOLP" id="177"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="178"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="179"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASLINM" id="180"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="181"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="182"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASALLC" id="183"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="184"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="185"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASTTDC" id="186"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="187"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="188"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASSTOP" id="189"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="190"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="191"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASTLDU" id="192"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="193"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="194"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASSHPC" id="195"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="196"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="197"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASLNOG" id="198"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="199"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="200"/>
+        <elementValue elementRef="TRACE_COLUMN" value="DELETE_FLAG" id="201"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="202"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="203"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASALLR" id="204"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="205"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="206"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASALLP" id="207"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="208"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="209"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASVOTH" id="210"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="211"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="212"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASTIND" id="213"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="214"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="215"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASLOCN" id="216"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="217"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="218"/>
+        <elementValue elementRef="TRACE_COLUMN" value="LOAD_DATE" id="219"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="220"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="221"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASSNDY" id="222"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="223"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="224"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASTTNC" id="225"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="226"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="227"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASTYPE" id="228"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="229"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="230"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASCURC" id="231"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="232"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="233"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASDFAC" id="234"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="235"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="236"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASSTYN" id="237"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="238"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="239"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASTTND" id="240"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="241"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="242"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASBOYN" id="243"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="244"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="245"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASTLT" id="246"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="247"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="248"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASINAL" id="249"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="250"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="251"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASMTCH" id="252"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="253"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="254"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASRVFR" id="255"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="256"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="257"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASSHPP" id="258"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="259"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="260"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ADFTRM" id="261"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="262"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="263"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASTTDU" id="264"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="265"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="266"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASTAXD" id="267"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="268"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="269"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASCNUM" id="270"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="271"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="272"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASTAXC" id="273"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="274"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="275"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASFRTF" id="276"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="277"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="278"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASPUSH" id="279"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="280"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="281"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASBLLD" id="282"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="283"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="284"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASLUOE" id="285"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="286"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="287"/>
+        <elementValue elementRef="TRACE_COLUMN" value="DELETE_DATE" id="288"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="289"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="290"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASMCHT" id="291"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="292"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="293"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASRTCD" id="294"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="295"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="296"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASALWF" id="297"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="298"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="299"/>
+        <elementValue elementRef="TRACE_COLUMN" value="ASBUMT" id="300"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="301"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="302"/>
+      </elementParameter>
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+    </connection>
+    <connection connectorName="FLOW" label="row4" lineStyle="8" metaname="INPUT_3" offsetLabelX="0" offsetLabelY="0" source="INPUT_3" target="tMap_2">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
+    </connection>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="INPUT_1" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="255;255;255" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;255;255"/>
+    </subjob>
+    <jobletNodes componentName="INPUT" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="120" posY="160" input="true">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="INPUT_1"/>
+      <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+      <elementParameter field="CHECK" name="START" value="true" show="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+      <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+      <elementParameter field="MEMO" name="COMMENT" value=""/>
+      <metadata connector="FLOW" name="INPUT_1">
+        <column comment="" key="false" length="3" name="Vendor" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="5" name="Location" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      </metadata>
+    </jobletNodes>
+    <jobletNodes componentName="INPUT" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="440" posY="320" input="true">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="INPUT_2"/>
+      <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+      <elementParameter field="CHECK" name="START" value="false" show="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="APPSUP"/>
+      <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+      <elementParameter field="MEMO" name="COMMENT" value=""/>
+      <metadata connector="FLOW" name="INPUT_2">
+        <column comment="" key="false" length="6" name="ASNUM" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="35" name="ASNAME" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="1" name="ASADAD" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="6" name="ASALPH" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="1" name="ASSTAT" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="1" name="ASTYPE" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="1" name="ASBOYN" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="1" name="ASAUTO" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="6" name="ASCNUM" nullable="false" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="3" name="ASCLRK" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="6" name="ASDFAC" nullable="false" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="5" name="ASSTR" nullable="false" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="6" name="ASVOTH" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="3" name="ASBUYR" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="8" name="ASCUST" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="PONOT1" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="PONOT2" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="PONOT3" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="RCNOT1" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="RCNOT2" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="RCNOT3" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="BYNOT1" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="BYNOT2" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="BYNOT3" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="3" name="ASRVFR" nullable="false" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="3" name="ASLEAD" nullable="false" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="9" name="ASTLT" nullable="false" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="3" name="ASTRMS" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="1" name="ASTIND" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="3" name="ASPUSH" nullable="false" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="1" name="ASTDSC" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="1" name="ASFPCD" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="5" name="ASFALP" nullable="false" pattern="" precision="3" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="15" name="ASFALN" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="1" name="ASFOBC" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="20" name="ASSHP1" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="20" name="ASSHP2" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="20" name="ASSHPP" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="20" name="ASSHPC" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="1" name="ASMINC" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="6" name="ASMINA" nullable="false" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="5" name="ASTRKP" nullable="false" pattern="" precision="3" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="15" name="ASTRKA" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="15" name="ASTARP" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="15" name="ASSTOP" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="15" name="ASSKID" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="15" name="ASOTHQ" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="5" name="ASOTHP" nullable="false" pattern="" precision="3" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="1" name="ASRTCD" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="5" name="ASVOLP" nullable="false" pattern="" precision="3" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="15" name="ASVOLN" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="5" name="ASREBP" nullable="false" pattern="" precision="3" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="15" name="ASREBN" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="5" name="ASALLP" nullable="false" pattern="" precision="3" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="15" name="ASALLN" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="9" name="AS1099" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="1" name="ASPCCD" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="35" name="ASOTHN" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="1" name="ASRAYN" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="3" name="ASCURC" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="1" name="ASTAXC" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="1" name="ASSTYN" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="4" name="ASTTPC" nullable="false" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="10" name="ASTTDC" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="4" name="ASTTPU" nullable="false" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="10" name="ASTTDU" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="4" name="ASTLPC" nullable="false" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="10" name="ASTLDC" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="4" name="ASTLPU" nullable="false" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="10" name="ASTLDU" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="1" name="ASLINM" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="17" name="ASTTNC" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="10" name="ASTTND" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="1" name="ASGSTR" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="20" name="ASGSTN" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="1" name="ASFRTF" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="1" name="ASALWF" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="1" name="ASHSHQ" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="1" name="ASLNOG" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="1" name="ASLUOE" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="1" name="ASLSOP" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="1" name="ASMTCH" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="1" name="ASCAUT" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="1" name="ASTAXD" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="5" name="ASALLC" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="1" name="ASMCHT" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="3" name="ASALLR" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="3" name="ASBLLD" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="1" name="ASBPOT" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="1" name="ASBUMT" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="3" name="ASINAL" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="1" name="ASIARP" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="5" name="ASLOCN" nullable="false" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="3" name="ASSNDY" nullable="false" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="1" name="ASAMTH" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="1" name="ARTVAP" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="1" name="ADFTRM" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="27" name="LOAD_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="7" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="27" name="UPDATE_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="7" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="1" name="DELETE_FLAG" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="27" name="DELETE_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="7" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+      </metadata>
+    </jobletNodes>
+    <jobletNodes componentName="INPUT" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="640" posY="320" input="true">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="INPUT_3"/>
+      <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+      <elementParameter field="CHECK" name="START" value="false" show="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="DW_LOCATION"/>
+      <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+      <elementParameter field="MEMO" name="COMMENT" value=""/>
+      <metadata connector="FLOW" name="INPUT_3">
+        <column comment="" key="true" length="50" name="STORE_CODE" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="STORE_DESC" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="STORE_TYPE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="FINANCE_STORE_TYPE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="TRF_REGION" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="AREA" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="REGION" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="PROVINCE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="DATE_OPENED" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="AREA_MANAGER" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="REGION_MANAGER" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="SR_SOM_MANAGER" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="SERVING_DC" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="MAIN_CUSTOMER_SEGMENT_CLASSIFICATION" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="STATUS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" defaultValue="'getdate()'" key="false" length="27" name="LOAD_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="7" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="Subsidiary_Code" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="Region_Code" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="Area_Code" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="Manthan_Area" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="Manthan_Region" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+      </metadata>
+    </jobletNodes>
+    <jobletNodes componentName="OUTPUT" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="1000" posY="160">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="OUTPUT_1"/>
+      <elementParameter field="CHECK" name="STARTABLE" value="false" show="false"/>
+      <elementParameter field="CHECK" name="START" value="false" show="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+      <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+      <elementParameter field="MEMO" name="COMMENT" value=""/>
+      <metadata connector="FLOW" name="OUTPUT_1">
+        <column comment="" key="false" length="-1" name="STATUS" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      </metadata>
+    </jobletNodes>
+    <jobletNodes componentName="OUTPUT" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="1000" posY="280">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="OUTPUT_2"/>
+      <elementParameter field="CHECK" name="STARTABLE" value="false" show="false"/>
+      <elementParameter field="CHECK" name="START" value="false" show="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+      <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+      <elementParameter field="MEMO" name="COMMENT" value=""/>
+      <metadata connector="FLOW" name="OUTPUT_2">
+        <column comment="" key="false" length="3" name="Vendor" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="5" name="Location" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="6" name="APSUPP_VENDOR" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="35" name="APSUPP_NAME" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="APSUPP_STATUS" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="true" length="50" name="DW_LOCATION_STORE_CODE" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="DW_LOCATION_STATUS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" defaultValue="" key="false" length="-1" name="is_Vendor_Valid" nullable="false" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+        <column comment="" defaultValue="" key="false" length="-1" name="is_Location_Valid" nullable="false" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      </metadata>
+    </jobletNodes>
+  </model:JobletProcess>
+  <TalendProperties:ByteArray/>
+</xmi:XMI>

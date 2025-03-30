@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:FileExcelConnection xmi:id="_op71IQPREfC32ZWQX0WhiQ" name="GMD_DS_INPUT2_HEADER" dataPackage="_op71IgPREfC32ZWQX0WhiQ" Server="Localhost 127.0.0.1" FilePath="D:/Clients/PRG/GMD DS/INPUT/IMM-338750-DS-SUSAN-022825-045.xlsx" Encoding="UTF-8" UseHeader="true" HeaderValue="1" FirstLineCaption="true" SheetName="Input2_IMM_Header_Merch" firstColumn="1" thousandSeparator="','" decimalSeparator="'.'" sheetList="Input2_IMM_Header_Merch:w&#xA;">
+    <sheetColumns>A</sheetColumns>
+    <sheetColumns>B</sheetColumns>
+    <sheetColumns>C</sheetColumns>
+    <sheetColumns>D</sheetColumns>
+    <sheetColumns>E</sheetColumns>
+    <sheetColumns>F</sheetColumns>
+    <sheetColumns>G</sheetColumns>
+    <sheetColumns>H</sheetColumns>
+    <sheetColumns>I</sheetColumns>
+    <sheetColumns>J</sheetColumns>
+  </TalendMetadata:FileExcelConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_op71IgPREfC32ZWQX0WhiQ" name="default" dataManager="_op71IQPREfC32ZWQX0WhiQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_op71IwPREfC32ZWQX0WhiQ" id="_Nqi2gAPREfC32ZWQX0WhiQ" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_op71JAPREfC32ZWQX0WhiQ" label="TYPE_OF_UPDATE" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_op71JQPREfC32ZWQX0WhiQ" label="SALES_CHANNEL" length="9" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_op71JgPREfC32ZWQX0WhiQ" label="PRIMARY_VENDOR_CODE" length="4" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_op71JwPREfC32ZWQX0WhiQ" label="PRIMARY_VENDOR_NAME" length="35" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_op71KAPREfC32ZWQX0WhiQ" label="DISCOUNT_TYPE" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_op71KQPREfC32ZWQX0WhiQ" label="DISCOUNT_DESCRIPTION" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_op71KgPREfC32ZWQX0WhiQ" label="DISCOUNT" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_op71KwPREfC32ZWQX0WhiQ" label="VAT_TYPE" length="6" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_op71LAPREfC32ZWQX0WhiQ" label="STORE_DC_LOCATION" length="13" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

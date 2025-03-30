@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:FileExcelConnection xmi:id="_A6nTMP4eEe-kTc6LQuf2LA" name="FMCG_NPIS_INPUT1" dataPackage="_A6nTMf4eEe-kTc6LQuf2LA" Server="Localhost 127.0.0.1" FilePath="D:/Clients/PRG/FMCG FRESTA/INPUT/IMM-0007133-FMCG-GRACE EMPIRE-012825-055.xlsx" Encoding="UTF-8" UseHeader="true" HeaderValue="1" FirstLineCaption="true" SheetName="Input1_IMM_Header_Merch" firstColumn="1" thousandSeparator="','" decimalSeparator="'.'" sheetList="Input1_IMM_Header_Merch:w&#xA;" generationMode="EVENT_MODE">
+    <sheetColumns>A</sheetColumns>
+    <sheetColumns>B</sheetColumns>
+    <sheetColumns>C</sheetColumns>
+    <sheetColumns>D</sheetColumns>
+    <sheetColumns>E</sheetColumns>
+    <sheetColumns>F</sheetColumns>
+    <sheetColumns>G</sheetColumns>
+    <sheetColumns>H</sheetColumns>
+    <sheetColumns>I</sheetColumns>
+    <sheetColumns>J</sheetColumns>
+    <sheetColumns>K</sheetColumns>
+    <sheetColumns>L</sheetColumns>
+    <sheetColumns>M</sheetColumns>
+    <sheetColumns>N</sheetColumns>
+  </TalendMetadata:FileExcelConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_A6nTMf4eEe-kTc6LQuf2LA" name="default" dataManager="_A6nTMP4eEe-kTc6LQuf2LA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_A6nTMv4eEe-kTc6LQuf2LA" id="_qYlQsP4dEe-kTc6LQuf2LA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A6nTM_4eEe-kTc6LQuf2LA" label="Type_of_Update" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A6nTNP4eEe-kTc6LQuf2LA" label="Sales_Channel" length="16" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A6nTNf4eEe-kTc6LQuf2LA" label="Primary_Vendor_Code" length="4" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A6nTNv4eEe-kTc6LQuf2LA" label="Primary_Vendor_Name___Auto_Populate" length="35" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A6nTN_4eEe-kTc6LQuf2LA" label="Alternate_Vendor_Code" length="4" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A6nTOP4eEe-kTc6LQuf2LA" label="Alternate_Vendor_Name___Auto_Populate" length="35" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A6nTOf4eEe-kTc6LQuf2LA" label="Store_DC_Location" length="5" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A6nTOv4eEe-kTc6LQuf2LA" label="Discount_Level" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A6nTO_4eEe-kTc6LQuf2LA" label="Discount_Type" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A6nTPP4eEe-kTc6LQuf2LA" label="Discount" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A6nTPf4eEe-kTc6LQuf2LA" label="Discount_Peso_Value" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A6nTPv4eEe-kTc6LQuf2LA" label="Multiple_Discount" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A6nTP_4eEe-kTc6LQuf2LA" label="Multiple_Discount1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A6nTQP4eEe-kTc6LQuf2LA" label="Vat_Type___Auto_Populate" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
