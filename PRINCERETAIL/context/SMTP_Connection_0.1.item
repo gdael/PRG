@@ -5,5 +5,5 @@
   <contextParameter xmi:id="_QYIGk9reEe-BIfLt3KD4dA" comment="" name="Email_From" prompt="Email_From?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="do-not-reply@princeretail.com"/>
   <contextParameter xmi:id="_5RqE0NreEe-BIfLt3KD4dA" comment="" name="Email_Username" prompt="Email_Username?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="do-not-reply@princeretail.com"/>
   <contextParameter xmi:id="_5RqE0dreEe-BIfLt3KD4dA" comment="" name="Email_Password" prompt="Email_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:lCixlbZKLs6iC7BEQDNpfgHaG/3KicMvyJ2BjeHnOOZD0xpxOn8="/>
-  <contextParameter xmi:id="_BQBLsN-DEe-wee1JR2_-cw" comment="" name="Email_File" prompt="Email_File?" promptNeeded="false" repositoryContextId="built-in" type="id_File" value="E:/Talend/Clients/PRG/FTP Folder/Email.xlsx"/>
+  <contextParameter xmi:id="_BQBLsN-DEe-wee1JR2_-cw" comment="" name="Email_File" prompt="Email_File?" promptNeeded="false" repositoryContextId="built-in" type="id_File" value="D:/Clients/PRG/Email.xlsx"/>
 </talendfile:ContextType>

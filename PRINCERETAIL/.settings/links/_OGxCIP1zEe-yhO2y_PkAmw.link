@@ -51,5 +51,27 @@
       "id" : "_H7xdsgnjEfC8JLkmvDic4w",
       "name" : "api_key"
     } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_QXraoNreEe-BIfLt3KD4dA",
+    "parameterList" : [ {
+      "id" : "_BQBLsN-DEe-wee1JR2_-cw",
+      "name" : "Email_File"
+    }, {
+      "id" : "_QYIGkdreEe-BIfLt3KD4dA",
+      "name" : "Email_Server"
+    }, {
+      "id" : "_QYIGk9reEe-BIfLt3KD4dA",
+      "name" : "Email_From"
+    }, {
+      "id" : "_5RqE0NreEe-BIfLt3KD4dA",
+      "name" : "Email_Username"
+    }, {
+      "id" : "_5RqE0dreEe-BIfLt3KD4dA",
+      "name" : "Email_Password"
+    }, {
+      "id" : "_QYIGktreEe-BIfLt3KD4dA",
+      "name" : "Email_Port"
+    } ]
   } ]
 }
