@@ -9,9 +9,9 @@
     <contextParameter comment="" name="DQS_Schema" prompt="DQS_Schema?" promptNeeded="false" repositoryContextId="_J8hz4NbzEe-4XYPM5vW39g" type="id_String" value="" internalId="_bJUsBd-DEe-wee1JR2_-cw"/>
     <contextParameter comment="" name="DQS_Server" prompt="DQS_Server?" promptNeeded="false" repositoryContextId="_J8hz4NbzEe-4XYPM5vW39g" type="id_String" value="10.0.2.64" internalId="_bJUsBt-DEe-wee1JR2_-cw"/>
     <contextParameter comment="" name="Archived_Folder" prompt="Archived_Folder?" promptNeeded="false" repositoryContextId="_EjETMNrVEe-BIfLt3KD4dA" type="id_String" value="" internalId="_bJVTEN-DEe-wee1JR2_-cw"/>
-    <contextParameter comment="" name="Input_Error_Folder_FMCG" prompt="Input_Error_Folder_FMCG?" promptNeeded="false" repositoryContextId="_EjETMNrVEe-BIfLt3KD4dA" type="id_String" value="D:\Clients\PRG\FMCG FRESTA\INPUT\ERROR" internalId="_bJVTEd-DEe-wee1JR2_-cw"/>
-    <contextParameter comment="" name="Input_Folder_FMCG" prompt="Input_Folder_FMCG?" promptNeeded="false" repositoryContextId="_EjETMNrVEe-BIfLt3KD4dA" type="id_String" value="D:/Clients/PRG/FMCG FRESTA/INPUT" internalId="_bJVTEt-DEe-wee1JR2_-cw"/>
-    <contextParameter comment="" name="Output_Folder_FMCG" prompt="Output_Folder_FMCG?" promptNeeded="false" repositoryContextId="_EjETMNrVEe-BIfLt3KD4dA" type="id_String" value="D:\Clients\PRG\FMCG FRESTA\OUTPUT" internalId="_bJVTE9-DEe-wee1JR2_-cw"/>
+    <contextParameter comment="" name="Input_Error_Folder_FMCG_NPIS" prompt="Input_Error_Folder_FMCG_NPIS?" promptNeeded="false" repositoryContextId="_EjETMNrVEe-BIfLt3KD4dA" type="id_String" value="D:\Clients\PRG\FMCG FRESTA\INPUT\ERROR" internalId="_bJVTEd-DEe-wee1JR2_-cw"/>
+    <contextParameter comment="" name="Input_Folder_FMCG_NPIS" prompt="Input_Folder_FMCG_NPIS?" promptNeeded="false" repositoryContextId="_EjETMNrVEe-BIfLt3KD4dA" type="id_String" value="D:\Clients\PRG\FMCG FRESTA\INPUT" internalId="_bJVTEt-DEe-wee1JR2_-cw"/>
+    <contextParameter comment="" name="Output_Folder_FMCG_NPIS" prompt="Output_Folder_FMCG_NPIS?" promptNeeded="false" repositoryContextId="_EjETMNrVEe-BIfLt3KD4dA" type="id_String" value="D:\Clients\PRG\FMCG FRESTA\OUTPUT" internalId="_bJVTE9-DEe-wee1JR2_-cw"/>
     <contextParameter comment="" name="Email_File" prompt="Email_File?" promptNeeded="false" repositoryContextId="_QXraoNreEe-BIfLt3KD4dA" type="id_File" value="E:/Talend/Clients/PRG/FTP Folder/Email.xlsx" internalId="_bJVTFN-DEe-wee1JR2_-cw"/>
     <contextParameter comment="" name="Email_From" prompt="Email_From?" promptNeeded="false" repositoryContextId="_QXraoNreEe-BIfLt3KD4dA" type="id_String" value="do-not-reply@princeretail.com" internalId="_bJVTFd-DEe-wee1JR2_-cw"/>
     <contextParameter comment="" name="Email_Password" prompt="Email_Password?" promptNeeded="false" repositoryContextId="_QXraoNreEe-BIfLt3KD4dA" type="id_Password" value="enc:system.encryption.key.v1:anVChl45RopZWxFoVkxYxBfTSiwf8bwOIajHYnL+vHylbpzY/EE=" internalId="_bJVTFt-DEe-wee1JR2_-cw"/>
@@ -2848,7 +2848,7 @@
   </node>
   <node componentName="tFileList" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="200" posY="1120">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileList_1" show="false"/>
-    <elementParameter field="DIRECTORY" name="DIRECTORY" value="context.Input_Folder_FMCG"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="context.Input_Folder_FMCG_NPIS"/>
     <elementParameter field="CLOSED_LIST" name="LIST_MODE" value="FILES"/>
     <elementParameter field="CHECK" name="INCLUDSUBDIR" value="false"/>
     <elementParameter field="CLOSED_LIST" name="CASE_SENSITIVE" value="NO"/>
@@ -4129,7 +4129,7 @@
     <elementParameter field="FILE" name="FILENAME" value="((String)globalMap.get(&quot;tFileList_1_CURRENT_FILEPATH&quot;))"/>
     <elementParameter field="CHECK" name="ENABLE_COPY_DIRECTORY" value="false"/>
     <elementParameter field="DIRECTORY" name="SOURCE_DERECTORY" value="&quot;E:/Talend/Studio/Talend-Studio-20240527_1700-V8.0.1-LBP/workspace&quot;" show="false"/>
-    <elementParameter field="DIRECTORY" name="DESTINATION" value="context.Input_Error_Folder_FMCG"/>
+    <elementParameter field="DIRECTORY" name="DESTINATION" value="context.Input_Error_Folder_FMCG_NPIS"/>
     <elementParameter field="CHECK" name="RENAME" value="false"/>
     <elementParameter field="TEXT" name="DESTINATION_RENAME" value="&quot;NewName.temp&quot;" show="false"/>
     <elementParameter field="CHECK" name="REMOVE_FILE" value="true"/>
@@ -4335,7 +4335,7 @@
     <elementParameter field="FILE" name="FILENAME" value="((String)globalMap.get(&quot;tFileList_1_CURRENT_FILEPATH&quot;)) "/>
     <elementParameter field="CHECK" name="ENABLE_COPY_DIRECTORY" value="false"/>
     <elementParameter field="DIRECTORY" name="SOURCE_DERECTORY" value="&quot;E:/Talend/Studio/Talend-Studio-20240527_1700-V8.0.1-LBP/workspace&quot;" show="false"/>
-    <elementParameter field="DIRECTORY" name="DESTINATION" value="context.Input_Error_Folder_FMCG +&quot;/Email/&quot;"/>
+    <elementParameter field="DIRECTORY" name="DESTINATION" value="context.Input_Error_Folder_FMCG_NPIS +&quot;/Email/&quot;"/>
     <elementParameter field="CHECK" name="RENAME" value="false"/>
     <elementParameter field="TEXT" name="DESTINATION_RENAME" value="&quot;NewName.temp&quot;" show="false"/>
     <elementParameter field="CHECK" name="REMOVE_FILE" value="true"/>
@@ -4505,7 +4505,7 @@
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="context.Input_Error_Folder_FMCG +&quot;/Email/&quot;+((String)globalMap.get(&quot;Current_File_Name_w_Extension&quot;))"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.Input_Error_Folder_FMCG_NPIS +&quot;/Email/&quot;+((String)globalMap.get(&quot;Current_File_Name_w_Extension&quot;))"/>
     <elementParameter field="TEXT" name="SHEETNAME" value="&quot;PRICE_INPUT_HEADER_LOGS&quot;"/>
     <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
     <elementParameter field="CHECK" name="APPEND_FILE" value="true"/>
@@ -4755,7 +4755,7 @@
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="context.Input_Error_Folder_FMCG +&quot;/Email/&quot;+((String)globalMap.get(&quot;Current_File_Name_w_Extension&quot;))"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.Input_Error_Folder_FMCG_NPIS +&quot;/Email/&quot;+((String)globalMap.get(&quot;Current_File_Name_w_Extension&quot;))"/>
     <elementParameter field="TEXT" name="SHEETNAME" value="&quot;COST_INPUT_HEADER_LOGS&quot;"/>
     <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
     <elementParameter field="CHECK" name="APPEND_FILE" value="true"/>
@@ -5046,7 +5046,7 @@
     <elementParameter field="FILE" name="FILENAME" value="((String)globalMap.get(&quot;tFileList_1_CURRENT_FILEPATH&quot;)) "/>
     <elementParameter field="CHECK" name="ENABLE_COPY_DIRECTORY" value="false"/>
     <elementParameter field="DIRECTORY" name="SOURCE_DERECTORY" value="&quot;E:/Talend/Studio/Talend-Studio-20240527_1700-V8.0.1-LBP/workspace&quot;" show="false"/>
-    <elementParameter field="DIRECTORY" name="DESTINATION" value="context.Input_Error_Folder_FMCG +&quot;/Reprocess/&quot;"/>
+    <elementParameter field="DIRECTORY" name="DESTINATION" value="context.Input_Error_Folder_FMCG_NPIS +&quot;/Reprocess/&quot;"/>
     <elementParameter field="CHECK" name="RENAME" value="false"/>
     <elementParameter field="TEXT" name="DESTINATION_RENAME" value="&quot;NewName.temp&quot;" show="false"/>
     <elementParameter field="CHECK" name="REMOVE_FILE" value="false"/>
@@ -5134,7 +5134,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_1" show="false"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="context.Input_Error_Folder_FMCG +&quot;/Barcode_Not_Match/&quot;+((String)globalMap.get(&quot;Current_File_Name_w_Extension&quot;))"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.Input_Error_Folder_FMCG_NPIS +&quot;/Barcode_Not_Match/&quot;+((String)globalMap.get(&quot;Current_File_Name_w_Extension&quot;))"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
     <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true" show="false"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
@@ -5262,7 +5262,7 @@
     <elementParameter field="MEMO_MESSAGE" name="MESSAGE" value="&quot;Dear &quot;+  ((String)globalMap.get(&quot;Email_Name&quot;)) +&#xD;&#xA;&#xD;&#xA;&quot;,\n\nThere are Invalid input on the Header. Please see the attached file for details.\nReturn this file to the Input folder for reprocessing.&#xD;&#xA;\n\nBest regards,\nYour Team&quot;"/>
     <elementParameter field="CHECK" name="CHECK_ATTACHMENT" value="true"/>
     <elementParameter field="TABLE" name="ATTACHMENTS">
-      <elementValue elementRef="FILE" value="context.Input_Error_Folder_FMCG +&quot;/Email/&quot;+((String)globalMap.get(&quot;Current_File_Name_w_Extension&quot;))" id="0"/>
+      <elementValue elementRef="FILE" value="context.Input_Error_Folder_FMCG_NPIS +&quot;/Email/&quot;+((String)globalMap.get(&quot;Current_File_Name_w_Extension&quot;))" id="0"/>
       <elementValue elementRef="CONTENT_TRANSFER_ENCODING" value="DEFAULT" id="1"/>
     </elementParameter>
     <elementParameter field="TABLE" name="HEADERS"/>
@@ -5305,7 +5305,7 @@
     <elementParameter field="MEMO_MESSAGE" name="MESSAGE" value="&quot;Dear &quot;+  ((String)globalMap.get(&quot;Email_Name&quot;)) +&#xD;&#xA;&#xD;&#xA;&quot;,\n\nPlease see attached file.\n&#xD;&#xA;CATEGORY:  Invalid Barcode from the file.\n&quot; +&#xD;&#xA;&#xD;&#xA;&quot;\n\nBest regards,\nYour Team&quot;&#xD;&#xA;&#xD;&#xA;"/>
     <elementParameter field="CHECK" name="CHECK_ATTACHMENT" value="true"/>
     <elementParameter field="TABLE" name="ATTACHMENTS">
-      <elementValue elementRef="FILE" value="context.Input_Error_Folder_FMCG +&quot;/Barcode_Not_Match/&quot;+((String)globalMap.get(&quot;Current_File_Name_w_Extension&quot;))" id="0"/>
+      <elementValue elementRef="FILE" value="context.Input_Error_Folder_FMCG_NPIS +&quot;/Barcode_Not_Match/&quot;+((String)globalMap.get(&quot;Current_File_Name_w_Extension&quot;))" id="0"/>
       <elementValue elementRef="CONTENT_TRANSFER_ENCODING" value="DEFAULT" id="1"/>
     </elementParameter>
     <elementParameter field="TABLE" name="HEADERS"/>
@@ -5546,7 +5546,7 @@
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="context.Input_Error_Folder_FMCG +&quot;/Reprocess/&quot;+((String)globalMap.get(&quot;Current_File_Name_w_Extension&quot;))"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.Input_Error_Folder_FMCG_NPIS +&quot;/Reprocess/&quot;+((String)globalMap.get(&quot;Current_File_Name_w_Extension&quot;))"/>
     <elementParameter field="TEXT" name="SHEETNAME" value="&quot; Input1_UPC&quot;"/>
     <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
     <elementParameter field="CHECK" name="APPEND_FILE" value="true"/>
@@ -5601,7 +5601,7 @@
     <elementParameter field="MEMO_MESSAGE" name="MESSAGE" value="&quot;Dear &quot;+  ((String)globalMap.get(&quot;Email_Name&quot;)) +&#xD;&#xA;&#xD;&#xA;&quot;,\n\nPlease attached file for reprocess.\n CATEGORY: Barcode with No CASE SKU \n&quot; +&#xD;&#xA;&#xD;&#xA;&quot;\n\nBest regards,\nYour Team&quot;&#xD;&#xA;&#xD;&#xA;"/>
     <elementParameter field="CHECK" name="CHECK_ATTACHMENT" value="true"/>
     <elementParameter field="TABLE" name="ATTACHMENTS">
-      <elementValue elementRef="FILE" value="context.Input_Error_Folder_FMCG +&quot;/Reprocess/&quot;+((String)globalMap.get(&quot;Current_File_Name_w_Extension&quot;))" id="0"/>
+      <elementValue elementRef="FILE" value="context.Input_Error_Folder_FMCG_NPIS +&quot;/Reprocess/&quot;+((String)globalMap.get(&quot;Current_File_Name_w_Extension&quot;))" id="0"/>
       <elementValue elementRef="CONTENT_TRANSFER_ENCODING" value="DEFAULT" id="1"/>
     </elementParameter>
     <elementParameter field="TABLE" name="HEADERS"/>
@@ -5634,7 +5634,7 @@
   <node componentName="tFileDelete" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1800" posY="3160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileDelete_1" show="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="context.Input_Error_Folder_FMCG +&quot;/Barcode_Not_Match/&quot;+((String)globalMap.get(&quot;Current_File_Name_w_Extension&quot;))"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.Input_Error_Folder_FMCG_NPIS +&quot;/Barcode_Not_Match/&quot;+((String)globalMap.get(&quot;Current_File_Name_w_Extension&quot;))"/>
     <elementParameter field="DIRECTORY" name="DIRECTORY" value="&quot;E:/Talend/Studio/Talend-Studio-20240527_1700-V8.0.1-LBP/workspace/delete_folder&quot;" show="false"/>
     <elementParameter field="TEXT" name="PATH" value="&quot;E:/Talend/Studio/Talend-Studio-20240527_1700-V8.0.1-LBP/workspace/delete_folder or delete_file&quot;" show="false"/>
     <elementParameter field="CHECK" name="FAILON" value="true"/>
@@ -5949,35 +5949,35 @@
   <connection connectorName="PARALLELIZE" label="Parallelize" lineStyle="13" metaname="tParallelize_1" offsetLabelX="0" offsetLabelY="0" outputId="4" source="tParallelize_1" target="tDBInput_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="Parallelize" show="false"/>
   </connection>
-  <connection connectorName="PARALLELIZE" label="Parallelize" lineStyle="13" metaname="tParallelize_1" offsetLabelX="0" offsetLabelY="0" outputId="5" source="tParallelize_1" target="tDBInput_4">
+  <connection connectorName="PARALLELIZE" label="Parallelize" lineStyle="13" metaname="tParallelize_1" offsetLabelX="0" offsetLabelY="0" outputId="5" source="tParallelize_1" target="tDBInput_7">
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="Parallelize" show="false"/>
   </connection>
-  <connection connectorName="PARALLELIZE" label="Parallelize" lineStyle="13" metaname="tParallelize_1" offsetLabelX="0" offsetLabelY="0" outputId="6" source="tParallelize_1" target="tDBInput_12">
+  <connection connectorName="PARALLELIZE" label="Parallelize" lineStyle="13" metaname="tParallelize_1" offsetLabelX="0" offsetLabelY="0" outputId="6" source="tParallelize_1" target="tDBInput_8">
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="Parallelize" show="false"/>
   </connection>
-  <connection connectorName="PARALLELIZE" label="Parallelize" lineStyle="13" metaname="tParallelize_1" offsetLabelX="0" offsetLabelY="0" outputId="7" source="tParallelize_1" target="tDBInput_6">
+  <connection connectorName="PARALLELIZE" label="Parallelize" lineStyle="13" metaname="tParallelize_1" offsetLabelX="0" offsetLabelY="0" outputId="7" source="tParallelize_1" target="tDBInput_9">
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="Parallelize" show="false"/>
   </connection>
-  <connection connectorName="PARALLELIZE" label="Parallelize" lineStyle="13" metaname="tParallelize_1" offsetLabelX="0" offsetLabelY="0" outputId="8" source="tParallelize_1" target="tDBInput_11">
+  <connection connectorName="PARALLELIZE" label="Parallelize" lineStyle="13" metaname="tParallelize_1" offsetLabelX="0" offsetLabelY="0" outputId="8" source="tParallelize_1" target="tDBInput_10">
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="Parallelize" show="false"/>
   </connection>
-  <connection connectorName="PARALLELIZE" label="Parallelize" lineStyle="13" metaname="tParallelize_1" offsetLabelX="0" offsetLabelY="0" outputId="9" source="tParallelize_1" target="tDBInput_10">
+  <connection connectorName="PARALLELIZE" label="Parallelize" lineStyle="13" metaname="tParallelize_1" offsetLabelX="0" offsetLabelY="0" outputId="9" source="tParallelize_1" target="tDBInput_11">
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="Parallelize" show="false"/>
   </connection>
-  <connection connectorName="PARALLELIZE" label="Parallelize" lineStyle="13" metaname="tParallelize_1" offsetLabelX="0" offsetLabelY="0" outputId="10" source="tParallelize_1" target="tDBInput_9">
+  <connection connectorName="PARALLELIZE" label="Parallelize" lineStyle="13" metaname="tParallelize_1" offsetLabelX="0" offsetLabelY="0" outputId="10" source="tParallelize_1" target="tDBInput_6">
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="Parallelize" show="false"/>
   </connection>
-  <connection connectorName="PARALLELIZE" label="Parallelize" lineStyle="13" metaname="tParallelize_1" offsetLabelX="0" offsetLabelY="0" outputId="11" source="tParallelize_1" target="tDBInput_8">
+  <connection connectorName="PARALLELIZE" label="Parallelize" lineStyle="13" metaname="tParallelize_1" offsetLabelX="0" offsetLabelY="0" outputId="11" source="tParallelize_1" target="tDBInput_12">
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="Parallelize" show="false"/>
   </connection>
-  <connection connectorName="PARALLELIZE" label="Parallelize" lineStyle="13" metaname="tParallelize_1" offsetLabelX="0" offsetLabelY="0" outputId="12" source="tParallelize_1" target="tDBInput_7">
+  <connection connectorName="PARALLELIZE" label="Parallelize" lineStyle="13" metaname="tParallelize_1" offsetLabelX="0" offsetLabelY="0" outputId="12" source="tParallelize_1" target="tDBInput_4">
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="Parallelize" show="false"/>
   </connection>

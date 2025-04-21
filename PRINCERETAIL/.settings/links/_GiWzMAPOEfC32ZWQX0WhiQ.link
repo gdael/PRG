@@ -33,22 +33,44 @@
       "name" : "Archived_Folder"
     }, {
       "id" : "_UmFhwQPQEfC32ZWQX0WhiQ",
-      "name" : "Output_Folder_GMD_DS"
+      "name" : "Output_Folder_GMD_DS_NPIS"
     }, {
       "id" : "_EkOw0drVEe-BIfLt3KD4dA",
-      "name" : "Input_Folder_FMCG"
+      "name" : "Input_Folder_FMCG_NPIS"
     }, {
       "id" : "_EkOw1NrVEe-BIfLt3KD4dA",
-      "name" : "Input_Error_Folder_FMCG"
+      "name" : "Input_Error_Folder_FMCG_NPIS"
     }, {
       "id" : "_UmFhwAPQEfC32ZWQX0WhiQ",
-      "name" : "Input_Folder_GMD_DS"
+      "name" : "Input_Folder_GMD_DS_NPIS"
     }, {
       "id" : "_UmFhwgPQEfC32ZWQX0WhiQ",
-      "name" : "Input_Error_Folder_GMD_DS"
+      "name" : "Input_Error_Folder_GMD_DS_NPIS"
     }, {
       "id" : "_EkOw0trVEe-BIfLt3KD4dA",
-      "name" : "Output_Folder_FMCG"
+      "name" : "Output_Folder_FMCG_NPIS"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_QXraoNreEe-BIfLt3KD4dA",
+    "parameterList" : [ {
+      "id" : "_BQBLsN-DEe-wee1JR2_-cw",
+      "name" : "Email_File"
+    }, {
+      "id" : "_QYIGkdreEe-BIfLt3KD4dA",
+      "name" : "Email_Server"
+    }, {
+      "id" : "_QYIGk9reEe-BIfLt3KD4dA",
+      "name" : "Email_From"
+    }, {
+      "id" : "_5RqE0NreEe-BIfLt3KD4dA",
+      "name" : "Email_Username"
+    }, {
+      "id" : "_5RqE0dreEe-BIfLt3KD4dA",
+      "name" : "Email_Password"
+    }, {
+      "id" : "_QYIGktreEe-BIfLt3KD4dA",
+      "name" : "Email_Port"
     } ]
   } ]
 }

@@ -1,0 +1,89 @@
+{
+  "itemId" : "_TS-i8BDoEfCtV9-PS-TmCw",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_J8hz4NbzEe-4XYPM5vW39g",
+    "parameterList" : [ {
+      "id" : "_J88DkdbzEe-4XYPM5vW39g",
+      "name" : "DQS_Database"
+    }, {
+      "id" : "_J88qoNbzEe-4XYPM5vW39g",
+      "name" : "DQS_AdditionalParams"
+    }, {
+      "id" : "_J88qodbzEe-4XYPM5vW39g",
+      "name" : "DQS_Login"
+    }, {
+      "id" : "_J88qotbzEe-4XYPM5vW39g",
+      "name" : "DQS_Password"
+    }, {
+      "id" : "_J88qo9bzEe-4XYPM5vW39g",
+      "name" : "DQS_Server"
+    }, {
+      "id" : "_J88qpNbzEe-4XYPM5vW39g",
+      "name" : "DQS_Schema"
+    }, {
+      "id" : "_J88qpdbzEe-4XYPM5vW39g",
+      "name" : "DQS_Port"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_EjETMNrVEe-BIfLt3KD4dA",
+    "parameterList" : [ {
+      "id" : "_UmFhwQPQEfC32ZWQX0WhiQ",
+      "name" : "Output_Folder_GMD_DS_NPIS"
+    }, {
+      "id" : "_EkOw0drVEe-BIfLt3KD4dA",
+      "name" : "Input_Folder_FMCG_NPIS"
+    }, {
+      "id" : "_EkOw09rVEe-BIfLt3KD4dA",
+      "name" : "Archived_Folder"
+    }, {
+      "id" : "_EkOw1NrVEe-BIfLt3KD4dA",
+      "name" : "Input_Error_Folder_FMCG_NPIS"
+    }, {
+      "id" : "_UmFhwAPQEfC32ZWQX0WhiQ",
+      "name" : "Input_Folder_GMD_DS_NPIS"
+    }, {
+      "id" : "_UmFhwgPQEfC32ZWQX0WhiQ",
+      "name" : "Input_Error_Folder_GMD_DS_NPIS"
+    }, {
+      "id" : "_EkOw0trVEe-BIfLt3KD4dA",
+      "name" : "Output_Folder_FMCG_NPIS"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_QXraoNreEe-BIfLt3KD4dA",
+    "parameterList" : [ {
+      "id" : "_BQBLsN-DEe-wee1JR2_-cw",
+      "name" : "Email_File"
+    }, {
+      "id" : "_QYIGkdreEe-BIfLt3KD4dA",
+      "name" : "Email_Server"
+    }, {
+      "id" : "_QYIGk9reEe-BIfLt3KD4dA",
+      "name" : "Email_From"
+    }, {
+      "id" : "_5RqE0NreEe-BIfLt3KD4dA",
+      "name" : "Email_Username"
+    }, {
+      "id" : "_5RqE0dreEe-BIfLt3KD4dA",
+      "name" : "Email_Password"
+    }, {
+      "id" : "_QYIGktreEe-BIfLt3KD4dA",
+      "name" : "Email_Port"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_ITPnUBNLEfCC5dPfUCFlJQ",
+    "parameterList" : [ {
+      "id" : "_P-0y8RNLEfCC5dPfUCFlJQ",
+      "name" : "pass"
+    }, {
+      "id" : "_P-0y8BNLEfCC5dPfUCFlJQ",
+      "name" : "user"
+    }, {
+      "id" : "_P-0y8hNLEfCC5dPfUCFlJQ",
+      "name" : "url"
+    } ]
+  } ]
+}

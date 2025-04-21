@@ -8,13 +8,13 @@
       "name" : "Archived_Folder"
     }, {
       "id" : "_EkOw1NrVEe-BIfLt3KD4dA",
-      "name" : "Input_Error_Folder_FMCG"
+      "name" : "Input_Error_Folder_FMCG_NPIS"
     }, {
       "id" : "_EkOw0drVEe-BIfLt3KD4dA",
-      "name" : "Input_Folder_FMCG"
+      "name" : "Input_Folder_FMCG_NPIS"
     }, {
       "id" : "_EkOw0trVEe-BIfLt3KD4dA",
-      "name" : "Output_Folder_FMCG"
+      "name" : "Output_Folder_FMCG_NPIS"
     } ]
   }, {
     "contextName" : "Default",
@@ -87,13 +87,13 @@
       "name" : "Archived_Folder"
     }, {
       "id" : "_EkOw1NrVEe-BIfLt3KD4dA",
-      "name" : "Input_Error_Folder_FMCG"
+      "name" : "Input_Error_Folder_FMCG_NPIS"
     }, {
       "id" : "_EkOw0drVEe-BIfLt3KD4dA",
-      "name" : "Input_Folder_FMCG"
+      "name" : "Input_Folder_FMCG_NPIS"
     }, {
       "id" : "_EkOw0trVEe-BIfLt3KD4dA",
-      "name" : "Output_Folder_FMCG"
+      "name" : "Output_Folder_FMCG_NPIS"
     } ]
   }, {
     "contextName" : "Production",

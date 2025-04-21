@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_ITgGABNLEfCC5dPfUCFlJQ" confirmationNeeded="false" hide="false" name="Default">
+  <contextParameter xmi:id="_P-0y8BNLEfCC5dPfUCFlJQ" comment="" name="user" prompt="user?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="ivan.mangubat@mtc.com.ph"/>
+  <contextParameter xmi:id="_P-0y8RNLEfCC5dPfUCFlJQ" comment="" name="pass" prompt="pass?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="EqgqwsM7SUyCgWFGW_wmChJpyRO46NbhKD-LAvZ1-V6_Na5t0TLNGBwyJhlqVv_T"/>
+  <contextParameter xmi:id="_P-0y8hNLEfCC5dPfUCFlJQ" comment="" name="url" prompt="url?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="https://tds.ap.cloud.talend.com/data-stewardship"/>
+</talendfile:ContextType>
