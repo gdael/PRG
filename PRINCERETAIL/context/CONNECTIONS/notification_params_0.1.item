@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_-ipLMCUGEeywZpynHjdFCA" confirmationNeeded="false" hide="false" name="Default">
+  <contextParameter xmi:id="_-jkYQCUGEeywZpynHjdFCA" comment="" name="error_cd" prompt="error_cd?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_-jkYQSUGEeywZpynHjdFCA" comment="" name="error_desc" prompt="error_desc?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_-jkYQiUGEeywZpynHjdFCA" comment="" name="error_type" prompt="error_type?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_-jkYQyUGEeywZpynHjdFCA" comment="" name="batch_id" prompt="batch_id?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value=""/>
+  <contextParameter xmi:id="_-jkYRCUGEeywZpynHjdFCA" comment="" name="parent_batch_id" prompt="parent_batch_id?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value=""/>
+  <contextParameter xmi:id="_-jkYRSUGEeywZpynHjdFCA" comment="" name="env" prompt="env?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="DEV"/>
+</talendfile:ContextType>

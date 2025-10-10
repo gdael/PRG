@@ -1,10 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_J88DkNbzEe-4XYPM5vW39g" confirmationNeeded="false" hide="false" name="Default">
-  <contextParameter xmi:id="_J88DkdbzEe-4XYPM5vW39g" comment="" name="DQS_Database" prompt="DQS_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="DQS"/>
-  <contextParameter xmi:id="_J88qoNbzEe-4XYPM5vW39g" comment="" name="DQS_AdditionalParams" prompt="DQS_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-  <contextParameter xmi:id="_J88qodbzEe-4XYPM5vW39g" comment="" name="DQS_Login" prompt="DQS_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="DQS_TSA"/>
-  <contextParameter xmi:id="_J88qotbzEe-4XYPM5vW39g" comment="" name="DQS_Password" prompt="DQS_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:Cr3LihgaK7VfMCDNWe/Rd8YDLpXJVZfWEr+QX48PGU/mNk0R8Pc="/>
-  <contextParameter xmi:id="_J88qo9bzEe-4XYPM5vW39g" comment="" name="DQS_Server" prompt="DQS_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="10.0.2.64"/>
-  <contextParameter xmi:id="_J88qpNbzEe-4XYPM5vW39g" comment="" name="DQS_Schema" prompt="DQS_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-  <contextParameter xmi:id="_J88qpdbzEe-4XYPM5vW39g" comment="" name="DQS_Port" prompt="DQS_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433"/>
-</talendfile:ContextType>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_J88DkNbzEe-4XYPM5vW39g" confirmationNeeded="false" hide="false" name="Default">
+    <contextParameter xmi:id="_J88DkdbzEe-4XYPM5vW39g" comment="" name="DQS_Database" prompt="DQS_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="DQS_QA"/>
+    <contextParameter xmi:id="_J88qoNbzEe-4XYPM5vW39g" comment="" name="DQS_AdditionalParams" prompt="DQS_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="integratedsecurity=true"/>
+    <contextParameter xmi:id="_J88qodbzEe-4XYPM5vW39g" comment="" name="DQS_Login" prompt="DQS_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_J88qotbzEe-4XYPM5vW39g" comment="" name="DQS_Password" prompt="DQS_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value=""/>
+    <contextParameter xmi:id="_J88qo9bzEe-4XYPM5vW39g" comment="" name="DQS_Server" prompt="DQS_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="10.0.2.207"/>
+    <contextParameter xmi:id="_J88qpNbzEe-4XYPM5vW39g" comment="" name="DQS_Schema" prompt="DQS_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="DWAUDIT"/>
+    <contextParameter xmi:id="_J88qpdbzEe-4XYPM5vW39g" comment="" name="DQS_Port" prompt="DQS_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_wZ9OEKWyEfCli6DVl9P-3A" confirmationNeeded="false" hide="false" name="DQS_PROCESS">
+    <contextParameter xmi:id="_wZ9OEaWyEfCli6DVl9P-3A" comment="" name="DQS_Database" prompt="DQS_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="DQS_QA"/>
+    <contextParameter xmi:id="_wZ9OEqWyEfCli6DVl9P-3A" comment="" name="DQS_AdditionalParams" prompt="DQS_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="integratedsecurity=true"/>
+    <contextParameter xmi:id="_wZ9OE6WyEfCli6DVl9P-3A" comment="" name="DQS_Login" prompt="DQS_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_wZ9OFKWyEfCli6DVl9P-3A" comment="" name="DQS_Password" prompt="DQS_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value=""/>
+    <contextParameter xmi:id="_wZ9OFaWyEfCli6DVl9P-3A" comment="" name="DQS_Server" prompt="DQS_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="10.0.2.207"/>
+    <contextParameter xmi:id="_wZ9OFqWyEfCli6DVl9P-3A" comment="" name="DQS_Schema" prompt="DQS_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="DWDQS"/>
+    <contextParameter xmi:id="_wZ9OF6WyEfCli6DVl9P-3A" comment="" name="DQS_Port" prompt="DQS_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433"/>
+  </talendfile:ContextType>
+</xmi:XMI>

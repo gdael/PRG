@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_zgxagLpEEeqJ2YQw-h1cbQ" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_zgxagbpEEeqJ2YQw-h1cbQ" comment="" name="flow_execution_id" prompt="flow_execution_id?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_zgxagrpEEeqJ2YQw-h1cbQ" comment="" name="flow_id" prompt="flow_id?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_zgxag7pEEeqJ2YQw-h1cbQ" comment="" name="flow_name" prompt="flow_name?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_zgxahLpEEeqJ2YQw-h1cbQ" comment="" name="flow_start_datetime" prompt="flow_start_datetime?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_zgxahbpEEeqJ2YQw-h1cbQ" comment="" name="flow_version" prompt="flow_version?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_zgxahrpEEeqJ2YQw-h1cbQ" comment="" name="flow_workspace" prompt="flow_workspace?" promptNeeded="false" type="id_String" value=""/>
+</talendfile:ContextType>

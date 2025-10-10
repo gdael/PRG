@@ -1,0 +1,29 @@
+{
+  "itemId" : "_bY9YgFlQEe20ruOddz-CNg",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_HgfCYPbEEeuIbc5-2EwF0A",
+    "parameterList" : [ {
+      "id" : "_WTx6RdzSEeqoid7doKnA7A",
+      "name" : "connection_postgresql_database"
+    }, {
+      "id" : "_WTx6QdzSEeqoid7doKnA7A",
+      "name" : "connection_postgresql_host"
+    }, {
+      "id" : "_WTx6Q9zSEeqoid7doKnA7A",
+      "name" : "connection_postgresql_jdbc_parameters"
+    }, {
+      "id" : "_WTx6TNzSEeqoid7doKnA7A",
+      "name" : "connection_postgresql_password"
+    }, {
+      "id" : "_WTx6QtzSEeqoid7doKnA7A",
+      "name" : "connection_postgresql_port"
+    }, {
+      "id" : "_WTx6RNzSEeqoid7doKnA7A",
+      "name" : "connection_postgresql_schema"
+    }, {
+      "id" : "_WTx6RtzSEeqoid7doKnA7A",
+      "name" : "connection_postgresql_username"
+    } ]
+  } ]
+}

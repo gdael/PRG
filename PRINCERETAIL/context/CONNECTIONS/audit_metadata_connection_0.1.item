@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_WTx6QNzSEeqoid7doKnA7A" confirmationNeeded="false" hide="false" name="Default">
+  <contextParameter xmi:id="_WTx6QdzSEeqoid7doKnA7A" comment="" name="connection_postgresql_host" prompt="connection_postgresql_host?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="edp-dev-talend-monitor.cluster-cx1frgelrjca.us-west-2.rds.amazonaws.com"/>
+  <contextParameter xmi:id="_WTx6QtzSEeqoid7doKnA7A" comment="" name="connection_postgresql_port" prompt="connection_postgresql_port?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="5432"/>
+  <contextParameter xmi:id="_WTx6Q9zSEeqoid7doKnA7A" comment="" name="connection_postgresql_jdbc_parameters" prompt="connection_postgresql_jdbc_parameters?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_WTx6RNzSEeqoid7doKnA7A" comment="" name="connection_postgresql_schema" prompt="connection_postgresql_schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="audit"/>
+  <contextParameter xmi:id="_WTx6RdzSEeqoid7doKnA7A" comment="" name="connection_postgresql_database" prompt="connection_postgresql_database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="EDP_Framework"/>
+  <contextParameter xmi:id="_WTx6RtzSEeqoid7doKnA7A" comment="" name="connection_postgresql_username" prompt="connection_postgresql_username?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="svc_talend_dev_aws"/>
+  <contextParameter xmi:id="_WTx6TNzSEeqoid7doKnA7A" comment="" name="connection_postgresql_password" prompt="connection_postgresql_password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:YDxc3KWj5UaLlADGZby+5Mt1U8M1wdyFwWFgrkLDjmQ0veHc0CJBRw=="/>
+</talendfile:ContextType>

@@ -1,0 +1,219 @@
+{
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "ssi_poc",
+    "description" : "No description",
+    "version" : "1.0.0"
+  },
+  "servers" : [ {
+    "url" : "/"
+  } ],
+  "paths" : {
+    "/customer" : {
+      "get" : {
+        "summary" : "Get the list of customers",
+        "parameters" : [ {
+          "name" : "limit",
+          "in" : "query",
+          "required" : false,
+          "schema" : {
+            "type" : "string",
+            "default" : "10"
+          },
+          "style" : "form",
+          "explode" : true
+        }, {
+          "name" : "offset",
+          "in" : "query",
+          "required" : false,
+          "schema" : {
+            "type" : "string",
+            "default" : "0"
+          },
+          "style" : "form",
+          "explode" : true
+        }, {
+          "name" : "id",
+          "in" : "query",
+          "required" : false,
+          "description" : "Customer ID",
+          "schema" : {
+            "type" : "string",
+            "description" : "Customer ID",
+            "enum" : [ "%" ]
+          },
+          "style" : "form",
+          "explode" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "status 200",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/customers"
+                },
+                "example" : "{\n\"etp_customer_raw\": [\n\t{\n\t\t\"CUSTOMER_NUMBER\" : \"20010030293\",\n\t\t\"BIRTHDATE\" : \"19940813\",\n\t\t\"ANNIVERSARY_DATE\" : \"0\",\n\t\t\"EMAIL\" : \"\\u0000\",\n\t\t\"TITLE\" : \"\\u0000\",\n\t\t\"CREATED_DATE\" : \"20241118\",\n\t\t\"CREATE_TIME\" : \"140314\",\n\t\t\"CHANGED_BY\" : \"42168\",\n\t\t\"CHANGE_NO\" : \"2\",\n\t\t\"DIVISION\" : \"9129990528\",\n\t\t\"MOBILENUMBER\" : \"100\",\n\t\t\"CUSTOMERNAME\" : \"MON EZIKIEL CAMPO\",\n\t\t\"CUSTOMERADDRESS1\" : \"DAVAO CITY\",\n\t\t\"CUSTOMERADDRESS2\" : \"DAVAO CITY\",\n\t\t\"CUSTOMERADDRESS3\" : \"\\u0000\",\n\t\t\"CUSTOMERADDRESS4\" : \"0\",\n\t\t\"STORECODE\" : \"2001\",\n\t\t\"FILE_DATE\" : null\n\t}]\n}"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/inventory" : {
+      "get" : {
+        "summary" : "Get the Inventory list",
+        "responses" : {
+          "200" : {
+            "description" : "status 200",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/inventory"
+                },
+                "example" : "{\n\"etp_inventory_raw\": [\n\t{\n\t\t\"STORE_CODE\" : \"2001\",\n\t\t\"SUB_LOCATION\" : \"APP\",\n\t\t\"SUB_LOCATION_DESC\" : \"Approved\",\n\t\t\"ARTICLE_ID\" : \"1000097002014\",\n\t\t\"ARTICLE_BATCH\" : \"2023FA\",\n\t\t\"DATE_ID\" : \"20250923\",\n\t\t\"QTY_ON_HAND\" : \"0.000000\",\n\t\t\"UNIT_PRICE\" : \"6000.000000\",\n\t\t\"FILE_DATE\" : \"20250924\"\n\t}]\n}"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components" : {
+    "schemas" : {
+      "customer" : {
+        "type" : "object",
+        "properties" : {
+          "etp_customer_raw" : {
+            "type" : "array",
+            "items" : {
+              "type" : "object",
+              "properties" : {
+                "CUSTOMER_NUMBER" : {
+                  "type" : "string"
+                },
+                "BIRTHDATE" : {
+                  "type" : "string"
+                },
+                "ANNIVERSARY_DATE" : {
+                  "type" : "string"
+                },
+                "EMAIL" : {
+                  "type" : "string"
+                },
+                "TITLE" : {
+                  "type" : "string"
+                },
+                "CREATED_DATE" : {
+                  "type" : "string"
+                },
+                "CREATE_TIME" : {
+                  "type" : "string"
+                },
+                "CHANGED_BY" : {
+                  "type" : "string"
+                },
+                "CHANGE_NO" : {
+                  "type" : "string"
+                },
+                "DIVISION" : {
+                  "type" : "string"
+                },
+                "MOBILENUMBER" : {
+                  "type" : "string"
+                },
+                "CUSTOMERNAME" : {
+                  "type" : "string"
+                },
+                "CUSTOMERADDRESS1" : {
+                  "type" : "string"
+                },
+                "CUSTOMERADDRESS2" : {
+                  "type" : "string"
+                },
+                "CUSTOMERADDRESS3" : {
+                  "type" : "string"
+                },
+                "CUSTOMERADDRESS4" : {
+                  "type" : "string"
+                },
+                "STORECODE" : {
+                  "type" : "string"
+                },
+                "FILE_DATE" : {
+                  "type" : "number"
+                }
+              }
+            }
+          }
+        },
+        "example" : "{\n\"etp_customer_raw\": [\n\t{\n\t\t\"CUSTOMER_NUMBER\" : \"20010030293\",\n\t\t\"BIRTHDATE\" : \"19940813\",\n\t\t\"ANNIVERSARY_DATE\" : \"0\",\n\t\t\"EMAIL\" : \"\\u0000\",\n\t\t\"TITLE\" : \"\\u0000\",\n\t\t\"CREATED_DATE\" : \"20241118\",\n\t\t\"CREATE_TIME\" : \"140314\",\n\t\t\"CHANGED_BY\" : \"42168\",\n\t\t\"CHANGE_NO\" : \"2\",\n\t\t\"DIVISION\" : \"9129990528\",\n\t\t\"MOBILENUMBER\" : \"100\",\n\t\t\"CUSTOMERNAME\" : \"MON EZIKIEL CAMPO\",\n\t\t\"CUSTOMERADDRESS1\" : \"DAVAO CITY\",\n\t\t\"CUSTOMERADDRESS2\" : \"DAVAO CITY\",\n\t\t\"CUSTOMERADDRESS3\" : \"\\u0000\",\n\t\t\"CUSTOMERADDRESS4\" : \"0\",\n\t\t\"STORECODE\" : \"2001\",\n\t\t\"FILE_DATE\" : 20250501\n\t}]\n}"
+      },
+      "customers" : {
+        "type" : "array",
+        "items" : {
+          "$ref" : "#/components/schemas/customer"
+        }
+      },
+      "Error" : {
+        "type" : "object",
+        "required" : [ "ID" ],
+        "properties" : {
+          "ID" : {
+            "type" : "string"
+          },
+          "errorCode" : {
+            "type" : "integer",
+            "format" : "int32",
+            "minimum" : 400,
+            "maximum" : 599
+          },
+          "errorMessage" : {
+            "type" : "string"
+          }
+        }
+      },
+      "inventory" : {
+        "type" : "object",
+        "properties" : {
+          "etp_inventory_raw" : {
+            "type" : "array",
+            "items" : {
+              "type" : "object",
+              "properties" : {
+                "STORE_CODE" : {
+                  "type" : "string"
+                },
+                "SUB_LOCATION" : {
+                  "type" : "string"
+                },
+                "SUB_LOCATION_DESC" : {
+                  "type" : "string"
+                },
+                "ARTICLE_ID" : {
+                  "type" : "string"
+                },
+                "ARTICLE_BATCH" : {
+                  "type" : "string"
+                },
+                "DATE_ID" : {
+                  "type" : "string"
+                },
+                "QTY_ON_HAND" : {
+                  "type" : "string"
+                },
+                "UNIT_PRICE" : {
+                  "type" : "string"
+                },
+                "FILE_DATE" : {
+                  "type" : "string"
+                }
+              }
+            }
+          }
+        },
+        "example" : "{\n\"etp_inventory_raw\": [\n\t{\n\t\t\"STORE_CODE\" : \"2001\",\n\t\t\"SUB_LOCATION\" : \"APP\",\n\t\t\"SUB_LOCATION_DESC\" : \"Approved\",\n\t\t\"ARTICLE_ID\" : \"1000097002014\",\n\t\t\"ARTICLE_BATCH\" : \"2023FA\",\n\t\t\"DATE_ID\" : \"20250923\",\n\t\t\"QTY_ON_HAND\" : \"0.000000\",\n\t\t\"UNIT_PRICE\" : \"6000.000000\",\n\t\t\"FILE_DATE\" : \"20250924\"\n\t}]\n}"
+      }
+    }
+  }
+}
