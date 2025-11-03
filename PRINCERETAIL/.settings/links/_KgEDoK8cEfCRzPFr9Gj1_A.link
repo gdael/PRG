@@ -1,0 +1,96 @@
+{
+  "itemId" : "_KgEDoK8cEfCRzPFr9Gj1_A",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_tFlrMKpQEfC_gsGR_6XiKA",
+    "parameterList" : [ {
+      "id" : "_tF83kqpQEfC_gsGR_6XiKA",
+      "name" : "ssi_mySQL_DB_AdditionalParams"
+    }, {
+      "id" : "_tF83lapQEfC_gsGR_6XiKA",
+      "name" : "ssi_mySQL_DB_Database"
+    }, {
+      "id" : "_tF83kapQEfC_gsGR_6XiKA",
+      "name" : "ssi_mySQL_DB_Login"
+    }, {
+      "id" : "_tF83lKpQEfC_gsGR_6XiKA",
+      "name" : "ssi_mySQL_DB_Password"
+    }, {
+      "id" : "_tF83k6pQEfC_gsGR_6XiKA",
+      "name" : "ssi_mySQL_DB_Port"
+    }, {
+      "id" : "_tF83lqpQEfC_gsGR_6XiKA",
+      "name" : "ssi_mySQL_DB_Server"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_cQH0EKwrEfCy1Ik_eKSceg",
+    "parameterList" : [ {
+      "id" : "_8viQRqwsEfCy1Ik_eKSceg",
+      "name" : "src_s3_region"
+    }, {
+      "id" : "_8viQR6wsEfCy1Ik_eKSceg",
+      "name" : "src_s3_access_key"
+    }, {
+      "id" : "_8viQSKwsEfCy1Ik_eKSceg",
+      "name" : "src_s3_secret_key"
+    }, {
+      "id" : "_8viQSawsEfCy1Ik_eKSceg",
+      "name" : "src_s3_bucket_name"
+    }, {
+      "id" : "_8viQSqwsEfCy1Ik_eKSceg",
+      "name" : "tgt_host"
+    }, {
+      "id" : "_8viQS6wsEfCy1Ik_eKSceg",
+      "name" : "tgt_port"
+    }, {
+      "id" : "_8viQTKwsEfCy1Ik_eKSceg",
+      "name" : "tgt_database"
+    }, {
+      "id" : "_8viQTawsEfCy1Ik_eKSceg",
+      "name" : "tgt_additional_param"
+    }, {
+      "id" : "_8viQTqwsEfCy1Ik_eKSceg",
+      "name" : "tgt_username"
+    }, {
+      "id" : "_8viQT6wsEfCy1Ik_eKSceg",
+      "name" : "tgt_password"
+    }, {
+      "id" : "_8viQUKwsEfCy1Ik_eKSceg",
+      "name" : "src_s3_folder"
+    }, {
+      "id" : "_8viQUawsEfCy1Ik_eKSceg",
+      "name" : "tgt_table_nm"
+    }, {
+      "id" : "_8viQUqwsEfCy1Ik_eKSceg",
+      "name" : "job_run_type"
+    }, {
+      "id" : "_-kUB8K7cEfCivaFensrFUg",
+      "name" : "src_s3_to_be_processed"
+    }, {
+      "id" : "_-kUB8a7cEfCivaFensrFUg",
+      "name" : "src_s3_processed"
+    }, {
+      "id" : "_-kUB8q7cEfCivaFensrFUg",
+      "name" : "src_s3_rejected"
+    }, {
+      "id" : "_-kUB867cEfCivaFensrFUg",
+      "name" : "src_s3_main_folder"
+    }, {
+      "id" : "_lGqtcK7dEfCivaFensrFUg",
+      "name" : "src_s3_filedate"
+    }, {
+      "id" : "_QoY6gK8hEfCRzPFr9Gj1_A",
+      "name" : "file_dl_path"
+    }, {
+      "id" : "_stRaMK8kEfCRzPFr9Gj1_A",
+      "name" : "job_run"
+    }, {
+      "id" : "_stRaMa8kEfCRzPFr9Gj1_A",
+      "name" : "split_file_per_row"
+    }, {
+      "id" : "_2foTkLIuEfCeNqbwvdUVJg",
+      "name" : "tgt_primary_key"
+    } ]
+  } ]
+}

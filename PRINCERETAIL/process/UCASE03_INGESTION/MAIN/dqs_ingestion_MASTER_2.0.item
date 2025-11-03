@@ -17,6 +17,7 @@
     <contextParameter comment="" name="flow_workspace" prompt="flow_workspace?" promptNeeded="false" repositoryContextId="_QRoqgE6cEequtZ_DY8Nmxw" type="id_String" value="" internalId="_mVQ5TJ2fEfCgauDxpvNxEw"/>
     <contextParameter comment="" name="extract_clm_nm" prompt="extract_clm_nm?" promptNeeded="false" repositoryContextId="_htX4oJ0REfCgauDxpvNxEw" type="id_String" value="" internalId="_1Kr78J3MEfCIa_kTMcQRag"/>
     <contextParameter comment="" name="tgt_tbl_nm" prompt="tgt_tbl_nm?" promptNeeded="false" repositoryContextId="_htX4oJ0REfCgauDxpvNxEw" type="id_String" value="" internalId="_1Kr78Z3MEfCIa_kTMcQRag"/>
+    <contextParameter comment="" name="extract_days_back" prompt="extract_days_back?" promptNeeded="false" repositoryContextId="_htX4oJ0REfCgauDxpvNxEw" type="id_String" value="" internalId="_Gu3w0LBXEfCzj6DOCUVajw"/>
   </context>
   <context confirmationNeeded="false" hide="false" name="DQS_PROCESS">
     <contextParameter comment="" name="process_name" prompt="process_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="BARTER_HQ" internalId="_nt6zIJx_EfCNsLsNTK5Rfw"/>
@@ -35,6 +36,7 @@
     <contextParameter comment="" name="DQS_Server" prompt="DQS_Server?" promptNeeded="false" repositoryContextId="_J8hz4NbzEe-4XYPM5vW39g" type="id_String" value="10.0.2.207" internalId="_wRsC6qWyEfCli6DVl9P-3A"/>
     <contextParameter comment="" name="DQS_Schema" prompt="DQS_Schema?" promptNeeded="false" repositoryContextId="_J8hz4NbzEe-4XYPM5vW39g" type="id_String" value="DWDQS" internalId="_wRsC66WyEfCli6DVl9P-3A"/>
     <contextParameter comment="" name="DQS_Port" prompt="DQS_Port?" promptNeeded="false" repositoryContextId="_J8hz4NbzEe-4XYPM5vW39g" type="id_String" value="1433" internalId="_wRsC7KWyEfCli6DVl9P-3A"/>
+    <contextParameter comment="" name="extract_days_back" prompt="extract_days_back?" promptNeeded="false" repositoryContextId="_htX4oJ0REfCgauDxpvNxEw" type="id_String" value="" internalId="_Gu3w0LBXEfCzj6DOCUVajw"/>
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
@@ -452,7 +454,7 @@
     <elementParameter field="CHECK" name="INFORMATION" value="false"/>
     <elementParameter field="MEMO" name="COMMENT" value=""/>
   </node>
-  <node componentName="dqs_jblt_update_process_attr" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="520" posY="40">
+  <node componentName="dqs_jblt_update_process_attr" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="600" posY="40">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="dqs_jblt_update_process_attr_2"/>
     <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
@@ -527,7 +529,7 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>
   <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
@@ -564,7 +566,7 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>
   <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>

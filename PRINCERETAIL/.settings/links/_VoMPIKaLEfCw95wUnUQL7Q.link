@@ -1,0 +1,314 @@
+{
+  "itemId" : "_VoMPIKaLEfCw95wUnUQL7Q",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_J8hz4NbzEe-4XYPM5vW39g",
+    "parameterList" : [ {
+      "id" : "_J88qoNbzEe-4XYPM5vW39g",
+      "name" : "DQS_AdditionalParams"
+    }, {
+      "id" : "_J88DkdbzEe-4XYPM5vW39g",
+      "name" : "DQS_Database"
+    }, {
+      "id" : "_J88qodbzEe-4XYPM5vW39g",
+      "name" : "DQS_Login"
+    }, {
+      "id" : "_J88qotbzEe-4XYPM5vW39g",
+      "name" : "DQS_Password"
+    }, {
+      "id" : "_J88qpdbzEe-4XYPM5vW39g",
+      "name" : "DQS_Port"
+    }, {
+      "id" : "_J88qpNbzEe-4XYPM5vW39g",
+      "name" : "DQS_Schema"
+    }, {
+      "id" : "_J88qo9bzEe-4XYPM5vW39g",
+      "name" : "DQS_Server"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_2DLyYKddEfCim-kSRXptKw",
+    "parameterList" : [ {
+      "id" : "_ZgX1kKfTEfCim-kSRXptKw",
+      "name" : "error_log_datetime"
+    }, {
+      "id" : "_ZgX1kafTEfCim-kSRXptKw",
+      "name" : "error_code"
+    }, {
+      "id" : "_ZgX1kqfTEfCim-kSRXptKw",
+      "name" : "error_type"
+    }, {
+      "id" : "_ZgX1k6fTEfCim-kSRXptKw",
+      "name" : "error_desc"
+    }, {
+      "id" : "_ZgX1lKfTEfCim-kSRXptKw",
+      "name" : "job_location"
+    }, {
+      "id" : "_ZgX1lafTEfCim-kSRXptKw",
+      "name" : "job_component"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_QRoqgE6cEequtZ_DY8Nmxw",
+    "parameterList" : [ {
+      "id" : "_zgxagbpEEeqJ2YQw-h1cbQ",
+      "name" : "flow_execution_id"
+    }, {
+      "id" : "_zgxagrpEEeqJ2YQw-h1cbQ",
+      "name" : "flow_id"
+    }, {
+      "id" : "_zgxag7pEEeqJ2YQw-h1cbQ",
+      "name" : "flow_name"
+    }, {
+      "id" : "_zgxahLpEEeqJ2YQw-h1cbQ",
+      "name" : "flow_start_datetime"
+    }, {
+      "id" : "_zgxahbpEEeqJ2YQw-h1cbQ",
+      "name" : "flow_version"
+    }, {
+      "id" : "_zgxahrpEEeqJ2YQw-h1cbQ",
+      "name" : "flow_workspace"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_RRzy0KaNEfCeO_9uJx7Q4g",
+    "parameterList" : [ {
+      "id" : "_AasesKfgEfCtRaMXZS63UQ",
+      "name" : "run_src_host"
+    }, {
+      "id" : "_AasesafgEfCtRaMXZS63UQ",
+      "name" : "run_src_port"
+    }, {
+      "id" : "_AasesqfgEfCtRaMXZS63UQ",
+      "name" : "run_src_database"
+    }, {
+      "id" : "_Aases6fgEfCtRaMXZS63UQ",
+      "name" : "run_src_schema"
+    }, {
+      "id" : "_AasetKfgEfCtRaMXZS63UQ",
+      "name" : "run_src_username"
+    }, {
+      "id" : "_AasetafgEfCtRaMXZS63UQ",
+      "name" : "run_src_password"
+    }, {
+      "id" : "_AasetqfgEfCtRaMXZS63UQ",
+      "name" : "run_src_additional_param"
+    }, {
+      "id" : "_Aaset6fgEfCtRaMXZS63UQ",
+      "name" : "run_tgt_file_name"
+    }, {
+      "id" : "_AaseuKfgEfCtRaMXZS63UQ",
+      "name" : "run_tgt_file_location_path"
+    }, {
+      "id" : "_AaseuafgEfCtRaMXZS63UQ",
+      "name" : "process_attr_name"
+    }, {
+      "id" : "_AaseuqfgEfCtRaMXZS63UQ",
+      "name" : "process_attr_desc"
+    }, {
+      "id" : "_Aaseu6fgEfCtRaMXZS63UQ",
+      "name" : "email_group"
+    }, {
+      "id" : "_AasevKfgEfCtRaMXZS63UQ",
+      "name" : "output_type"
+    }, {
+      "id" : "_HEyp8KlmEfCtRaMXZS63UQ",
+      "name" : "exception_db_host"
+    }, {
+      "id" : "_HEyp8almEfCtRaMXZS63UQ",
+      "name" : "exception_db_port"
+    }, {
+      "id" : "_HEyp8qlmEfCtRaMXZS63UQ",
+      "name" : "exception_db_database"
+    }, {
+      "id" : "_HEyp86lmEfCtRaMXZS63UQ",
+      "name" : "exception_db_schema"
+    }, {
+      "id" : "_HEyp9KlmEfCtRaMXZS63UQ",
+      "name" : "exception_db_additional_param"
+    }, {
+      "id" : "_HEyp9almEfCtRaMXZS63UQ",
+      "name" : "exception_db_username"
+    }, {
+      "id" : "_HEyp9qlmEfCtRaMXZS63UQ",
+      "name" : "exception_db_password"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_X8Z7MKaQEfCeO_9uJx7Q4g",
+    "parameterList" : [ {
+      "id" : "_rB-_QKfgEfCtRaMXZS63UQ",
+      "name" : "br_process_id"
+    }, {
+      "id" : "_rB-_QafgEfCtRaMXZS63UQ",
+      "name" : "business_rule_nm"
+    }, {
+      "id" : "_rB-_QqfgEfCtRaMXZS63UQ",
+      "name" : "base_query"
+    }, {
+      "id" : "_rB-_Q6fgEfCtRaMXZS63UQ",
+      "name" : "output_query"
+    }, {
+      "id" : "_aoD78KgLEfCtRaMXZS63UQ",
+      "name" : "report_query"
+    }, {
+      "id" : "_RB7IAKmTEfCtRaMXZS63UQ",
+      "name" : "exception_table_name"
+    } ]
+  }, {
+    "contextName" : "DQS_PROCESS",
+    "repoId" : "_J8hz4NbzEe-4XYPM5vW39g",
+    "parameterList" : [ {
+      "id" : "_wZ9OEqWyEfCli6DVl9P-3A",
+      "name" : "DQS_AdditionalParams"
+    }, {
+      "id" : "_wZ9OEaWyEfCli6DVl9P-3A",
+      "name" : "DQS_Database"
+    }, {
+      "id" : "_wZ9OE6WyEfCli6DVl9P-3A",
+      "name" : "DQS_Login"
+    }, {
+      "id" : "_wZ9OFKWyEfCli6DVl9P-3A",
+      "name" : "DQS_Password"
+    }, {
+      "id" : "_wZ9OF6WyEfCli6DVl9P-3A",
+      "name" : "DQS_Port"
+    }, {
+      "id" : "_wZ9OFqWyEfCli6DVl9P-3A",
+      "name" : "DQS_Schema"
+    }, {
+      "id" : "_wZ9OFaWyEfCli6DVl9P-3A",
+      "name" : "DQS_Server"
+    } ]
+  }, {
+    "contextName" : "DQS_PROCESS",
+    "repoId" : "_2DLyYKddEfCim-kSRXptKw",
+    "parameterList" : [ {
+      "id" : "_ZgX1lqfTEfCim-kSRXptKw",
+      "name" : "error_log_datetime"
+    }, {
+      "id" : "_ZgX1l6fTEfCim-kSRXptKw",
+      "name" : "error_code"
+    }, {
+      "id" : "_ZgX1mKfTEfCim-kSRXptKw",
+      "name" : "error_type"
+    }, {
+      "id" : "_ZgX1mafTEfCim-kSRXptKw",
+      "name" : "error_desc"
+    }, {
+      "id" : "_ZgX1mqfTEfCim-kSRXptKw",
+      "name" : "job_location"
+    }, {
+      "id" : "_ZgX1m6fTEfCim-kSRXptKw",
+      "name" : "job_component"
+    } ]
+  }, {
+    "contextName" : "DQS_PROCESS",
+    "repoId" : "_QRoqgE6cEequtZ_DY8Nmxw",
+    "parameterList" : [ {
+      "id" : "_zgxagbpEEeqJ2YQw-h1cbQ",
+      "name" : "flow_execution_id"
+    }, {
+      "id" : "_zgxagrpEEeqJ2YQw-h1cbQ",
+      "name" : "flow_id"
+    }, {
+      "id" : "_zgxag7pEEeqJ2YQw-h1cbQ",
+      "name" : "flow_name"
+    }, {
+      "id" : "_zgxahLpEEeqJ2YQw-h1cbQ",
+      "name" : "flow_start_datetime"
+    }, {
+      "id" : "_zgxahbpEEeqJ2YQw-h1cbQ",
+      "name" : "flow_version"
+    }, {
+      "id" : "_zgxahrpEEeqJ2YQw-h1cbQ",
+      "name" : "flow_workspace"
+    } ]
+  }, {
+    "contextName" : "DQS_PROCESS",
+    "repoId" : "_RRzy0KaNEfCeO_9uJx7Q4g",
+    "parameterList" : [ {
+      "id" : "_AasevafgEfCtRaMXZS63UQ",
+      "name" : "run_src_host"
+    }, {
+      "id" : "_AasevqfgEfCtRaMXZS63UQ",
+      "name" : "run_src_port"
+    }, {
+      "id" : "_Aasev6fgEfCtRaMXZS63UQ",
+      "name" : "run_src_database"
+    }, {
+      "id" : "_AasewKfgEfCtRaMXZS63UQ",
+      "name" : "run_src_schema"
+    }, {
+      "id" : "_AasewafgEfCtRaMXZS63UQ",
+      "name" : "run_src_username"
+    }, {
+      "id" : "_AasewqfgEfCtRaMXZS63UQ",
+      "name" : "run_src_password"
+    }, {
+      "id" : "_Aasew6fgEfCtRaMXZS63UQ",
+      "name" : "run_src_additional_param"
+    }, {
+      "id" : "_AasexKfgEfCtRaMXZS63UQ",
+      "name" : "run_tgt_file_name"
+    }, {
+      "id" : "_AasexafgEfCtRaMXZS63UQ",
+      "name" : "run_tgt_file_location_path"
+    }, {
+      "id" : "_AasexqfgEfCtRaMXZS63UQ",
+      "name" : "process_attr_name"
+    }, {
+      "id" : "_Aasex6fgEfCtRaMXZS63UQ",
+      "name" : "process_attr_desc"
+    }, {
+      "id" : "_AaseyKfgEfCtRaMXZS63UQ",
+      "name" : "email_group"
+    }, {
+      "id" : "_AaseyafgEfCtRaMXZS63UQ",
+      "name" : "output_type"
+    }, {
+      "id" : "_HEyp96lmEfCtRaMXZS63UQ",
+      "name" : "exception_db_host"
+    }, {
+      "id" : "_HEyp-KlmEfCtRaMXZS63UQ",
+      "name" : "exception_db_port"
+    }, {
+      "id" : "_HEyp-almEfCtRaMXZS63UQ",
+      "name" : "exception_db_database"
+    }, {
+      "id" : "_HEyp-qlmEfCtRaMXZS63UQ",
+      "name" : "exception_db_schema"
+    }, {
+      "id" : "_HEyp-6lmEfCtRaMXZS63UQ",
+      "name" : "exception_db_additional_param"
+    }, {
+      "id" : "_HEyp_KlmEfCtRaMXZS63UQ",
+      "name" : "exception_db_username"
+    }, {
+      "id" : "_HEyp_almEfCtRaMXZS63UQ",
+      "name" : "exception_db_password"
+    } ]
+  }, {
+    "contextName" : "DQS_PROCESS",
+    "repoId" : "_X8Z7MKaQEfCeO_9uJx7Q4g",
+    "parameterList" : [ {
+      "id" : "_rB-_RKfgEfCtRaMXZS63UQ",
+      "name" : "br_process_id"
+    }, {
+      "id" : "_rB-_RafgEfCtRaMXZS63UQ",
+      "name" : "business_rule_nm"
+    }, {
+      "id" : "_rB-_RqfgEfCtRaMXZS63UQ",
+      "name" : "base_query"
+    }, {
+      "id" : "_rB-_R6fgEfCtRaMXZS63UQ",
+      "name" : "output_query"
+    }, {
+      "id" : "_aoD78agLEfCtRaMXZS63UQ",
+      "name" : "report_query"
+    }, {
+      "id" : "_RB7IAamTEfCtRaMXZS63UQ",
+      "name" : "exception_table_name"
+    } ]
+  } ]
+}

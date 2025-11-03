@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties" xmlns:model="http://www.talend.com/joblet.ecore">
+  <model:JobletProcess defaultContext="Default" jobType="Standard">
+    <context confirmationNeeded="false" hide="false" name="Default">
+      <contextParameter comment="" name="ssi_mySQL_DB_AdditionalParams" prompt="ssi_mySQL_DB_AdditionalParams?" promptNeeded="false" repositoryContextId="_tFlrMKpQEfC_gsGR_6XiKA" type="id_String" value="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1" internalId="_8viQQKwsEfCy1Ik_eKSceg"/>
+      <contextParameter comment="" name="ssi_mySQL_DB_Database" prompt="ssi_mySQL_DB_Database?" promptNeeded="false" repositoryContextId="_tFlrMKpQEfC_gsGR_6XiKA" type="id_String" value="ssi_dm_ingestion" internalId="_8viQQawsEfCy1Ik_eKSceg"/>
+      <contextParameter comment="" name="ssi_mySQL_DB_Login" prompt="ssi_mySQL_DB_Login?" promptNeeded="false" repositoryContextId="_tFlrMKpQEfC_gsGR_6XiKA" type="id_String" value="dbadmin" internalId="_8viQQqwsEfCy1Ik_eKSceg"/>
+      <contextParameter comment="" name="ssi_mySQL_DB_Password" prompt="ssi_mySQL_DB_Password?" promptNeeded="false" repositoryContextId="_tFlrMKpQEfC_gsGR_6XiKA" type="id_Password" value="enc:system.encryption.key.v1:N68gqsSuSYY2WXeTFQGFLd5rwIQO5oTVLvJDm0TEAhNffmJF1k/C0ZQkxw==" internalId="_8viQQ6wsEfCy1Ik_eKSceg"/>
+      <contextParameter comment="" name="ssi_mySQL_DB_Port" prompt="ssi_mySQL_DB_Port?" promptNeeded="false" repositoryContextId="_tFlrMKpQEfC_gsGR_6XiKA" type="id_String" value="3306" internalId="_8viQRKwsEfCy1Ik_eKSceg"/>
+      <contextParameter comment="" name="ssi_mySQL_DB_Server" prompt="ssi_mySQL_DB_Server?" promptNeeded="false" repositoryContextId="_tFlrMKpQEfC_gsGR_6XiKA" type="id_String" value="localhost" internalId="_8viQRawsEfCy1Ik_eKSceg"/>
+      <contextParameter comment="" name="src_s3_region" prompt="src_s3_region?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_8viQRqwsEfCy1Ik_eKSceg"/>
+      <contextParameter comment="" name="src_s3_access_key" prompt="src_s3_access_key?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_8viQR6wsEfCy1Ik_eKSceg"/>
+      <contextParameter comment="" name="src_s3_secret_key" prompt="src_s3_secret_key?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_8viQSKwsEfCy1Ik_eKSceg"/>
+      <contextParameter comment="" name="src_s3_bucket_name" prompt="src_s3_bucket_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_8viQSawsEfCy1Ik_eKSceg"/>
+      <contextParameter comment="" name="tgt_host" prompt="tgt_host?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_8viQSqwsEfCy1Ik_eKSceg"/>
+      <contextParameter comment="" name="tgt_port" prompt="tgt_port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_8viQS6wsEfCy1Ik_eKSceg"/>
+      <contextParameter comment="" name="tgt_database" prompt="tgt_database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_8viQTKwsEfCy1Ik_eKSceg"/>
+      <contextParameter comment="" name="tgt_additional_param" prompt="tgt_additional_param?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_8viQTawsEfCy1Ik_eKSceg"/>
+      <contextParameter comment="" name="tgt_username" prompt="tgt_username?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_8viQTqwsEfCy1Ik_eKSceg"/>
+      <contextParameter comment="" name="tgt_password" prompt="tgt_password?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_8viQT6wsEfCy1Ik_eKSceg"/>
+      <contextParameter comment="" name="src_s3_folder" prompt="src_s3_folder?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_8viQUKwsEfCy1Ik_eKSceg"/>
+      <contextParameter comment="" name="tgt_table_nm" prompt="tgt_table_nm?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_8viQUawsEfCy1Ik_eKSceg"/>
+      <contextParameter comment="" name="job_run_type" prompt="job_run_type?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_8viQUqwsEfCy1Ik_eKSceg"/>
+      <contextParameter comment="" name="src_s3_to_be_processed" prompt="src_s3_to_be_processed?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_-kUB8K7cEfCivaFensrFUg"/>
+      <contextParameter comment="" name="src_s3_processed" prompt="src_s3_processed?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_-kUB8a7cEfCivaFensrFUg"/>
+      <contextParameter comment="" name="src_s3_rejected" prompt="src_s3_rejected?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_-kUB8q7cEfCivaFensrFUg"/>
+      <contextParameter comment="" name="src_s3_main_folder" prompt="src_s3_main_folder?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_-kUB867cEfCivaFensrFUg"/>
+      <contextParameter comment="" name="src_s3_filedate" prompt="src_s3_filedate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_lGqtcK7dEfCivaFensrFUg"/>
+      <contextParameter comment="" name="file_dl_path" prompt="file_dl_path?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_QoY6gK8hEfCRzPFr9Gj1_A"/>
+      <contextParameter comment="" name="job_run" prompt="job_run?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_stRaMK8kEfCRzPFr9Gj1_A"/>
+      <contextParameter comment="" name="split_file_per_row" prompt="split_file_per_row?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_stRaMa8kEfCRzPFr9Gj1_A"/>
+      <contextParameter comment="" name="tgt_primary_key" prompt="tgt_primary_key?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_2foTkLIuEfCeNqbwvdUVJg"/>
+    </context>
+    <parameters>
+      <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+      <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+      <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+      <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+      <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="false" show="false"/>
+      <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="false" show="false"/>
+      <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false" show="false"/>
+      <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000" show="false"/>
+      <elementParameter field="CHECK" name="STARTABLE" value="true"/>
+      <elementParameter field="ICON_SELECTION" name="ICONSELECTION" value=""/>
+      <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false" show="false"/>
+      <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+      <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+      <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;/media/glenndael/Backup/01 Data Integration/Talend/Studio/Linux/Talend-Studio-20250226_1030-V8.0.1/workspace/in.csv&quot;" show="false"/>
+      <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;" show="false"/>
+      <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+      <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+      <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="ORACLE_18" show="false"/>
+      <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+      <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:2T2RfXZZWmuSv9+2kxRiNGZIF5jxB74jgdTsAHPR" show="false"/>
+      <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+      <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+      <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+      <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="true" show="false"/>
+      <elementParameter field="CHECK" name="DISABLE_INFO" value="true" show="false"/>
+      <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+      <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+      <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+      <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+      <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+      <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+      <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+      <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+      <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+      <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    </parameters>
+    <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="280" posY="400">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_8"/>
+      <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+      <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+      <elementParameter field="TEXT" name="HOST" value="context.ssi_mySQL_DB_Server"/>
+      <elementParameter field="TEXT" name="PORT" value="context.ssi_mySQL_DB_Port"/>
+      <elementParameter field="TEXT" name="DBNAME" value="context.ssi_mySQL_DB_Database"/>
+      <elementParameter field="TEXT" name="TYPE" value="MySQL" show="false"/>
+      <elementParameter field="TEXT" name="USER" value="context.ssi_mySQL_DB_Login"/>
+      <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:nROPnVxU4I036TgWnhdpJ+lFlh9NCDo832TFs03CosVC2nAnSFN/NjN8E5a1EL5VSnQR3GC2bwDb"/>
+      <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+      <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+      <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+      <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+      <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+      <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select run_attr_nm,run_attr_vl from dm_ingestion_process_attr where run_id in (&quot;+context.run_id +&quot;,&quot;+context.parent_run_id+&quot;)&quot;"/>
+      <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+      <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+      <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+      <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
+      <elementParameter field="TEXT" name="PROPERTIES" value="context.ssi_mySQL_DB_AdditionalParams"/>
+      <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+      <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+      <elementParameter field="CHECK" name="ENABLE_STREAM" value="false"/>
+      <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+      <elementParameter field="TABLE" name="TRIM_COLUMN">
+        <elementValue elementRef="SCHEMA_COLUMN" value="key" id="0"/>
+        <elementValue elementRef="TRIM" value="false" id="1"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="value" id="2"/>
+        <elementValue elementRef="TRIM" value="false" id="3"/>
+      </elementParameter>
+      <elementParameter field="TEXT" name="LABEL" value="Get batch atributes"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tDBInput_1">
+        <column comment="" key="false" length="-1" name="key" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="value" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tContextLoad" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="600" posY="400">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tContextLoad_1" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning"/>
+      <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning"/>
+      <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false"/>
+      <elementParameter field="CHECK" name="DISABLE_ERROR" value="false"/>
+      <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="true"/>
+      <elementParameter field="CHECK" name="DISABLE_INFO" value="true"/>
+      <elementParameter field="CHECK" name="DIEONERROR" value="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="Load context variables"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tContextLoad_1">
+        <column defaultValue="" key="false" length="255" name="key" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="255" name="value" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="TRIGGER_INPUT_1" offsetLabelX="0" offsetLabelY="0" source="TRIGGER_INPUT_1" target="tDBInput_1">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
+    </connection>
+    <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tContextLoad_1">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+    </connection>
+    <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tContextLoad_1" offsetLabelX="0" offsetLabelY="0" source="tContextLoad_1" target="TRIGGER_OUTPUT_1">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>
+    </connection>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="TRIGGER_INPUT_1" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="TRIGGER_OUTPUT_1" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+    </subjob>
+    <jobletNodes componentName="TRIGGER_INPUT" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="280" posY="160" input="true" trigger="true">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="TRIGGER_INPUT_1"/>
+      <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+      <elementParameter field="CHECK" name="START" value="true" show="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+      <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+      <elementParameter field="MEMO" name="COMMENT" value=""/>
+    </jobletNodes>
+    <jobletNodes componentName="TRIGGER_OUTPUT" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="880" posY="400" trigger="true">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="TRIGGER_OUTPUT_1"/>
+      <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+      <elementParameter field="CHECK" name="START" value="false" show="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+      <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+      <elementParameter field="MEMO" name="COMMENT" value=""/>
+    </jobletNodes>
+  </model:JobletProcess>
+  <TalendProperties:ByteArray/>
+</xmi:XMI>

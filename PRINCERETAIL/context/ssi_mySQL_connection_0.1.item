@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_tF83kKpQEfC_gsGR_6XiKA" confirmationNeeded="false" hide="false" name="Default">
+  <contextParameter xmi:id="_tF83kapQEfC_gsGR_6XiKA" comment="" name="ssi_mySQL_DB_Login" prompt="ssi_mySQL_DB_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="dbadmin"/>
+  <contextParameter xmi:id="_tF83kqpQEfC_gsGR_6XiKA" comment="" name="ssi_mySQL_DB_AdditionalParams" prompt="ssi_mySQL_DB_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1"/>
+  <contextParameter xmi:id="_tF83k6pQEfC_gsGR_6XiKA" comment="" name="ssi_mySQL_DB_Port" prompt="ssi_mySQL_DB_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="3306"/>
+  <contextParameter xmi:id="_tF83lKpQEfC_gsGR_6XiKA" comment="" name="ssi_mySQL_DB_Password" prompt="ssi_mySQL_DB_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:afMqTgxsXV/bYZlWuq/l6+BkL3bMibONb4nLfrvfWuOG9qj+XyUqWs08RA=="/>
+  <contextParameter xmi:id="_tF83lapQEfC_gsGR_6XiKA" comment="" name="ssi_mySQL_DB_Database" prompt="ssi_mySQL_DB_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="ssi_dm_ingestion"/>
+  <contextParameter xmi:id="_tF83lqpQEfC_gsGR_6XiKA" comment="" name="ssi_mySQL_DB_Server" prompt="ssi_mySQL_DB_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="localhost"/>
+</talendfile:ContextType>
