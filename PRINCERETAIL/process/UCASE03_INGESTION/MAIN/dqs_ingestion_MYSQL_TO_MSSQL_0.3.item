@@ -6,7 +6,7 @@
     <contextParameter comment="" name="DQS_Login" prompt="DQS_Login?" promptNeeded="false" repositoryContextId="_J8hz4NbzEe-4XYPM5vW39g" type="id_String" value="" internalId="_nqvWEps8EfCPN9Ag9IEeNg"/>
     <contextParameter comment="" name="DQS_Password" prompt="DQS_Password?" promptNeeded="false" repositoryContextId="_J8hz4NbzEe-4XYPM5vW39g" type="id_Password" value="" internalId="_nqvWE5s8EfCPN9Ag9IEeNg"/>
     <contextParameter comment="" name="DQS_Port" prompt="DQS_Port?" promptNeeded="false" repositoryContextId="_J8hz4NbzEe-4XYPM5vW39g" type="id_String" value="1433" internalId="_nqvWFJs8EfCPN9Ag9IEeNg"/>
-    <contextParameter comment="" name="DQS_Schema" prompt="DQS_Schema?" promptNeeded="false" repositoryContextId="_J8hz4NbzEe-4XYPM5vW39g" type="id_String" value="DWAUDIT" internalId="_nqvWFZs8EfCPN9Ag9IEeNg"/>
+    <contextParameter comment="" name="DQS_Schema" prompt="DQS_Schema?" promptNeeded="false" repositoryContextId="_J8hz4NbzEe-4XYPM5vW39g" type="id_String" value="DWINGEST" internalId="_nqvWFZs8EfCPN9Ag9IEeNg"/>
     <contextParameter comment="" name="DQS_Server" prompt="DQS_Server?" promptNeeded="false" repositoryContextId="_J8hz4NbzEe-4XYPM5vW39g" type="id_String" value="10.0.2.207" internalId="_nqvWFps8EfCPN9Ag9IEeNg"/>
     <contextParameter comment="" name="process_id" prompt="process_id?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value="100" internalId="_nqvWF5s8EfCPN9Ag9IEeNg"/>
     <contextParameter comment="Null default, Manual input (check batch process table)" name="group_batch_id" prompt="group_batch_id?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value="" internalId="_M9ESMJs_EfCPN9Ag9IEeNg"/>
@@ -71,7 +71,7 @@
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
     <elementParameter field="TEXT" name="JOB_RUN_VM_ARGUMENTS" value="{&quot;JOB_RUN_VM_ARGUMENTS&quot;:[&quot;-Xms2g&quot;,&quot;-Xmx8g&quot;]}" show="false"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="263" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="287" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
@@ -597,6 +597,7 @@
   </node>
   <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1320" posY="760">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_3" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
     <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
     <elementParameter field="PROCESS_TYPE" name="PROCESS" value="dqs_ingestion_MYSQL_TO_MSSQL_stage"/>
@@ -779,6 +780,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk14" show="false"/>
   </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_6" offsetLabelX="0" offsetLabelY="0" source="tJava_6" target="tRunJob_3">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk15" show="false"/>
   </connection>
   <note opaque="true" posX="960" posY="240" sizeHeight="201" sizeWidth="521" text="1. Start batch for process control entries&#xD;&#xA;2. Iterate over batch&#xD;&#xA;3. Execute individial batches.&#xD;&#xA;4. Update batch status.&#xD;&#xA;5. Complete job with statistics.">

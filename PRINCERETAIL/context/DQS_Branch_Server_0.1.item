@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_gJpfICveEfChos-YAKZCvg" confirmationNeeded="false" hide="false" name="Default">
+  <contextParameter xmi:id="_gKWpwCveEfChos-YAKZCvg" comment="" name="DB_User" prompt="DB_User?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="DWREADONLY"/>
+  <contextParameter xmi:id="_gKWpwSveEfChos-YAKZCvg" comment="" name="DB_Password" prompt="DB_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:u9A0FHPgQYk9xdoZDApSQFitFNDhmiw8kcuf0AYp7/62i+asl/I="/>
+  <contextParameter xmi:id="_6rXJ4DntEfCt0tl_LTbi-A" comment="" name="DB_Database" prompt="DB_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="barterbranch"/>
+  <contextParameter xmi:id="_7-ABADnuEfCt0tl_LTbi-A" comment="" name="DB_IP" prompt="DB_IP?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+</talendfile:ContextType>

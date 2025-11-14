@@ -7,7 +7,7 @@
     <contextParameter comment="" name="DQS_Login" prompt="DQS_Login?" promptNeeded="false" repositoryContextId="_J8hz4NbzEe-4XYPM5vW39g" type="id_String" value="" internalId="_g5Bckps6EfCPN9Ag9IEeNg"/>
     <contextParameter comment="" name="DQS_Password" prompt="DQS_Password?" promptNeeded="false" repositoryContextId="_J8hz4NbzEe-4XYPM5vW39g" type="id_Password" value="" internalId="_g5Bck5s6EfCPN9Ag9IEeNg"/>
     <contextParameter comment="" name="DQS_Port" prompt="DQS_Port?" promptNeeded="false" repositoryContextId="_J8hz4NbzEe-4XYPM5vW39g" type="id_String" value="1433" internalId="_g5BclJs6EfCPN9Ag9IEeNg"/>
-    <contextParameter comment="" name="DQS_Schema" prompt="DQS_Schema?" promptNeeded="false" repositoryContextId="_J8hz4NbzEe-4XYPM5vW39g" type="id_String" value="DWAUDIT" internalId="_g5BclZs6EfCPN9Ag9IEeNg"/>
+    <contextParameter comment="" name="DQS_Schema" prompt="DQS_Schema?" promptNeeded="false" repositoryContextId="_J8hz4NbzEe-4XYPM5vW39g" type="id_String" value="DWINGEST" internalId="_g5BclZs6EfCPN9Ag9IEeNg"/>
     <contextParameter comment="" name="DQS_Server" prompt="DQS_Server?" promptNeeded="false" repositoryContextId="_J8hz4NbzEe-4XYPM5vW39g" type="id_String" value="10.0.2.207" internalId="_g5Bclps6EfCPN9Ag9IEeNg"/>
   </context>
   <context confirmationNeeded="false" hide="false" name="DQS_PROCESS">
@@ -189,7 +189,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select max(batch_id) from DWAUDIT.batch_process where process_grp_id=&quot;+context.process_id+&quot; and process_status in ( 'STARTED','FAILED') &quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#xD;&#xA;select max(bp.batch_id) from DWAUDIT.batch_process bp where bp.process_grp_id=&quot;+context.process_id+&quot;&#xD;&#xA;&#x9;  AND bp.process_status in ( 'STARTED','FAILED') &#xD;&#xA;      AND bp.process_start_datetime >= CAST(GETDATE() AS DATE)&#xD;&#xA;      AND bp.process_start_datetime &lt; DATEADD(DAY, 1, CAST(GETDATE() AS DATE))&#xD;&#xA;&#xD;&#xA;&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>

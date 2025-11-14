@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties" xmlns:model="http://www.talend.com/joblet.ecore">
+  <model:JobletProcess defaultContext="Default" jobType="Standard">
+    <context confirmationNeeded="false" hide="false" name="Default"/>
+    <parameters>
+      <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+      <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="80" show="false"/>
+      <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+      <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+      <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="false" show="false"/>
+      <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="false" show="false"/>
+      <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false" show="false"/>
+      <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000" show="false"/>
+      <elementParameter field="CHECK" name="STARTABLE" value="true"/>
+      <elementParameter field="ICON_SELECTION" name="ICONSELECTION" value=""/>
+      <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false" show="false"/>
+      <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+      <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+      <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;D:/01 Data Integration/Talend/Studio/Talend-Studio-20250226_1030-V8.0.1/workspace/in.csv&quot;" show="false"/>
+      <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;" show="false"/>
+      <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+      <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+      <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="ORACLE_18" show="false"/>
+      <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+      <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:pxwy+CbwQWOGcaKuPS5yDYq/TPUBBwHRUv2faJhO" show="false"/>
+      <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+      <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+      <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+      <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="true" show="false"/>
+      <elementParameter field="CHECK" name="DISABLE_INFO" value="true" show="false"/>
+      <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+      <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+      <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+      <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+      <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+      <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+      <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+      <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+      <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+      <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    </parameters>
+    <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="160" posY="160">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFlowToIterate_1" show="false"/>
+      <elementParameter field="CHECK" name="DEFAULT_MAP" value="true"/>
+      <elementParameter field="TABLE" name="MAP" show="false"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tFlowToIterate_1"/>
+    </node>
+    <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="400" posY="160">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
+      <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+      <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1" show="false"/>
+      <elementParameter field="TEXT" name="HOST" value="context.DQS_Server"/>
+      <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+      <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+      <elementParameter field="TEXT" name="PORT" value="context.DQS_Port"/>
+      <elementParameter field="TEXT" name="DB_SCHEMA" value="context.DQS_Schema"/>
+      <elementParameter field="TEXT" name="DBNAME" value="context.DQS_Database"/>
+      <elementParameter field="TEXT" name="USER" value="context.DQS_Login"/>
+      <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:h2X4JoVArHR7X2Nl8im0luHYUh4klbBbWMX5WDAqC7pA9D7nN00yEgqrR7BYJIKS"/>
+      <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+      <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+      <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+      <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+      <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+      <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT pba.process_id, &#xD;&#xA;       pbs.*, &#xD;&#xA;       pga.global_attr_vl as email,&#xD;&#xA;&#x9;   pc.process_nm &#xD;&#xA;FROM DWAUDIT.process_batch_attr pba &#xD;&#xA;LEFT JOIN DWAUDIT.process_batch_src pbs ON pbs.source_id = pba.source_id &#xD;&#xA;LEFT JOIN DWAUDIT.process_ctrl pc ON pba.process_id = pc.process_id &#xD;&#xA;LEFT JOIN DWAUDIT.process_global_attr pga ON pc.alerting_group = pga.global_attr_nm&#xD;&#xA;WHERE pba.process_id = &quot; + (Long)globalMap.get(&quot;row1.process_id&quot;)&#xD;&#xA;"/>
+      <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+      <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+      <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+      <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+      <elementParameter field="TEXT" name="PROPERTIES" value="context.DQS_AdditionalParams"/>
+      <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false" show="false"/>
+      <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+      <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+      <elementParameter field="CHECK" name="ENABLE_ALWAYS_ENCRYPTED" value="false" show="false"/>
+      <elementParameter field="TEXT" name="KEYSTORE_PRINCIPAL_ID" value="" show="false"/>
+      <elementParameter field="PASSWORD" name="KEYSTORE_SECRET" value="" show="false"/>
+      <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+      <elementParameter field="TABLE" name="TRIM_COLUMN">
+        <elementValue elementRef="SCHEMA_COLUMN" value="process_id" id="0"/>
+        <elementValue elementRef="TRIM" value="false" id="1"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="source_id" id="2"/>
+        <elementValue elementRef="TRIM" value="false" id="3"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="src_host" id="4"/>
+        <elementValue elementRef="TRIM" value="false" id="5"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="src_database" id="6"/>
+        <elementValue elementRef="TRIM" value="false" id="7"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="src_port" id="8"/>
+        <elementValue elementRef="TRIM" value="false" id="9"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="src_username" id="10"/>
+        <elementValue elementRef="TRIM" value="false" id="11"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="src_password" id="12"/>
+        <elementValue elementRef="TRIM" value="false" id="13"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="src_additional_param" id="14"/>
+        <elementValue elementRef="TRIM" value="false" id="15"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="email" id="16"/>
+        <elementValue elementRef="TRIM" value="false" id="17"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="process_nm" id="18"/>
+        <elementValue elementRef="TRIM" value="false" id="19"/>
+      </elementParameter>
+      <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
+      <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" value="30" show="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="Get Src Conn details"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tDBInput_1">
+        <column comment="" key="false" length="-1" name="process_id" nullable="true" pattern="" precision="-1" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="source_id" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="src_host" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="src_database" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="src_port" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="src_username" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="src_password" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="src_additional_param" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="email" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="process_nm" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="680" posY="160">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_1" show="false"/>
+      <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="Connection conn = null;&#xD;&#xA;&#xD;&#xA;//Set the database IP and name&#xD;&#xA;String src_host = input_row.src_host;&#xD;&#xA;String src_database = input_row.src_database;&#xD;&#xA;String src_port = input_row.src_port;&#xD;&#xA;String src_username = input_row.src_username;&#xD;&#xA;String src_password = input_row.src_password;&#xD;&#xA;String src_additional_param = input_row.src_additional_param;&#xD;&#xA;&#xD;&#xA;Boolean db_connection_status = false;&#xD;&#xA;&#xD;&#xA;//Timeout values (in milliseconds)&#xD;&#xA;int connectTimeout = 10000; // n seconds connection timeout&#xD;&#xA;int socketTimeout = 10000; // n seconds socket timeout&#xD;&#xA;&#xD;&#xA;//Build JDBC URL with timeout parameters&#xD;&#xA;String url = &quot;jdbc:mysql://&quot; + src_host + &quot;:&quot; + src_port + &quot;/&quot; + src_database&#xD;&#xA;         + &quot;?serverTimezone=UTC&amp;useSSL=false&quot;&#xD;&#xA;         + &quot;&amp;connectTimeout=&quot; + connectTimeout&#xD;&#xA;         + &quot;&amp;socketTimeout=&quot; + socketTimeout;&#xD;&#xA;&#xD;&#xA;String user = src_username;&#xD;&#xA;String password = src_password;&#xD;&#xA;&#xD;&#xA;try {&#xD;&#xA; // Load MySQL JDBC driver&#xD;&#xA; Class.forName(&quot;com.mysql.cj.jdbc.Driver&quot;);&#xD;&#xA;&#xD;&#xA; // Set the connection properties&#xD;&#xA; Properties connectionProps = new Properties();&#xD;&#xA; connectionProps.put(&quot;user&quot;, user);&#xD;&#xA; connectionProps.put(&quot;password&quot;, password);&#xD;&#xA;&#xD;&#xA; // Connect to MySQL with the specified timeout settings&#xD;&#xA; conn = DriverManager.getConnection(url, connectionProps);&#xD;&#xA; &#xD;&#xA; // If connection is successful&#xD;&#xA; db_connection_status = true;&#xD;&#xA;&#xD;&#xA;} catch (Exception e) {&#xD;&#xA; // Catch any exception (e.g., wrong credentials, unreachable host, timeout)&#xD;&#xA; //System.err.println(&quot;MySQL connection failed: &quot; + e.getMessage());&#xD;&#xA; db_connection_status = false;&#xD;&#xA;} finally {&#xD;&#xA; // Clean up connection&#xD;&#xA; if (conn != null) {&#xD;&#xA;     try {&#xD;&#xA;         conn.close();&#xD;&#xA;     } catch (Exception e) {&#xD;&#xA;         //System.err.println(&quot;Error closing connection: &quot; + e.getMessage());&#xD;&#xA;     }&#xD;&#xA; }&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;//Output connection status&#xD;&#xA;&#xD;&#xA;output_row.process_id = input_row.process_id;&#xD;&#xA;output_row.src_host = src_host;&#xD;&#xA;output_row.db_connection_status = db_connection_status;&#xD;&#xA;output_row.email=input_row.email;&#xD;&#xA;output_row.process_nm = input_row.process_nm;&#xD;&#xA;"/>
+      <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;&#xA;&#xA;import java.util.Properties;&#xA;import java.sql.Connection;&#xA;import java.sql.DriverManager;"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tJavaRow_1">
+        <column comment="" key="false" length="-1" name="process_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="src_host" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="db_connection_status" nullable="true" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="email" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="process_nm" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="INPUT_1" offsetLabelX="0" offsetLabelY="0" source="INPUT_1" target="tFlowToIterate_1">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+    </connection>
+    <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFlowToIterate_1" offsetLabelX="0" offsetLabelY="0" source="tFlowToIterate_1" target="tDBInput_1">
+      <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+      <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2" show="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate1" show="false"/>
+    </connection>
+    <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tJavaRow_1">
+      <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+        <elementValue elementRef="TRACE_COLUMN" value="src_port" id="0"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+        <elementValue elementRef="TRACE_COLUMN" value="process_id" id="3"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="4"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="5"/>
+        <elementValue elementRef="TRACE_COLUMN" value="src_additional_param" id="6"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="7"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="8"/>
+        <elementValue elementRef="TRACE_COLUMN" value="src_host" id="9"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="10"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="11"/>
+        <elementValue elementRef="TRACE_COLUMN" value="src_username" id="12"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="13"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="14"/>
+        <elementValue elementRef="TRACE_COLUMN" value="src_password" id="15"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="16"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="17"/>
+        <elementValue elementRef="TRACE_COLUMN" value="src_database" id="18"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="19"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="20"/>
+        <elementValue elementRef="TRACE_COLUMN" value="email" id="21"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="22"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="23"/>
+        <elementValue elementRef="TRACE_COLUMN" value="process_nm" id="24"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="25"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="26"/>
+      </elementParameter>
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+    </connection>
+    <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tJavaRow_1" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_1" target="OUTPUT_1">
+      <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+        <elementValue elementRef="TRACE_COLUMN" value="process_nm" id="0"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+      </elementParameter>
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+    </connection>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="INPUT_1" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+    </subjob>
+    <jobletNodes componentName="INPUT" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="-40" posY="160" input="true">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="INPUT_1"/>
+      <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+      <elementParameter field="CHECK" name="START" value="true" show="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+      <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+      <elementParameter field="MEMO" name="COMMENT" value=""/>
+      <metadata connector="FLOW" name="INPUT_1">
+        <column comment="" key="false" length="-1" name="process_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      </metadata>
+    </jobletNodes>
+    <jobletNodes componentName="OUTPUT" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="920" posY="160">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="OUTPUT_1"/>
+      <elementParameter field="CHECK" name="STARTABLE" value="false" show="false"/>
+      <elementParameter field="CHECK" name="START" value="false" show="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+      <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+      <elementParameter field="MEMO" name="COMMENT" value=""/>
+      <metadata connector="FLOW" name="OUTPUT_1">
+        <column comment="" key="false" length="-1" name="process_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="src_host" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="db_connection_status" nullable="true" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="email" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="process_nm" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      </metadata>
+    </jobletNodes>
+  </model:JobletProcess>
+  <TalendProperties:ByteArray/>
+</xmi:XMI>

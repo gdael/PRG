@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:dataquality.indicators.sql="http://dataquality.indicators.sql" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <dataquality.analysis:Analysis xmi:id="_rd0bcLoPEfCM0dSg-Wm-kg" name="Business_Rule_Analysis" creationDate="2025-11-05T14:21:35.263+0800" defaultContext="Default">
+    <clientDependency href="../../TDQ_Libraries/Rules/SQL/Invalid_Location_0.1.rules#_wGn9ILoQEfCM0dSg-Wm-kg"/>
+    <clientDependency href="../../metadata/connections/DQS_0.1.item#_xDWEEboQEfCM0dSg-Wm-kg"/>
+    <taggedValue xmi:id="_rd0bcboPEfCM0dSg-Wm-kg" tag="Status" value="Draft"/>
+    <taggedValue xmi:id="_rd0bcroPEfCM0dSg-Wm-kg" tag="Author" value="glenn.dael@mtc.com.ph_nfr"/>
+    <taggedValue xmi:id="_rd0bc7oPEfCM0dSg-Wm-kg" tag="Purpose"/>
+    <taggedValue xmi:id="_rd0bdLoPEfCM0dSg-Wm-kg" tag="Description"/>
+    <taggedValue xmi:id="_rd0bdboPEfCM0dSg-Wm-kg" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_tkB6AboPEfCM0dSg-Wm-kg" tag="ANA_LAST_RUN_CONTEXT" value="Default"/>
+    <taggedValue xmi:id="_tkB6AroPEfCM0dSg-Wm-kg" tag="NUMBER_OF_CONNECTIONS_PER_ANALYSIS" value="5"/>
+    <context xmi:id="_rd0bdroPEfCM0dSg-Wm-kg">
+      <connection href="../../metadata/connections/DQS_0.1.item#_M0jXoMNwEe-d642uF6kQsA"/>
+      <analysedElements xsi:type="relational:TdTable" href="../../metadata/connections/DQS_0.1.item#_qb4AQMzQEe-IhcPnw2JWGA"/>
+    </context>
+    <results xmi:id="_rd0bd7oPEfCM0dSg-Wm-kg">
+      <resultMetadata xmi:id="_rd0beLoPEfCM0dSg-Wm-kg"/>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_xDU18LoQEfCM0dSg-Wm-kg">
+        <analyzedElement xsi:type="relational:TdTable" href="../../metadata/connections/DQS_0.1.item#_qb4AQMzQEe-IhcPnw2JWGA"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators.sql:WhereRuleIndicator" xmi:id="_xDWEELoQEfCM0dSg-Wm-kg">
+        <analyzedElement xsi:type="relational:TdTable" href="../../metadata/connections/DQS_0.1.item#_qb4AQMzQEe-IhcPnw2JWGA"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Rules/SQL/Invalid_Location_0.1.rules#_X5ecoLoQEfCM0dSg-Wm-kg"/>
+      </indicators>
+    </results>
+    <parameters xmi:id="_rd0beboPEfCM0dSg-Wm-kg" dataFilter="_tkChELoPEfCM0dSg-Wm-kg" analysisType="Table Analysis"/>
+    <contextType xmi:id="_tkB6ALoPEfCM0dSg-Wm-kg" confirmationNeeded="false" hide="false" name="Default"/>
+  </dataquality.analysis:Analysis>
+  <dataquality.domain:Domain xmi:id="_tkChELoPEfCM0dSg-Wm-kg" name="Business_Rule_Analysis">
+    <ranges xmi:id="_tkDIILoPEfCM0dSg-Wm-kg">
+      <expressions xmi:id="_tkDIIboPEfCM0dSg-Wm-kg">
+        <expression xsi:type="relational:TdExpression" xmi:id="_tkDIIroPEfCM0dSg-Wm-kg" body="" language="SQL"/>
+      </expressions>
+    </ranges>
+  </dataquality.domain:Domain>
+</xmi:XMI>

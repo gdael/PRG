@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin"/>
+<recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin">
+  <deletedFolders>process/DB_TO_DB_VALIDATION/BARTER_CENTRA</deletedFolders>
+  <deletedItems id="_OlHJcGEoEfCPlKMqIKwdZA" path="DB_TO_DB_VALIDATION/BARTER_CENTRA" type="PROCESS"/>
+  <deletedItems id="_rdxYILoPEfCM0dSg-Wm-kg" path="" type="TDQ_ANALYSIS_ELEMENT"/>
+</recyclebin:RecycleBin>

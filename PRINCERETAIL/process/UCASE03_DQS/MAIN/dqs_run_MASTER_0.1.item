@@ -6,7 +6,7 @@
     <contextParameter comment="" name="DQS_Login" prompt="DQS_Login?" promptNeeded="false" repositoryContextId="_J8hz4NbzEe-4XYPM5vW39g" type="id_String" value="" internalId="_FqH84qWvEfCli6DVl9P-3A"/>
     <contextParameter comment="" name="DQS_Password" prompt="DQS_Password?" promptNeeded="false" repositoryContextId="_J8hz4NbzEe-4XYPM5vW39g" type="id_Password" value="" internalId="_FqH846WvEfCli6DVl9P-3A"/>
     <contextParameter comment="" name="DQS_Port" prompt="DQS_Port?" promptNeeded="false" repositoryContextId="_J8hz4NbzEe-4XYPM5vW39g" type="id_String" value="1433" internalId="_FqH85KWvEfCli6DVl9P-3A"/>
-    <contextParameter comment="" name="DQS_Schema" prompt="DQS_Schema?" promptNeeded="false" repositoryContextId="_J8hz4NbzEe-4XYPM5vW39g" type="id_String" value="DWAUDIT" internalId="_FqH85aWvEfCli6DVl9P-3A"/>
+    <contextParameter comment="" name="DQS_Schema" prompt="DQS_Schema?" promptNeeded="false" repositoryContextId="_J8hz4NbzEe-4XYPM5vW39g" type="id_String" value="DWINGEST" internalId="_FqH85aWvEfCli6DVl9P-3A"/>
     <contextParameter comment="" name="DQS_Server" prompt="DQS_Server?" promptNeeded="false" repositoryContextId="_J8hz4NbzEe-4XYPM5vW39g" type="id_String" value="10.0.2.207" internalId="_FqH85qWvEfCli6DVl9P-3A"/>
     <contextParameter comment="" name="process_id" prompt="process_id?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value="" internalId="_b2sq8KXqEfCSn73KIDXJ8A"/>
     <contextParameter comment="" name="parent_run_id" prompt="parent_run_id?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value="" internalId="_r26EsKbmEfCOo-vY4AR94w"/>
@@ -336,7 +336,7 @@
       <column comment="" key="false" length="-1" name="jvm_max" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var">
         <mapperTableEntries name="jvm_min" expression="row2.jvm_min !=null || !row2.jvm_min.isEmpty()?row2.jvm_min:context.jvm_min " type="id_String"/>
         <mapperTableEntries name="jvm_max" expression="row2.jvm_max !=null || !row2.jvm_min.isEmpty()?row2.jvm_max:context.jvm_max " type="id_String"/>
@@ -915,7 +915,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk13" show="false"/>
   </connection>
   <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
@@ -931,7 +931,7 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>
   <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>

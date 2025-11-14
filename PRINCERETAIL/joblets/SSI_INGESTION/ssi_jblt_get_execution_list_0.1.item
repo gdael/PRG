@@ -191,7 +191,7 @@
         <column comment="" key="false" length="-1" name="FILE_DATE" nullable="true" pattern="&quot;yyyyMMdd&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
       </metadata>
       <nodeData xsi:type="TalendMapper:MapperData">
-        <uiProperties shellMaximized="true"/>
+        <uiProperties/>
         <varTables sizeState="INTERMEDIATE" name="Var">
           <mapperTableEntries name="filter" expression="(&quot;SINGLE_DATE_EXTRACTION&quot;.equalsIgnoreCase(context.job_run_type))&#xD;&#xA;    ? row1.FILE_DATE.equals((Date) globalMap.get(&quot;filedate_to_process&quot;))&#xD;&#xA;    : row1.FILE_DATE.compareTo((Date) globalMap.get(&quot;filedate_to_process&quot;)) >= 0 " type="id_Boolean"/>
         </varTables>

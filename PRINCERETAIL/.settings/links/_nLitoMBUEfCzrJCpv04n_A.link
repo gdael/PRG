@@ -1,0 +1,52 @@
+{
+  "itemId" : "_nLitoMBUEfCzrJCpv04n_A",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_IAMdMMBaEfCzrJCpv04n_A",
+    "parameterList" : [ {
+      "id" : "_IAf_McBaEfCzrJCpv04n_A",
+      "name" : "file_path"
+    }, {
+      "id" : "_IAf_NMBaEfCzrJCpv04n_A",
+      "name" : "field_seperator"
+    }, {
+      "id" : "_IAf_MsBaEfCzrJCpv04n_A",
+      "name" : "file_name"
+    }, {
+      "id" : "_IAf_M8BaEfCzrJCpv04n_A",
+      "name" : "row_seperator"
+    } ]
+  }, {
+    "contextName" : "Production",
+    "repoId" : "_IAMdMMBaEfCzrJCpv04n_A",
+    "parameterList" : [ {
+      "id" : "_IAf_OcBaEfCzrJCpv04n_A",
+      "name" : "field_seperator"
+    }, {
+      "id" : "_IAf_N8BaEfCzrJCpv04n_A",
+      "name" : "file_name"
+    }, {
+      "id" : "_IAf_NsBaEfCzrJCpv04n_A",
+      "name" : "file_path"
+    }, {
+      "id" : "_IAf_OMBaEfCzrJCpv04n_A",
+      "name" : "row_seperator"
+    } ]
+  }, {
+    "contextName" : "Development",
+    "repoId" : "_IAMdMMBaEfCzrJCpv04n_A",
+    "parameterList" : [ {
+      "id" : "_IAf_NMBaEfCzrJCpv04n_A",
+      "name" : "field_seperator"
+    }, {
+      "id" : "_IAf_MsBaEfCzrJCpv04n_A",
+      "name" : "file_name"
+    }, {
+      "id" : "_IAf_McBaEfCzrJCpv04n_A",
+      "name" : "file_path"
+    }, {
+      "id" : "_IAf_M8BaEfCzrJCpv04n_A",
+      "name" : "row_seperator"
+    } ]
+  } ]
+}

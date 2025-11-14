@@ -7,7 +7,7 @@
       <contextParameter comment="" name="DQS_Login" prompt="DQS_Login?" promptNeeded="false" repositoryContextId="_J8hz4NbzEe-4XYPM5vW39g" type="id_String" value="" internalId="_Mm12gqajEfCeO_9uJx7Q4g"/>
       <contextParameter comment="" name="DQS_Password" prompt="DQS_Password?" promptNeeded="false" repositoryContextId="_J8hz4NbzEe-4XYPM5vW39g" type="id_Password" value="" internalId="_Mm12g6ajEfCeO_9uJx7Q4g"/>
       <contextParameter comment="" name="DQS_Port" prompt="DQS_Port?" promptNeeded="false" repositoryContextId="_J8hz4NbzEe-4XYPM5vW39g" type="id_String" value="1433" internalId="_Mm12hKajEfCeO_9uJx7Q4g"/>
-      <contextParameter comment="" name="DQS_Schema" prompt="DQS_Schema?" promptNeeded="false" repositoryContextId="_J8hz4NbzEe-4XYPM5vW39g" type="id_String" value="DWAUDIT" internalId="_Mm12haajEfCeO_9uJx7Q4g"/>
+      <contextParameter comment="" name="DQS_Schema" prompt="DQS_Schema?" promptNeeded="false" repositoryContextId="_J8hz4NbzEe-4XYPM5vW39g" type="id_String" value="DWINGEST" internalId="_Mm12haajEfCeO_9uJx7Q4g"/>
       <contextParameter comment="" name="DQS_Server" prompt="DQS_Server?" promptNeeded="false" repositoryContextId="_J8hz4NbzEe-4XYPM5vW39g" type="id_String" value="10.0.2.207" internalId="_Mm12hqajEfCeO_9uJx7Q4g"/>
     </context>
     <context confirmationNeeded="false" hide="false" name="DQS_PROCESS">
@@ -232,7 +232,7 @@
         <column comment="" key="false" length="-1" name="run_status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       </metadata>
       <nodeData xsi:type="TalendMapper:MapperData">
-        <uiProperties shellMaximized="true"/>
+        <uiProperties/>
         <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
         <outputTables sizeState="INTERMEDIATE" name="update_batch">
           <mapperTableEntries name="run_id" expression="context.run_id" type="id_Long" nullable="true"/>

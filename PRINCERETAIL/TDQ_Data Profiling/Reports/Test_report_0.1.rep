@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.reports:TdReport xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.reports="http://dataquality.reports" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010" xmi:id="_zYEFIMBlEfCzrJCpv04n_A" name="Test_report" creationDate="2025-11-13T15:53:12.044+0800" defaultContext="Default">
+  <clientDependency href="../Analyses/Customer_Gender_Analysis_0.1.ana#_G3bn4sBmEfCzrJCpv04n_A"/>
+  <taggedValue xmi:id="_zYEFIcBlEfCzrJCpv04n_A" tag="Status" value="development"/>
+  <taggedValue xmi:id="_zYEFIsBlEfCzrJCpv04n_A" tag="Author" value="glenn.dael@mtc.com.ph_nfr"/>
+  <taggedValue xmi:id="_zYEFI8BlEfCzrJCpv04n_A" tag="Purpose"/>
+  <taggedValue xmi:id="_zYEFJMBlEfCzrJCpv04n_A" tag="Description"/>
+  <taggedValue xmi:id="_zYEFJcBlEfCzrJCpv04n_A" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_zYEFJsBlEfCzrJCpv04n_A" tag="OutputFolder" value=""/>
+  <taggedValue xmi:id="_zYEFJ8BlEfCzrJCpv04n_A" tag="REP_DBINFO_DBTYPE" value="HSQL"/>
+  <taggedValue xmi:id="_zYEFKMBlEfCzrJCpv04n_A" tag="REP_DBINFO_DBVERSION" value=""/>
+  <taggedValue xmi:id="_zYEFKcBlEfCzrJCpv04n_A" tag="REP_DBINFO_HOST" value=""/>
+  <taggedValue xmi:id="_zYEFKsBlEfCzrJCpv04n_A" tag="REP_DBINFO_PORT" value=""/>
+  <taggedValue xmi:id="_zYEFK8BlEfCzrJCpv04n_A" tag="REP_DBINFO_WAREHOUSE" value=""/>
+  <taggedValue xmi:id="_zYEFLMBlEfCzrJCpv04n_A" tag="REP_DBINFO_DBNAME" value="talend_dq"/>
+  <taggedValue xmi:id="_zYEFLcBlEfCzrJCpv04n_A" tag="REP_DBINFO_SCHEMA" value=""/>
+  <taggedValue xmi:id="_zYEFLsBlEfCzrJCpv04n_A" tag="REP_DBINFO_USER" value="sa"/>
+  <taggedValue xmi:id="_zYEFL8BlEfCzrJCpv04n_A" tag="REP_DBINFO_PASSWORD" value="enc:system.encryption.key.v1:HQcYVLKADBYiTLjdHPe41y8qZsJcde4rfKDKow=="/>
+  <taggedValue xmi:id="_zYEFMMBlEfCzrJCpv04n_A" tag="REP_DBINFO_PARAMETER" value=""/>
+  <taggedValue xmi:id="_zYEFMcBlEfCzrJCpv04n_A" tag="REP_DBINFO_URL" value="jdbc:hsqldb:file:/D:\01 Data Integration\Talend\Studio\Talend-Studio-20250226_1030-V8.0.1\workspace\TDQ_reporting_db\talend_dq"/>
+  <taggedValue xmi:id="_zYEFMsBlEfCzrJCpv04n_A" tag="REP_DBINFO_DRIVER" value="org.hsqldb.jdbcDriver"/>
+  <taggedValue xmi:id="_zYEFM8BlEfCzrJCpv04n_A" tag="REP_DBINFO_DIALECT" value="org.hibernate.dialect.HSQLDialect"/>
+  <taggedValue xmi:id="_zYEFNMBlEfCzrJCpv04n_A" tag="REP_PASSWORD_CONTEXT" value="false"/>
+  <taggedValue xmi:id="_zYyd4MBlEfCzrJCpv04n_A" tag="REP_GENERATE_FILE" value="true"/>
+  <taggedValue xmi:id="_zYyd4cBlEfCzrJCpv04n_A" tag="OutputType" value="xls"/>
+  <taggedValue xmi:id="_E2Y9MMBmEfCzrJCpv04n_A" tag="OutputFileName" value=""/>
+  <taggedValue xmi:id="_E2Y9McBmEfCzrJCpv04n_A" tag="Single output" value="false"/>
+  <taggedValue xmi:id="_G3bn4cBmEfCzrJCpv04n_A" tag="REP_LAST_RUN_CONTEXT" value="Default"/>
+  <presentationParams xmi:id="_E2aLUMBmEfCzrJCpv04n_A" type="TOP_LEFT_PRESENTATIONKEY">
+    <formula xmi:id="_E2aLUcBmEfCzrJCpv04n_A">
+      <expression xsi:type="relational:TdExpression" xmi:id="_E2aLUsBmEfCzrJCpv04n_A" body="Report Author"/>
+    </formula>
+  </presentationParams>
+  <analysisMap xmi:id="_1dzpoMBlEfCzrJCpv04n_A" mustRefresh="true" reportType="Basic">
+    <analysis href="../Analyses/Customer_Gender_Analysis_0.1.ana#_HD82YMBlEfCzrJCpv04n_A"/>
+  </analysisMap>
+  <context xmi:id="_G3bn4MBmEfCzrJCpv04n_A" confirmationNeeded="false" hide="false" name="Default"/>
+</dataquality.reports:TdReport>

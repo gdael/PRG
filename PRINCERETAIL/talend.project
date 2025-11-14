@@ -7,7 +7,7 @@
     <componentsSettings xmi:id="_MwWJ0wOqEfC_Q_LZcmPi9g" name="DI|tAmazonMysqlRow" family="Cloud/Amazon/MySQL (Deprecated)"/>
     <componentsSettings xmi:id="_MwWJ1AOqEfC_Q_LZcmPi9g" name="DI|tHashInput" family="Technical"/>
     <componentsSettings xmi:id="_MwWJ1QOqEfC_Q_LZcmPi9g" name="DI|tSAPHanaUnload" family="Databases/DB Specifics/SAP Hana"/>
-    <componentsSettings xmi:id="_MwWJ1gOqEfC_Q_LZcmPi9g" name="DI|tArrayIn" family="Technical"/>
+    <componentsSettings xmi:id="_MwWJ1gOqEfC_Q_LZcmPi9g" name="DI|tArrayIn" hidden="true" family="Technical"/>
     <componentsSettings xmi:id="_MwWJ1wOqEfC_Q_LZcmPi9g" name="DI|tHashOutput" family="Technical"/>
     <componentsSettings xmi:id="_MwWJ2AOqEfC_Q_LZcmPi9g" name="DI|tAmazonMysqlOutput" family="Databases/DB Specifics/Amazon/MySQL (Deprecated)"/>
     <componentsSettings xmi:id="_MwWJ2QOqEfC_Q_LZcmPi9g" name="DI|tAmazonMysqlRollback" family="Cloud/Amazon/MySQL (Deprecated)"/>
@@ -22,7 +22,7 @@
     <componentsSettings xmi:id="_MwWw5gOqEfC_Q_LZcmPi9g" name="DI|tAmazonMysqlConnection" family="Databases/DB Specifics/Amazon/MySQL (Deprecated)"/>
     <componentsSettings xmi:id="_MwWw5wOqEfC_Q_LZcmPi9g" name="DI|tAmazonMysqlClose" family="Databases/DB Specifics/Amazon/MySQL (Deprecated)"/>
     <componentsSettings xmi:id="_MwWw6AOqEfC_Q_LZcmPi9g" name="DI|tAmazonMysqlOutput" family="Cloud/Amazon/MySQL (Deprecated)"/>
-    <componentsSettings xmi:id="_MwWw6QOqEfC_Q_LZcmPi9g" name="DI|tArray" family="Technical"/>
+    <componentsSettings xmi:id="_MwWw6QOqEfC_Q_LZcmPi9g" name="DI|tArray" hidden="true" family="Technical"/>
     <componentsSettings xmi:id="_NClJUAOqEfC_Q_LZcmPi9g" name="SPARK|tAvroMap" family="Processing"/>
     <componentsSettings xmi:id="_NS0kwAOqEfC_Q_LZcmPi9g" name="SPARKSTREAMING|tAvroMap" family="Processing"/>
     <componentsSettings xmi:id="_NigmkAOqEfC_Q_LZcmPi9g" name="CAMEL|cAWSMQBroker" family="AWS"/>

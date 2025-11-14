@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.rules="http://dataquality.rules" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.rules:WhereRule xmi:id="_X5ecoLoQEfCM0dSg-Wm-kg" name="Invalid Location" supplierDependency="_wGn9ILoQEfCM0dSg-Wm-kg" criticalityLevel="1" whereExpression="STATUS In ('Closed','Inactive')">
+    <taggedValue xmi:id="_X5ecoboQEfCM0dSg-Wm-kg" tag="Status" value="development"/>
+    <taggedValue xmi:id="_X5ecoroQEfCM0dSg-Wm-kg" tag="Author" value="glenn.dael@mtc.com.ph_nfr"/>
+    <taggedValue xmi:id="_X5eco7oQEfCM0dSg-Wm-kg" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_X5ecpLoQEfCM0dSg-Wm-kg" tag="Description" value=""/>
+    <taggedValue xmi:id="_X5ecpboQEfCM0dSg-Wm-kg" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_X5ecproQEfCM0dSg-Wm-kg" tag="Validation_Status" value="true"/>
+    <categories href="../../.Talend.definition#_8i9eQBI5Ed6TWL6NwMMHzQ"/>
+    <sqlGenericExpression xmi:id="_X5ecp7oQEfCM0dSg-Wm-kg" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__JOIN_CLAUSE__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+  </dataquality.rules:WhereRule>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_wGn9ILoQEfCM0dSg-Wm-kg" kind="Usage" supplier="_X5ecoLoQEfCM0dSg-Wm-kg">
+    <client xsi:type="dataquality.analysis:Analysis" href="../../../TDQ_Data Profiling/Analyses/Business_Rule_Analysis_0.1.ana#_rd0bcLoPEfCM0dSg-Wm-kg"/>
+  </orgomg.cwm.objectmodel.core:Dependency>
+</xmi:XMI>

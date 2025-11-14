@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_bbrUwGE_EfCPlKMqIKwdZA" name="Default">
+    <contextParameter xmi:id="_bcd-8GE_EfCPlKMqIKwdZA" comment="" name="IP" prompt="IP?" promptNeeded="false" type="id_String" value="10.0.2.6"/>
+    <contextParameter xmi:id="_bcd-8WE_EfCPlKMqIKwdZA" comment="" name="STORE_CODE" prompt="STORE_CODE?" promptNeeded="false" type="id_String" value="00000"/>
+    <contextParameter xmi:id="_bcd-8mE_EfCPlKMqIKwdZA" comment="" name="DB_User" prompt="DB_User?" promptNeeded="false" type="id_String" value="prince"/>
+    <contextParameter xmi:id="_bcd-82E_EfCPlKMqIKwdZA" comment="" name="DB_Password" prompt="DB_Password?" promptNeeded="false" type="id_Password" value="pr1nc3"/>
+    <contextParameter xmi:id="_bcd-9GE_EfCPlKMqIKwdZA" comment="" name="DQS_Database" prompt="DQS_Database?" promptNeeded="false" type="id_String" value="DQS"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_bbrUwWE_EfCPlKMqIKwdZA" name="DQS_QA">
+    <contextParameter xmi:id="_bcd-9WE_EfCPlKMqIKwdZA" comment="" name="IP" prompt="IP?" promptNeeded="false" type="id_String" value="10.0.2.6"/>
+    <contextParameter xmi:id="_bcd-9mE_EfCPlKMqIKwdZA" comment="" name="STORE_CODE" prompt="STORE_CODE?" promptNeeded="false" type="id_String" value="00000"/>
+    <contextParameter xmi:id="_bcd-92E_EfCPlKMqIKwdZA" comment="" name="DB_User" prompt="DB_User?" promptNeeded="false" type="id_String" value="prince"/>
+    <contextParameter xmi:id="_bcd--GE_EfCPlKMqIKwdZA" comment="" name="DB_Password" prompt="DB_Password?" promptNeeded="false" type="id_Password" value="pr1nc3"/>
+    <contextParameter xmi:id="_bcd--WE_EfCPlKMqIKwdZA" comment="" name="DQS_Database" prompt="DQS_Database?" promptNeeded="false" type="id_String" value="DQS_QA"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_bbrUwmE_EfCPlKMqIKwdZA" name="Production">
+    <contextParameter xmi:id="_bcd--mE_EfCPlKMqIKwdZA" comment="" name="IP" prompt="IP?" promptNeeded="false" type="id_String" value="10.0.2.6"/>
+    <contextParameter xmi:id="_bcd--2E_EfCPlKMqIKwdZA" comment="" name="STORE_CODE" prompt="STORE_CODE?" promptNeeded="false" type="id_String" value="00000"/>
+    <contextParameter xmi:id="_bcd-_GE_EfCPlKMqIKwdZA" comment="" name="DB_User" prompt="DB_User?" promptNeeded="false" type="id_String" value="prince"/>
+    <contextParameter xmi:id="_bcd-_WE_EfCPlKMqIKwdZA" comment="" name="DB_Password" prompt="DB_Password?" promptNeeded="false" type="id_Password" value="pr1nc3"/>
+    <contextParameter xmi:id="_bcd-_mE_EfCPlKMqIKwdZA" comment="" name="DQS_Database" prompt="DQS_Database?" promptNeeded="false" type="id_String" value="DQS_QA"/>
+  </talendfile:ContextType>
+</xmi:XMI>
