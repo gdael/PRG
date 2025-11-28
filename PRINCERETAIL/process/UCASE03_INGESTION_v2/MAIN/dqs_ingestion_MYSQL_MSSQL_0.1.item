@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
   <context confirmationNeeded="false" hide="false" name="Default">
-    <contextParameter comment="" name="process_id" prompt="process_id?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="100" internalId="_1hBwgLymEfCqV4xO0CHamA"/>
+    <contextParameter comment="" name="process_id" prompt="process_id?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="13011" internalId="_1hBwgLymEfCqV4xO0CHamA"/>
     <contextParameter comment="" name="DQS_AdditionalParams" prompt="DQS_AdditionalParams?" promptNeeded="false" repositoryContextId="_J8hz4NbzEe-4XYPM5vW39g" type="id_String" value="integratedsecurity=true" internalId="_1hBwgbymEfCqV4xO0CHamA"/>
     <contextParameter comment="" name="DQS_Database" prompt="DQS_Database?" promptNeeded="false" repositoryContextId="_J8hz4NbzEe-4XYPM5vW39g" type="id_String" value="DQS_QA" internalId="_1hBwgrymEfCqV4xO0CHamA"/>
     <contextParameter comment="" name="DQS_Login" prompt="DQS_Login?" promptNeeded="false" repositoryContextId="_J8hz4NbzEe-4XYPM5vW39g" type="id_String" value="" internalId="_1hBwg7ymEfCqV4xO0CHamA"/>
@@ -11,6 +11,7 @@
     <contextParameter comment="" name="DQS_Server" prompt="DQS_Server?" promptNeeded="false" repositoryContextId="_J8hz4NbzEe-4XYPM5vW39g" type="id_String" value="10.0.2.207" internalId="_1hBwh7ymEfCqV4xO0CHamA"/>
     <contextParameter comment="" name="jvm_min" prompt="jvm_min?" promptNeeded="false" repositoryContextId="_9CEKILzUEfCS5-jckjolPw" type="id_String" value="" internalId="_j9RagLzVEfCS5-jckjolPw"/>
     <contextParameter comment="" name="jvm_max" prompt="jvm_max?" promptNeeded="false" repositoryContextId="_9CEKILzUEfCS5-jckjolPw" type="id_String" value="" internalId="_j9RagbzVEfCS5-jckjolPw"/>
+    <contextParameter comment="" name="process_run_group" prompt="process_run_group?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="BARTER_BRANCH" internalId="_rJxPgMZvEfC1xN3xGJ4v9w"/>
   </context>
   <context confirmationNeeded="false" hide="false" name="DQS_PROCESS">
     <contextParameter comment="" name="process_id" prompt="process_id?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="" internalId="_1hBwiLymEfCqV4xO0CHamA"/>
@@ -23,6 +24,7 @@
     <contextParameter comment="" name="DQS_Server" prompt="DQS_Server?" promptNeeded="false" repositoryContextId="_J8hz4NbzEe-4XYPM5vW39g" type="id_String" value="10.0.2.207" internalId="_1hBwj7ymEfCqV4xO0CHamA"/>
     <contextParameter comment="" name="jvm_min" prompt="jvm_min?" promptNeeded="false" repositoryContextId="_9CEKILzUEfCS5-jckjolPw" type="id_String" value="" internalId="_j9RagLzVEfCS5-jckjolPw"/>
     <contextParameter comment="" name="jvm_max" prompt="jvm_max?" promptNeeded="false" repositoryContextId="_9CEKILzUEfCS5-jckjolPw" type="id_String" value="" internalId="_j9RagbzVEfCS5-jckjolPw"/>
+    <contextParameter comment="" name="process_run_group" prompt="process_run_group?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_rJxPgcZvEfC1xN3xGJ4v9w"/>
   </context>
   <parameters>
     <elementParameter field="CHECK" name="LOG4J_RUN_ACTIVATE" value="true" show="false"/>
@@ -137,7 +139,7 @@
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="40">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
-    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="String hostname = InetAddress.getLocalHost().getHostName();&#xD;&#xA;&#xD;&#xA;log.info(&quot;****************STARTING JOB &quot; +  jobName +&quot;******************&quot;);&#xD;&#xA;&#xD;&#xA;globalMap.put(&quot;hostname&quot;,hostname);&#xA;&#xD;&#xA;&#xA;&#xA;"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="String hostname = InetAddress.getLocalHost().getHostName();&#xD;&#xA;&#xD;&#xA;log.info(&quot;****************STARTING JOB &quot; +  jobName + &quot; | &quot; +context.process_id +&quot;******************&quot;);&#xD;&#xA;&#xD;&#xA;globalMap.put(&quot;hostname&quot;,hostname);&#xA;&#xD;&#xA;&#xA;&#xA;"/>
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;&#xA;import java.net.InetAddress;&#xA;import java.net.UnknownHostException;"/>
     <elementParameter field="TEXT" name="LABEL" value="&lt;b>Initialize_job&lt;/b>"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -158,6 +160,8 @@
     <elementParameter field="TABLE" name="CONTEXTPARAMS">
       <elementValue elementRef="PARAM_NAME_COLUMN" value="process_id" id="0"/>
       <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.process_id" id="1"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="process_run_group" id="2"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.process_run_group" id="3"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
     <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
@@ -203,6 +207,8 @@
       <elementValue elementRef="PARAM_VALUE_COLUMN" value="(Long)globalMap.get(&quot;main_batch_id&quot;)" id="1"/>
       <elementValue elementRef="PARAM_NAME_COLUMN" value="isBatchNew" id="2"/>
       <elementValue elementRef="PARAM_VALUE_COLUMN" value="(Boolean)globalMap.get(&quot;isBatchNew&quot;)" id="3"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="process_run_group" id="4"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.process_run_group" id="5"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
     <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>

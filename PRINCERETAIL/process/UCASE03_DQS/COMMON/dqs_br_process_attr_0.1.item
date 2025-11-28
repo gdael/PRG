@@ -141,7 +141,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT pbr.process_br_grp_id, br_process_id, business_rule_nm, base_query, output_query, report_query,jvm_min, jvm_max, exception_table_name &quot; +&#xA;&#x9;&quot;FROM DWDQS.process_br_attr pbr &quot; +&#xA;&#x9;&quot;LEFT JOIN DWDQS.process_br pb ON pb.process_br_grp_id =pbr.process_br_grp_id &quot; +&#xA;&#x9;&quot;WHERE pbr.active=1 AND pb.process_id=&quot; +context.process_id + &quot; &quot; +&#xA;&#x9;&quot;AND br_process_id = &quot;+((Integer)globalMap.get(&quot;row1.br_process_id&quot;))&#xA;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT pbr.* &quot; +&#xA;&#x9;&quot;FROM DWDQS.process_br_attr pbr &quot; +&#xA;&#x9;&quot;LEFT JOIN DWDQS.process_br pb ON pb.process_br_grp_id =pbr.process_br_grp_id &quot; +&#xA;&#x9;&quot;WHERE pbr.active=1 AND pb.process_id=&quot; +context.process_id + &quot; &quot; +&#xA;&#x9;&quot;AND br_process_id = &quot;+((Integer)globalMap.get(&quot;row1.br_process_id&quot;))&#xA;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -163,16 +163,26 @@
       <elementValue elementRef="TRIM" value="false" id="5"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="base_query" id="6"/>
       <elementValue elementRef="TRIM" value="false" id="7"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="output_query" id="8"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="output_column" id="8"/>
       <elementValue elementRef="TRIM" value="false" id="9"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="report_query" id="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="report_column" id="10"/>
       <elementValue elementRef="TRIM" value="false" id="11"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="jvm_min" id="12"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="active" id="12"/>
       <elementValue elementRef="TRIM" value="false" id="13"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="jvm_max" id="14"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="sequence" id="14"/>
       <elementValue elementRef="TRIM" value="false" id="15"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="exception_table_name" id="16"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="jvm_min" id="16"/>
       <elementValue elementRef="TRIM" value="false" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="jvm_max" id="18"/>
+      <elementValue elementRef="TRIM" value="false" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="exception_table_name" id="20"/>
+      <elementValue elementRef="TRIM" value="false" id="21"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="exception_table_primary_key" id="22"/>
+      <elementValue elementRef="TRIM" value="false" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="exception_table_date_clm" id="24"/>
+      <elementValue elementRef="TRIM" value="false" id="25"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="business_rule_desc" id="26"/>
+      <elementValue elementRef="TRIM" value="false" id="27"/>
     </elementParameter>
     <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
     <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" value="30" show="false"/>
@@ -182,11 +192,16 @@
       <column comment="" key="false" length="-1" name="br_process_id" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="business_rule_nm" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="base_query" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="output_query" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="report_query" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="output_column" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="report_column" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="active" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="sequence" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="jvm_min" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="jvm_max" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="exception_table_name" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="exception_table_primary_key" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="exception_table_date_clm" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="business_rule_desc" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="2320" posY="480">
@@ -208,36 +223,51 @@
       <column comment="" key="false" length="-1" name="br_process_id" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="business_rule_nm" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="base_query" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="output_query" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="report_query" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="output_column" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="report_column" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="active" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="sequence" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="jvm_min" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="jvm_max" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="exception_table_name" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="exception_table_primary_key" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="exception_table_date_clm" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="business_rule_desc" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="br_attr">
         <mapperTableEntries name="run_id" expression="(Long)globalMap.get(&quot;run_id&quot;)" type="id_Long" nullable="true"/>
         <mapperTableEntries name="br_process_id" expression="row6.br_process_id " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="business_rule_nm" expression="row6.business_rule_nm " type="id_String" nullable="true"/>
         <mapperTableEntries name="base_query" expression="row6.base_query " type="id_String" nullable="true"/>
-        <mapperTableEntries name="output_query" expression="row6.output_query " type="id_String" nullable="true"/>
-        <mapperTableEntries name="report_query" expression="row6.report_query " type="id_String" nullable="true"/>
+        <mapperTableEntries name="output_column" expression="row6.output_column " type="id_String" nullable="true"/>
+        <mapperTableEntries name="report_column" expression="row6.report_column " type="id_String" nullable="true"/>
+        <mapperTableEntries name="active" expression="row6.active " type="id_String" nullable="true"/>
+        <mapperTableEntries name="sequence" expression="row6.sequence " type="id_String" nullable="true"/>
         <mapperTableEntries name="jvm_min" expression="row6.jvm_min " type="id_String" nullable="true"/>
         <mapperTableEntries name="jvm_max" expression="row6.jvm_max " type="id_String" nullable="true"/>
         <mapperTableEntries name="exception_table_name" expression="row6.exception_table_name " type="id_String" nullable="true"/>
+        <mapperTableEntries name="exception_table_primary_key" expression="row6.exception_table_primary_key " type="id_String" nullable="true"/>
+        <mapperTableEntries name="exception_table_date_clm" expression="row6.exception_table_date_clm " type="id_String" nullable="true"/>
+        <mapperTableEntries name="business_rule_desc" expression="row6.business_rule_desc " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row6" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="process_br_grp_id" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="br_process_id" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="business_rule_nm" type="id_String" nullable="true"/>
         <mapperTableEntries name="base_query" type="id_String" nullable="true"/>
-        <mapperTableEntries name="output_query" type="id_String" nullable="true"/>
-        <mapperTableEntries name="report_query" type="id_String" nullable="true"/>
+        <mapperTableEntries name="output_column" type="id_String" nullable="true"/>
+        <mapperTableEntries name="report_column" type="id_String" nullable="true"/>
+        <mapperTableEntries name="active" type="id_String" nullable="true"/>
+        <mapperTableEntries name="sequence" type="id_String" nullable="true"/>
         <mapperTableEntries name="jvm_min" type="id_String" nullable="true"/>
         <mapperTableEntries name="jvm_max" type="id_String" nullable="true"/>
         <mapperTableEntries name="exception_table_name" type="id_String" nullable="true"/>
+        <mapperTableEntries name="exception_table_primary_key" type="id_String" nullable="true"/>
+        <mapperTableEntries name="exception_table_date_clm" type="id_String" nullable="true"/>
+        <mapperTableEntries name="business_rule_desc" type="id_String" nullable="true"/>
       </inputTables>
     </nodeData>
   </node>
@@ -460,7 +490,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&#xA;&quot;Select  pb.process_id, br_process_id FROM dwdqs.process_br_attr pba &quot; +&#xA;&#x9;&quot;LEFT JOIN dwdqs.process_br pb ON pb.process_br_grp_id = pba.process_br_grp_id &quot; +&#xA;&#x9;&quot;WHERE pb.process_id=&quot; + context.process_id"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&#xA;&quot;Select  pb.process_id, br_process_id FROM dwdqs.process_br_attr pba &quot; +&#xA;&#x9;&quot;LEFT JOIN dwdqs.process_br pb ON pb.process_br_grp_id = pba.process_br_grp_id &quot; +&#xA;&#x9;&quot;WHERE pba.active=1 AND pb.process_id=&quot; + context.process_id"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -1209,7 +1239,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT pbr.process_br_grp_id, br_process_id, business_rule_nm, base_query, output_query,report_query,jvm_min, jvm_max, exception_table_name &quot; +&#xA;&#x9;&quot;FROM DWDQS.process_br_attr pbr &quot; +&#xA;&#x9;&quot;LEFT JOIN DWDQS.process_br pb ON pb.process_br_grp_id =pbr.process_br_grp_id &quot; +&#xA;&#x9;&quot;WHERE pbr.active=1 AND pb.process_id=&quot; +context.process_id + &quot; &quot; +&#xA;&#x9;&quot;AND br_process_id = &quot;+((Integer)globalMap.get(&quot;row5.br_id&quot;))"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT pbr.* &quot; +&#xA;&#x9;&quot;FROM DWDQS.process_br_attr pbr &quot; +&#xA;&#x9;&quot;LEFT JOIN DWDQS.process_br pb ON pb.process_br_grp_id =pbr.process_br_grp_id &quot; +&#xA;&#x9;&quot;WHERE pbr.active=1 AND pb.process_id=&quot; +context.process_id + &quot; &quot; +&#xA;&#x9;&quot;AND br_process_id = &quot;+((Integer)globalMap.get(&quot;row5.br_id&quot;))"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -1231,16 +1261,26 @@
       <elementValue elementRef="TRIM" value="false" id="5"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="base_query" id="6"/>
       <elementValue elementRef="TRIM" value="false" id="7"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="output_query" id="8"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="output_column" id="8"/>
       <elementValue elementRef="TRIM" value="false" id="9"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="report_query" id="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="report_column" id="10"/>
       <elementValue elementRef="TRIM" value="false" id="11"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="jvm_min" id="12"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="active" id="12"/>
       <elementValue elementRef="TRIM" value="false" id="13"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="jvm_max" id="14"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="sequence" id="14"/>
       <elementValue elementRef="TRIM" value="false" id="15"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="exception_table_name" id="16"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="jvm_min" id="16"/>
       <elementValue elementRef="TRIM" value="false" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="jvm_max" id="18"/>
+      <elementValue elementRef="TRIM" value="false" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="exception_table_name" id="20"/>
+      <elementValue elementRef="TRIM" value="false" id="21"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="exception_table_primary_key" id="22"/>
+      <elementValue elementRef="TRIM" value="false" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="exception_table_date_clm" id="24"/>
+      <elementValue elementRef="TRIM" value="false" id="25"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="business_rule_desc" id="26"/>
+      <elementValue elementRef="TRIM" value="false" id="27"/>
     </elementParameter>
     <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
     <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" value="30" show="false"/>
@@ -1250,11 +1290,16 @@
       <column comment="" key="false" length="-1" name="br_process_id" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="business_rule_nm" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="base_query" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="output_query" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="report_query" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="output_column" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="report_column" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="active" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="sequence" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="jvm_min" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="jvm_max" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="exception_table_name" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="exception_table_primary_key" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="exception_table_date_clm" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="business_rule_desc" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1840" posY="680">
@@ -1276,36 +1321,51 @@
       <column comment="" key="false" length="-1" name="br_process_id" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="business_rule_nm" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="base_query" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="output_query" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="report_query" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="output_column" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="report_column" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="active" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="sequence" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="jvm_min" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="jvm_max" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="exception_table_name" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="exception_table_primary_key" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="exception_table_date_clm" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="business_rule_desc" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="update_br_attr">
         <mapperTableEntries name="run_id" expression="((Long)globalMap.get(&quot;row5.run_id&quot;)) " type="id_Long" nullable="true"/>
-        <mapperTableEntries name="br_process_id" expression="row7.br_process_id  " type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="business_rule_nm" expression="row7.business_rule_nm  " type="id_String" nullable="true"/>
-        <mapperTableEntries name="base_query" expression="row7.base_query  " type="id_String" nullable="true"/>
-        <mapperTableEntries name="output_query" expression="row7.output_query  " type="id_String" nullable="true"/>
-        <mapperTableEntries name="report_query" expression="row7.report_query " type="id_String" nullable="true"/>
+        <mapperTableEntries name="br_process_id" expression="row7.br_process_id " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="business_rule_nm" expression="row7.business_rule_nm " type="id_String" nullable="true"/>
+        <mapperTableEntries name="base_query" expression="row7.base_query " type="id_String" nullable="true"/>
+        <mapperTableEntries name="output_column" expression="row7.output_column " type="id_String" nullable="true"/>
+        <mapperTableEntries name="report_column" expression="row7.report_column " type="id_String" nullable="true"/>
+        <mapperTableEntries name="active" expression="row7.active " type="id_String" nullable="true"/>
+        <mapperTableEntries name="sequence" expression="row7.sequence " type="id_String" nullable="true"/>
         <mapperTableEntries name="jvm_min" expression="row7.jvm_min " type="id_String" nullable="true"/>
         <mapperTableEntries name="jvm_max" expression="row7.jvm_max " type="id_String" nullable="true"/>
         <mapperTableEntries name="exception_table_name" expression="row7.exception_table_name " type="id_String" nullable="true"/>
+        <mapperTableEntries name="exception_table_primary_key" expression="row7.exception_table_primary_key " type="id_String" nullable="true"/>
+        <mapperTableEntries name="exception_table_date_clm" expression="row7.exception_table_date_clm " type="id_String" nullable="true"/>
+        <mapperTableEntries name="business_rule_desc" expression="row7.business_rule_desc " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row7" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="process_br_grp_id" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="br_process_id" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="business_rule_nm" type="id_String" nullable="true"/>
         <mapperTableEntries name="base_query" type="id_String" nullable="true"/>
-        <mapperTableEntries name="output_query" type="id_String" nullable="true"/>
-        <mapperTableEntries name="report_query" type="id_String" nullable="true"/>
+        <mapperTableEntries name="output_column" type="id_String" nullable="true"/>
+        <mapperTableEntries name="report_column" type="id_String" nullable="true"/>
+        <mapperTableEntries name="active" type="id_String" nullable="true"/>
+        <mapperTableEntries name="sequence" type="id_String" nullable="true"/>
         <mapperTableEntries name="jvm_min" type="id_String" nullable="true"/>
         <mapperTableEntries name="jvm_max" type="id_String" nullable="true"/>
         <mapperTableEntries name="exception_table_name" type="id_String" nullable="true"/>
+        <mapperTableEntries name="exception_table_primary_key" type="id_String" nullable="true"/>
+        <mapperTableEntries name="exception_table_date_clm" type="id_String" nullable="true"/>
+        <mapperTableEntries name="business_rule_desc" type="id_String" nullable="true"/>
       </inputTables>
     </nodeData>
   </node>
@@ -1466,7 +1526,7 @@
   </node>
   <connection connectorName="FLOW" label="row6" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tMap_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="report_query" id="0"/>
+      <elementValue elementRef="TRACE_COLUMN" value="report_column" id="0"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
       <elementValue elementRef="TRACE_COLUMN" value="jvm_min" id="3"/>
@@ -1478,13 +1538,31 @@
       <elementValue elementRef="TRACE_COLUMN" value="exception_table_name" id="9"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="10"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="11"/>
+      <elementValue elementRef="TRACE_COLUMN" value="exception_table_primary_key" id="12"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="13"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="14"/>
+      <elementValue elementRef="TRACE_COLUMN" value="exception_table_date_clm" id="15"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="16"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="17"/>
+      <elementValue elementRef="TRACE_COLUMN" value="business_rule_desc" id="18"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="19"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="20"/>
+      <elementValue elementRef="TRACE_COLUMN" value="includeBRtable" id="21"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="22"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="23"/>
+      <elementValue elementRef="TRACE_COLUMN" value="sequence" id="24"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="25"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="26"/>
+      <elementValue elementRef="TRACE_COLUMN" value="active" id="27"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="28"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="29"/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row6" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="br_attr" lineStyle="0" metaname="br_attr" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tUnpivotRow_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="report_query" id="0"/>
+      <elementValue elementRef="TRACE_COLUMN" value="report_column" id="0"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
       <elementValue elementRef="TRACE_COLUMN" value="jvm_min" id="3"/>
@@ -1496,6 +1574,27 @@
       <elementValue elementRef="TRACE_COLUMN" value="exception_table_name" id="9"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="10"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="11"/>
+      <elementValue elementRef="TRACE_COLUMN" value="exception_table_primary_key" id="12"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="13"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="14"/>
+      <elementValue elementRef="TRACE_COLUMN" value="exception_table_date_clm" id="15"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="16"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="17"/>
+      <elementValue elementRef="TRACE_COLUMN" value="output_column" id="18"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="19"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="20"/>
+      <elementValue elementRef="TRACE_COLUMN" value="business_rule_desc" id="21"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="22"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="23"/>
+      <elementValue elementRef="TRACE_COLUMN" value="includeBRtable" id="24"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="25"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="26"/>
+      <elementValue elementRef="TRACE_COLUMN" value="sequence" id="27"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="28"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="29"/>
+      <elementValue elementRef="TRACE_COLUMN" value="active" id="30"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="31"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="32"/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="br_attr" show="false"/>
@@ -1620,7 +1719,7 @@
   </connection>
   <connection connectorName="FLOW" label="row7" lineStyle="0" metaname="tDBInput_5" offsetLabelX="0" offsetLabelY="0" source="tDBInput_5" target="tMap_4">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="report_query" id="0"/>
+      <elementValue elementRef="TRACE_COLUMN" value="report_column" id="0"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
       <elementValue elementRef="TRACE_COLUMN" value="jvm_min" id="3"/>
@@ -1632,13 +1731,31 @@
       <elementValue elementRef="TRACE_COLUMN" value="exception_table_name" id="9"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="10"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="11"/>
+      <elementValue elementRef="TRACE_COLUMN" value="exception_table_primary_key" id="12"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="13"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="14"/>
+      <elementValue elementRef="TRACE_COLUMN" value="exception_table_date_clm" id="15"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="16"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="17"/>
+      <elementValue elementRef="TRACE_COLUMN" value="business_rule_desc" id="18"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="19"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="20"/>
+      <elementValue elementRef="TRACE_COLUMN" value="includeBRtable" id="21"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="22"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="23"/>
+      <elementValue elementRef="TRACE_COLUMN" value="sequence" id="24"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="25"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="26"/>
+      <elementValue elementRef="TRACE_COLUMN" value="active" id="27"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="28"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="29"/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row7" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="update_br_attr" lineStyle="0" metaname="update_br_attr" offsetLabelX="0" offsetLabelY="0" source="tMap_4" target="tUnpivotRow_2">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="report_query" id="0"/>
+      <elementValue elementRef="TRACE_COLUMN" value="report_column" id="0"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
       <elementValue elementRef="TRACE_COLUMN" value="jvm_min" id="3"/>
@@ -1650,6 +1767,27 @@
       <elementValue elementRef="TRACE_COLUMN" value="exception_table_name" id="9"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="10"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="11"/>
+      <elementValue elementRef="TRACE_COLUMN" value="exception_table_primary_key" id="12"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="13"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="14"/>
+      <elementValue elementRef="TRACE_COLUMN" value="exception_table_date_clm" id="15"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="16"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="17"/>
+      <elementValue elementRef="TRACE_COLUMN" value="output_column" id="18"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="19"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="20"/>
+      <elementValue elementRef="TRACE_COLUMN" value="business_rule_desc" id="21"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="22"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="23"/>
+      <elementValue elementRef="TRACE_COLUMN" value="includeBRtable" id="24"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="25"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="26"/>
+      <elementValue elementRef="TRACE_COLUMN" value="sequence" id="27"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="28"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="29"/>
+      <elementValue elementRef="TRACE_COLUMN" value="active" id="30"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="31"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="32"/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="update_br_attr" show="false"/>
@@ -1689,7 +1827,7 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>
   <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
@@ -1746,7 +1884,7 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>
   <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>

@@ -4,7 +4,7 @@
     <context confirmationNeeded="false" hide="false" name="Default"/>
     <parameters>
       <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
-      <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+      <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="40" show="false"/>
       <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
       <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
       <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
@@ -85,7 +85,7 @@
       <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
       <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
       <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-      <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT run_attr_nm, run_attr_vl FROM DWDQS.dqs_process_attr  &#xA;WHERE run_attr_nm in ('email_group','output_type','run_tgt_file_name','process_attr_name','process_attr_desc','run_tgt_file_location_path') and run_id =&quot; + context.parent_run_id"/>
+      <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT run_attr_nm, run_attr_vl FROM DWDQS.dqs_process_attr  &#xA;WHERE run_attr_nm in ('email_group','output_type','run_tgt_file_name','process_attr_name','process_attr_desc','run_tgt_file_location_path','include_exception_stat') and run_id =&quot; + context.parent_run_id"/>
       <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
       <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
       <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>

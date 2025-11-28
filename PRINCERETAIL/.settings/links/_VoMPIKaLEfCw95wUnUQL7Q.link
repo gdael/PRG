@@ -147,13 +147,19 @@
       "name" : "base_query"
     }, {
       "id" : "_rB-_Q6fgEfCtRaMXZS63UQ",
-      "name" : "output_query"
+      "name" : "output_column"
     }, {
       "id" : "_aoD78KgLEfCtRaMXZS63UQ",
-      "name" : "report_query"
+      "name" : "report_column"
     }, {
       "id" : "_RB7IAKmTEfCtRaMXZS63UQ",
       "name" : "exception_table_name"
+    }, {
+      "id" : "_JmRY4MTpEfCzrJCpv04n_A",
+      "name" : "exception_table_primary_key"
+    }, {
+      "id" : "_VPAkUMTuEfCzrJCpv04n_A",
+      "name" : "exception_table_date_clm"
     } ]
   }, {
     "contextName" : "DQS_PROCESS",
@@ -302,13 +308,19 @@
       "name" : "base_query"
     }, {
       "id" : "_rB-_R6fgEfCtRaMXZS63UQ",
-      "name" : "output_query"
+      "name" : "output_column"
     }, {
       "id" : "_aoD78agLEfCtRaMXZS63UQ",
-      "name" : "report_query"
+      "name" : "report_column"
     }, {
       "id" : "_RB7IAamTEfCtRaMXZS63UQ",
       "name" : "exception_table_name"
+    }, {
+      "id" : "_JmRY4cTpEfCzrJCpv04n_A",
+      "name" : "exception_table_primary_key"
+    }, {
+      "id" : "_VPAkUcTuEfCzrJCpv04n_A",
+      "name" : "exception_table_date_clm"
     } ]
   } ]
 }

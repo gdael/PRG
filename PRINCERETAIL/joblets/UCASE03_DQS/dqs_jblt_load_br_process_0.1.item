@@ -12,9 +12,11 @@
       <contextParameter comment="" name="br_process_id" prompt="br_process_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_rB-_QKfgEfCtRaMXZS63UQ"/>
       <contextParameter comment="" name="business_rule_nm" prompt="business_rule_nm?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_rB-_QafgEfCtRaMXZS63UQ"/>
       <contextParameter comment="" name="base_query" prompt="base_query?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_rB-_QqfgEfCtRaMXZS63UQ"/>
-      <contextParameter comment="" name="output_query" prompt="output_query?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_rB-_Q6fgEfCtRaMXZS63UQ"/>
-      <contextParameter comment="" name="report_query" prompt="report_query?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_aoD78KgLEfCtRaMXZS63UQ"/>
+      <contextParameter comment="" name="output_column" prompt="output_column?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_rB-_Q6fgEfCtRaMXZS63UQ"/>
+      <contextParameter comment="" name="report_column" prompt="report_column?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_aoD78KgLEfCtRaMXZS63UQ"/>
       <contextParameter comment="" name="exception_table_name" prompt="exception_table_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_RB7IAKmTEfCtRaMXZS63UQ"/>
+      <contextParameter comment="" name="exception_table_primary_key" prompt="exception_table_primary_key?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_JmRY4MTpEfCzrJCpv04n_A"/>
+      <contextParameter comment="" name="exception_table_date_clm" prompt="exception_table_date_clm?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_VPAkUMTuEfCzrJCpv04n_A"/>
     </context>
     <context confirmationNeeded="false" hide="false" name="DQS_PROCESS">
       <contextParameter comment="" name="DQS_AdditionalParams" prompt="DQS_AdditionalParams?" promptNeeded="false" repositoryContextId="_J8hz4NbzEe-4XYPM5vW39g" type="id_String" value="integratedsecurity=true" internalId="_mK9l96fgEfCtRaMXZS63UQ"/>
@@ -27,9 +29,11 @@
       <contextParameter comment="" name="br_process_id" prompt="br_process_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_rB-_RKfgEfCtRaMXZS63UQ"/>
       <contextParameter comment="" name="business_rule_nm" prompt="business_rule_nm?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_rB-_RafgEfCtRaMXZS63UQ"/>
       <contextParameter comment="" name="base_query" prompt="base_query?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_rB-_RqfgEfCtRaMXZS63UQ"/>
-      <contextParameter comment="" name="output_query" prompt="output_query?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_rB-_R6fgEfCtRaMXZS63UQ"/>
-      <contextParameter comment="" name="report_query" prompt="report_query?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_aoD78agLEfCtRaMXZS63UQ"/>
+      <contextParameter comment="" name="output_column" prompt="output_column?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_rB-_R6fgEfCtRaMXZS63UQ"/>
+      <contextParameter comment="" name="report_column" prompt="report_column?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_aoD78agLEfCtRaMXZS63UQ"/>
       <contextParameter comment="" name="exception_table_name" prompt="exception_table_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_RB7IAamTEfCtRaMXZS63UQ"/>
+      <contextParameter comment="" name="exception_table_primary_key" prompt="exception_table_primary_key?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_JmRY4cTpEfCzrJCpv04n_A"/>
+      <contextParameter comment="" name="exception_table_date_clm" prompt="exception_table_date_clm?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_VPAkUcTuEfCzrJCpv04n_A"/>
     </context>
     <parameters>
       <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>

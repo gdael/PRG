@@ -152,7 +152,7 @@
       <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
       <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
       <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-      <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select distinct run_status from dwdqs.dqs_process  &#xA;where run_status IN ('FAILED')AND parent_run_id = &quot; + context.parent_run_id"/>
+      <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select distinct run_status from dwdqs.dqs_process  &#xA;where run_status IN ('FAILED','STARTED')AND parent_run_id = &quot; + context.parent_run_id"/>
       <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
       <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
       <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -362,12 +362,12 @@
         <column comment="" key="false" length="-1" name="run_status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       </metadata>
       <nodeData xsi:type="TalendMapper:MapperData">
-        <uiProperties/>
+        <uiProperties shellMaximized="true"/>
         <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
         <outputTables sizeState="INTERMEDIATE" name="update_batch_2">
           <mapperTableEntries name="run_id" expression="context.parent_run_id " type="id_Long" nullable="true"/>
           <mapperTableEntries name="run_end_datetime" expression="TalendDate.getCurrentDate() " type="id_Date" nullable="true"/>
-          <mapperTableEntries name="run_status" expression="(String)globalMap.get(&quot;grp_status&quot;)" type="id_String" nullable="true"/>
+          <mapperTableEntries name="run_status" expression="&quot;FAILED&quot;" type="id_String" nullable="true"/>
         </outputTables>
         <inputTables sizeState="INTERMEDIATE" name="row3" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
           <mapperTableEntries name="dummy" type="id_String" nullable="true"/>
@@ -492,7 +492,7 @@
         <column comment="" key="false" length="-1" name="run_status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       </metadata>
       <nodeData xsi:type="TalendMapper:MapperData">
-        <uiProperties/>
+        <uiProperties shellMaximized="true"/>
         <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
         <outputTables sizeState="INTERMEDIATE" name="update_batch_3">
           <mapperTableEntries name="run_id" expression="context.parent_run_id " type="id_Long" nullable="true"/>
