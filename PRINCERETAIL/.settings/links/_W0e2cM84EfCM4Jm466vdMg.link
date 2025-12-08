@@ -1,5 +1,5 @@
 {
-  "itemId" : "_jdJ7YLymEfCqV4xO0CHamA",
+  "itemId" : "_W0e2cM84EfCM4Jm466vdMg",
   "contextList" : [ {
     "contextName" : "Default",
     "repoId" : "_J8hz4NbzEe-4XYPM5vW39g",
@@ -24,16 +24,6 @@
     }, {
       "id" : "_J88qo9bzEe-4XYPM5vW39g",
       "name" : "DQS_Server"
-    } ]
-  }, {
-    "contextName" : "Default",
-    "repoId" : "_9CEKILzUEfCS5-jckjolPw",
-    "parameterList" : [ {
-      "id" : "_j9RagLzVEfCS5-jckjolPw",
-      "name" : "jvm_min"
-    }, {
-      "id" : "_j9RagbzVEfCS5-jckjolPw",
-      "name" : "jvm_max"
     } ]
   }, {
     "contextName" : "Default",
@@ -84,16 +74,6 @@
     } ]
   }, {
     "contextName" : "DQS_PROCESS",
-    "repoId" : "_9CEKILzUEfCS5-jckjolPw",
-    "parameterList" : [ {
-      "id" : "_j9RagLzVEfCS5-jckjolPw",
-      "name" : "jvm_min"
-    }, {
-      "id" : "_j9RagbzVEfCS5-jckjolPw",
-      "name" : "jvm_max"
-    } ]
-  }, {
-    "contextName" : "DQS_PROCESS",
     "repoId" : "_QRoqgE6cEequtZ_DY8Nmxw",
     "parameterList" : [ {
       "id" : "_zgxagbpEEeqJ2YQw-h1cbQ",
@@ -113,63 +93,6 @@
     }, {
       "id" : "_zgxahrpEEeqJ2YQw-h1cbQ",
       "name" : "flow_workspace"
-    } ]
-  }, {
-    "contextName" : "UAT",
-    "repoId" : "_9CEKILzUEfCS5-jckjolPw",
-    "parameterList" : [ {
-      "id" : "_j9RagLzVEfCS5-jckjolPw",
-      "name" : "jvm_min"
-    }, {
-      "id" : "_j9RagbzVEfCS5-jckjolPw",
-      "name" : "jvm_max"
-    } ]
-  }, {
-    "contextName" : "UAT",
-    "repoId" : "_QRoqgE6cEequtZ_DY8Nmxw",
-    "parameterList" : [ {
-      "id" : "_zgxagbpEEeqJ2YQw-h1cbQ",
-      "name" : "flow_execution_id"
-    }, {
-      "id" : "_zgxagrpEEeqJ2YQw-h1cbQ",
-      "name" : "flow_id"
-    }, {
-      "id" : "_zgxag7pEEeqJ2YQw-h1cbQ",
-      "name" : "flow_name"
-    }, {
-      "id" : "_zgxahLpEEeqJ2YQw-h1cbQ",
-      "name" : "flow_start_datetime"
-    }, {
-      "id" : "_zgxahbpEEeqJ2YQw-h1cbQ",
-      "name" : "flow_version"
-    }, {
-      "id" : "_zgxahrpEEeqJ2YQw-h1cbQ",
-      "name" : "flow_workspace"
-    } ]
-  }, {
-    "contextName" : "UAT",
-    "repoId" : "_J8hz4NbzEe-4XYPM5vW39g",
-    "parameterList" : [ {
-      "id" : "_J88DkdbzEe-4XYPM5vW39g",
-      "name" : "DQS_Database"
-    }, {
-      "id" : "_J88qoNbzEe-4XYPM5vW39g",
-      "name" : "DQS_AdditionalParams"
-    }, {
-      "id" : "_J88qodbzEe-4XYPM5vW39g",
-      "name" : "DQS_Login"
-    }, {
-      "id" : "_J88qotbzEe-4XYPM5vW39g",
-      "name" : "DQS_Password"
-    }, {
-      "id" : "_J88qo9bzEe-4XYPM5vW39g",
-      "name" : "DQS_Server"
-    }, {
-      "id" : "_J88qpNbzEe-4XYPM5vW39g",
-      "name" : "DQS_Schema"
-    }, {
-      "id" : "_J88qpdbzEe-4XYPM5vW39g",
-      "name" : "DQS_Port"
     } ]
   } ]
 }
