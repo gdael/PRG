@@ -7,7 +7,7 @@
       <contextParameter comment="" name="DQS_Login" prompt="DQS_Login?" promptNeeded="false" repositoryContextId="_J8hz4NbzEe-4XYPM5vW39g" type="id_String" value="" internalId="_FkTvQqagEfCeO_9uJx7Q4g"/>
       <contextParameter comment="" name="DQS_Password" prompt="DQS_Password?" promptNeeded="false" repositoryContextId="_J8hz4NbzEe-4XYPM5vW39g" type="id_Password" value="" internalId="_FkTvQ6agEfCeO_9uJx7Q4g"/>
       <contextParameter comment="" name="DQS_Port" prompt="DQS_Port?" promptNeeded="false" repositoryContextId="_J8hz4NbzEe-4XYPM5vW39g" type="id_String" value="1433" internalId="_FkTvRKagEfCeO_9uJx7Q4g"/>
-      <contextParameter comment="" name="DQS_Schema" prompt="DQS_Schema?" promptNeeded="false" repositoryContextId="_J8hz4NbzEe-4XYPM5vW39g" type="id_String" value="DWAUDIT" internalId="_FkTvRaagEfCeO_9uJx7Q4g"/>
+      <contextParameter comment="" name="DQS_Schema" prompt="DQS_Schema?" promptNeeded="false" repositoryContextId="_J8hz4NbzEe-4XYPM5vW39g" type="id_String" value="DWINGEST" internalId="_FkTvRaagEfCeO_9uJx7Q4g"/>
       <contextParameter comment="" name="DQS_Server" prompt="DQS_Server?" promptNeeded="false" repositoryContextId="_J8hz4NbzEe-4XYPM5vW39g" type="id_String" value="10.0.2.207" internalId="_FkTvRqagEfCeO_9uJx7Q4g"/>
     </context>
     <context confirmationNeeded="false" hide="false" name="DQS_PROCESS">

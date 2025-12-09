@@ -1,0 +1,42 @@
+package routines;
+
+public class HtmlTableBuilder {
+
+    private static StringBuilder tableHtml = new StringBuilder();
+
+    /**
+     * Initialize the HTML table with header
+     */
+    public static void initTable(String title,String email_body, String[] headers) {
+        tableHtml.setLength(0); // Clear previous data
+        tableHtml.append("<html><body>");
+        tableHtml.append("<h3>").append(email_body).append("</h3>");
+        tableHtml.append("<h4>").append(title).append("</h4>");
+        tableHtml.append("<table border='1' cellpadding='5' cellspacing='0'><tr>");
+
+        for (String header : headers) {
+            tableHtml.append("<th>").append(header).append("</th>");
+        }
+
+        tableHtml.append("</tr>");
+    }
+
+    /**
+     * Add a row to the table
+     */
+    public static void addRow(String[] values) {
+        tableHtml.append("<tr>");
+        for (String value : values) {
+            tableHtml.append("<td>").append(value == null ? "" : value).append("</td>");
+        }
+        tableHtml.append("</tr>");
+    }
+
+    /**
+     * Finalize the table and return HTML string
+     */
+    public static String getHtmlTable() {
+        tableHtml.append("</table></body></html>");
+        return tableHtml.toString();
+    }
+}

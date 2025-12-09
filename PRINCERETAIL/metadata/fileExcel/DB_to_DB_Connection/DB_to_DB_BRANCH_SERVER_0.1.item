@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:FileExcelConnection xmi:id="_cUmc0ClEEfCigcyseX02gg" name="DB_to_DB_BRANCH_SERVER" dataPackage="_cUnD4ClEEfCigcyseX02gg" Server="Localhost 127.0.0.1" FilePath="//10.0.2.30/dgt/DQS_CSV/DB_to_DB_Connection/Connection.xlsx" Encoding="UTF-8" UseHeader="true" HeaderValue="1" FirstLineCaption="true" SheetName="Branch Server" firstColumn="1" thousandSeparator="','" decimalSeparator="'.'" sheetList="Branch Server:w&#xA;">
+    <sheetColumns>A</sheetColumns>
+    <sheetColumns>B</sheetColumns>
+    <sheetColumns>C</sheetColumns>
+    <sheetColumns>D</sheetColumns>
+    <sheetColumns>E</sheetColumns>
+    <sheetColumns>F</sheetColumns>
+  </TalendMetadata:FileExcelConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_cUnD4ClEEfCigcyseX02gg" name="default" dataManager="_cUmc0ClEEfCigcyseX02gg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_cUnD4SlEEfCigcyseX02gg" id="_QhuEoClEEfCigcyseX02gg" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cUnD4ilEEfCigcyseX02gg" label="STORE_CODE" length="5" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cUnD4ylEEfCigcyseX02gg" label="STORE_DESC" length="22" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cUnD5ClEEfCigcyseX02gg" label="SERVER_IP_ADDRESS" length="13" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

@@ -7,7 +7,7 @@
       <contextParameter comment="" name="DQS_Login" prompt="DQS_Login?" promptNeeded="false" repositoryContextId="_J8hz4NbzEe-4XYPM5vW39g" type="id_String" value="" internalId="_63VWIqcWEfCOo-vY4AR94w"/>
       <contextParameter comment="" name="DQS_Password" prompt="DQS_Password?" promptNeeded="false" repositoryContextId="_J8hz4NbzEe-4XYPM5vW39g" type="id_Password" value="" internalId="_63VWI6cWEfCOo-vY4AR94w"/>
       <contextParameter comment="" name="DQS_Port" prompt="DQS_Port?" promptNeeded="false" repositoryContextId="_J8hz4NbzEe-4XYPM5vW39g" type="id_String" value="1433" internalId="_63V9MKcWEfCOo-vY4AR94w"/>
-      <contextParameter comment="" name="DQS_Schema" prompt="DQS_Schema?" promptNeeded="false" repositoryContextId="_J8hz4NbzEe-4XYPM5vW39g" type="id_String" value="DWAUDIT" internalId="_63V9MacWEfCOo-vY4AR94w"/>
+      <contextParameter comment="" name="DQS_Schema" prompt="DQS_Schema?" promptNeeded="false" repositoryContextId="_J8hz4NbzEe-4XYPM5vW39g" type="id_String" value="DWINGEST" internalId="_63V9MacWEfCOo-vY4AR94w"/>
       <contextParameter comment="" name="DQS_Server" prompt="DQS_Server?" promptNeeded="false" repositoryContextId="_J8hz4NbzEe-4XYPM5vW39g" type="id_String" value="10.0.2.207" internalId="_63V9MqcWEfCOo-vY4AR94w"/>
       <contextParameter comment="" name="flow_execution_id" prompt="flow_execution_id?" promptNeeded="false" repositoryContextId="_QRoqgE6cEequtZ_DY8Nmxw" type="id_String" value="" internalId="_63V9M6cWEfCOo-vY4AR94w"/>
       <contextParameter comment="" name="flow_id" prompt="flow_id?" promptNeeded="false" repositoryContextId="_QRoqgE6cEequtZ_DY8Nmxw" type="id_String" value="" internalId="_63V9NKcWEfCOo-vY4AR94w"/>
@@ -96,43 +96,8 @@
       <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
       <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
       <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+      <routinesParameter id="_-moDwDVGEfCyBsmFKFt3Ew" name="HtmlTableBuilder"/>
     </parameters>
-    <node componentName="tSendMail" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1000" posY="400">
-      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_1" show="false"/>
-      <elementParameter field="TEXT" name="TO" value="(String)globalMap.get(&quot;email&quot;)"/>
-      <elementParameter field="TEXT" name="FROM" value="(String)globalMap.get(&quot;smtp_from_email&quot;)"/>
-      <elementParameter field="CHECK" name="NEED_PERSONAL_NAME" value="false"/>
-      <elementParameter field="TEXT" name="PERSONAL_NAME" value="&quot;sender&quot;" show="false"/>
-      <elementParameter field="TEXT" name="CC" value="&quot;&quot;"/>
-      <elementParameter field="TEXT" name="BCC" value="&quot;&quot;"/>
-      <elementParameter field="TEXT" name="SUBJECT" value="&quot;REPORT | &quot; +  context.run_tgt_file_name +&quot; | &quot; + context.flow_name + &quot; | &quot; +  context.parent_run_id "/>
-      <elementParameter field="MEMO_MESSAGE" name="MESSAGE" value="(String)globalMap.get(&quot;emailBody&quot;)"/>
-      <elementParameter field="CHECK" name="CHECK_ATTACHMENT" value="false"/>
-      <elementParameter field="TABLE" name="ATTACHMENTS">
-        <elementValue elementRef="FILE" value="context.run_tgt_file_location_path +&quot;/&quot;+context.run_tgt_file_name +&quot;_&quot;+context.parent_run_id+&quot;.xlsx&quot;" id="0"/>
-        <elementValue elementRef="CONTENT_TRANSFER_ENCODING" value="DEFAULT" id="1"/>
-      </elementParameter>
-      <elementParameter field="TABLE" name="HEADERS"/>
-      <elementParameter field="TEXT" name="SMTP_HOST" value="(String)globalMap.get(&quot;smtp_host_email&quot;)"/>
-      <elementParameter field="TEXT" name="SMTP_PORT" value="(String)globalMap.get(&quot;smtp_port_email&quot;)"/>
-      <elementParameter field="CHECK" name="SSL" value="false"/>
-      <elementParameter field="CHECK" name="STARTTLS" value="true"/>
-      <elementParameter field="CLOSED_LIST" name="IMPORTANCE" value="Normal"/>
-      <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="BASIC"/>
-      <elementParameter field="TEXT" name="AUTH_USERNAME" value="(String)globalMap.get(&quot;smtp_username_email&quot;)"/>
-      <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="enc:system.encryption.key.v1:zgLi8xuOqifIiD6tF0am7+gFCjL5E1/SWRBDwaPM6pPTpN890LCXjPYrStPoB6Q2lP4DCnYAYBQlSAjupUp/Jyk9c7RFhTxH"/>
-      <elementParameter field="PASSWORD" name="TOKEN" value="enc:system.encryption.key.v1:uv+Wkbn209yi1IUIFBjOrFk6s5UCXBBNzYnFqrFXAqjUqH9oRnI=" show="false"/>
-      <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
-      <elementParameter field="CLOSED_LIST" name="TEXT_SUBTYPE" value="html"/>
-      <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
-      <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
-      <elementParameter field="CHECK" name="SET_LOCALHOST" value="false"/>
-      <elementParameter field="TEXT" name="LOCALHOST" value="&quot;localhost&quot;" show="false"/>
-      <elementParameter field="CHECK" name="USE_TWO_LINE_TOKEN" value="false" show="false"/>
-      <elementParameter field="TABLE" name="CONFIGS"/>
-      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-      <metadata connector="FLOW" name="tSendMail_1"/>
-    </node>
     <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="120">
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
       <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
@@ -245,25 +210,26 @@
         <column comment="" key="false" length="-1" name="email" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       </metadata>
     </node>
-    <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="400">
+    <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="840" posY="920">
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
-      <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="&#xA;System.out.println(&quot;******** PARENT PROCESS ID: &quot; + context.process_id);&#xA;&#xA;System.out.println(&quot;EMAIL TO: &quot; + (String)globalMap.get(&quot;email&quot;));&#xA;System.out.println(&quot;EMAIL FROM: &quot; + (String)globalMap.get(&quot;smtp_from_email&quot;));&#xA;System.out.println(&quot;SUBJECT: &quot; + &quot;REPORT | &quot; +  context.run_tgt_file_name +&quot; | &quot; + context.flow_name + &quot; | &quot; +  context.parent_run_id );&#xA;&#xA;String emailBody=&#xA;&#x9;&#x9;&quot;&lt;p>Hello,&lt;/p>&quot; +&#xA;&#x9;    &quot;&lt;p>Here is the DQS Report Details:&lt;/p>&quot; +&#xA;&#x9;    &quot;&lt;p>Task '&quot; + context.flow_name + &quot;' failed on &quot; + context.flow_start_datetime + &quot;&lt;/p>&quot; +&#xA;&#x9;    &quot;&lt;p>&lt;b>Summary:&lt;/b>&lt;/p>&quot; +&#xA;&#x9;    &quot;&lt;p> Process Description &quot; + context.process_attr_desc + &quot;&lt;/p>&quot; +&#xA;&#x9;    &quot;&lt;p>&lt;b>Run details:&lt;/b>&lt;/p>&quot; +&#xA;&#x9;    &quot;&lt;p>Task Run Id: &quot; + context.flow_execution_id + &quot;&lt;/p>&quot; +&#xA;&#x9;    &quot;&lt;p>Task Id: &quot; + context.flow_id + &quot;&lt;/p>&quot; +&#xA;&#x9;    &quot;&lt;p>Task Name: &quot; + context.flow_name + &quot;&lt;/p>&quot; +&#xA;&#x9;    &quot;&lt;p>Workspace Name: &quot; + context.flow_workspace + &quot;&lt;/p>&quot; +&#xA;&#x9;    &quot;&lt;p>&lt;b>Audit details:&lt;/b>&lt;/p>&quot; +&#xA;&#x9;    &quot;&lt;p>Run Id: &quot; + context.parent_run_id + &quot;&lt;/p>&quot; +&#xA;&#x9;    &quot;&lt;p>Process Id: &quot; + context.process_id + &quot;&lt;/p>&quot; +&#xA;&#x9;    &quot;&lt;p>Process Name: &quot; + context.process_attr_name + &quot;&lt;/p>&quot; +&#xA;&#x9;    &quot;&lt;p>output type : &quot; + context.output_type + &quot;&lt;/p>&quot; +&#xA;&#x9;    &quot;&lt;p>Filename: &quot; + context.run_tgt_file_name +&quot;_&quot;+context.parent_run_id+&quot;.xlsx&quot;+ &quot; &lt;/p>&quot; +&#xA;&#x9;    &quot;&lt;p>Best,&lt;/p>&quot; +&#xA;&#x9;    &quot;&lt;p>Prince FMCG Team&lt;/p>&quot;;&#xA;System.out.println(&quot;BODY: &quot; + emailBody);&#xA;&#xA;&#xA;&#xA;System.out.println(&quot;EMAIL HOST:&quot; + (String)globalMap.get(&quot;smtp_host_email&quot;));&#xA;System.out.println(&quot;EMAIL PORT:&quot; + (String)globalMap.get(&quot;smtp_port_email&quot;));&#xA;System.out.println(&quot;EMAIL USERNAME:&quot; + (String)globalMap.get(&quot;smtp_username_email&quot;));&#xA;System.out.println(&quot;EMAIL PASSWORD:&quot; + (String)globalMap.get(&quot;smtp_password_email&quot;));&#xA;&#xA;&#xA;globalMap.put(&quot;emailBody&quot;, emailBody);&#xA;&#xA;"/>
+      <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="System.out.println(&quot;******** PARENT PROCESS ID: &quot; + context.process_id);&#xD;&#xA;&#xD;&#xA;//Read global values&#xD;&#xA;String emailTo   = (String) globalMap.get(&quot;email&quot;);&#xD;&#xA;String emailFrom = (String) globalMap.get(&quot;smtp_from_email&quot;);&#xD;&#xA;String smtpHost  = (String) globalMap.get(&quot;smtp_host_email&quot;);&#xD;&#xA;String smtpPort  = (String) globalMap.get(&quot;smtp_port_email&quot;);&#xD;&#xA;String smtpUser  = (String) globalMap.get(&quot;smtp_username_email&quot;);&#xD;&#xA;String smtpPass  = (String) globalMap.get(&quot;smtp_password_email&quot;);&#xD;&#xA;String fileLoc   = context.run_tgt_file_location_path +&quot;/&quot;+context.parent_run_id;&#xD;&#xA;&#xD;&#xA;System.out.println(&quot;EMAIL TO: &quot; + emailTo);&#xD;&#xA;System.out.println(&quot;EMAIL FROM: &quot; + emailFrom);&#xD;&#xA;System.out.println(&quot;SUBJECT: &quot; +&#xD;&#xA; &quot;REPORT | &quot; + context.run_tgt_file_name + &quot; | &quot; +&#xD;&#xA; context.flow_name + &quot; | &quot; + context.parent_run_id);&#xD;&#xA;&#xD;&#xA;//Dynamic HTML from globalMap&#xD;&#xA;String emailHtmlSummary = (String) globalMap.get(&quot;EMAIL_HTML&quot;);&#xD;&#xA;&#xD;&#xA;//Build email body using string concatenation&#xD;&#xA;String emailBody =&#xD;&#xA; &quot;&lt;p>Dear Team,&lt;/p>&quot; +&#xD;&#xA; &quot;&lt;p>Please find below the summary of the Data Quality Service (DQS) report.&lt;/p>&quot; +&#xD;&#xA;&#xD;&#xA; &quot;&lt;p>&lt;b>Report Overview:&lt;/b>&lt;/p>&quot; +&#xD;&#xA; &quot;&lt;p>Task: &quot; + context.flow_name + &quot;&lt;/p>&quot; +&#xD;&#xA; &quot;&lt;p>Start Time: &quot; + context.flow_start_datetime + &quot;&lt;/p>&quot; +&#xD;&#xA; &quot;&lt;p>Description: &quot; + context.process_attr_desc + &quot;&lt;/p>&quot; +&#xD;&#xA;&#xD;&#xA; &quot;&lt;p>&lt;b>Run Details:&lt;/b>&lt;/p>&quot; +&#xD;&#xA; &quot;&lt;p>Task Run ID: &quot; + context.flow_execution_id + &quot;&lt;/p>&quot; +&#xD;&#xA; &quot;&lt;p>Task ID: &quot; + context.flow_id + &quot;&lt;/p>&quot; +&#xD;&#xA; &quot;&lt;p>Task Name: &quot; + context.flow_name + &quot;&lt;/p>&quot; +&#xD;&#xA; &quot;&lt;p>Workspace: &quot; + context.flow_workspace + &quot;&lt;/p>&quot; +&#xD;&#xA;&#xD;&#xA; &quot;&lt;p>&lt;b>Audit Details:&lt;/b>&lt;/p>&quot; +&#xD;&#xA; &quot;&lt;p>Run ID: &quot; + context.parent_run_id + &quot;&lt;/p>&quot; +&#xD;&#xA; &quot;&lt;p>Process ID: &quot; + context.process_id + &quot;&lt;/p>&quot; +&#xD;&#xA; &quot;&lt;p>Process Name: &quot; + context.process_attr_name + &quot;&lt;/p>&quot; +&#xD;&#xA; &quot;&lt;p>Output Type: &quot; + context.output_type + &quot;&lt;/p>&quot; +&#xD;&#xA; &quot;&lt;p>Generated File: &quot; + context.run_tgt_file_name + &quot;_&quot; + context.parent_run_id + &quot;.xlsx&lt;/p>&quot; +&#xD;&#xA; &quot;&lt;p>File Location: &quot; + fileLoc + &quot;&lt;/p>&quot; +&#xD;&#xA; &#xD;&#xA;&#xD;&#xA; (&quot;1&quot;.equals(context.include_exception_stat)&#xD;&#xA;     ? (&quot;&lt;p>&lt;b>Business Rule Exceptions:&lt;/b>&lt;/p>&quot; +&#xD;&#xA;        &quot;&lt;p>&quot; + emailHtmlSummary + &quot;&lt;/p>&quot;)&#xD;&#xA;     : &quot;&quot;) +&#xD;&#xA;&#xD;&#xA; &quot;&lt;p>Regards,&lt;br>Prince FMCG Team&lt;/p>&quot;;&#xD;&#xA;&#xD;&#xA;System.out.println(&quot;BODY: &quot; + emailBody);&#xD;&#xA;System.out.println(&quot;EMAIL HOST: &quot; + smtpHost);&#xD;&#xA;System.out.println(&quot;EMAIL PORT: &quot; + smtpPort);&#xD;&#xA;System.out.println(&quot;EMAIL USERNAME: &quot; + smtpUser);&#xD;&#xA;System.out.println(&quot;EMAIL PASSWORD: &quot; + smtpPass);&#xD;&#xA;&#xD;&#xA;//Push final body&#xD;&#xA;globalMap.put(&quot;emailBody&quot;, emailBody);&#xD;&#xA;"/>
       <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+      <elementParameter field="TEXT" name="LABEL" value="Email setup"/>
       <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
       <metadata connector="FLOW" name="tJava_1"/>
     </node>
     <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="360" posY="120">
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
-      <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="System.out.println(&quot;****************** SENDING EMAIL **********************&quot;);&#xA;System.out.println(&quot;****** RUN STATUS :&quot; + (String) globalMap.get(&quot;main_run_status&quot;));&#xA;&#xA;if (&quot;COMPLETED&quot;.equals((String) globalMap.get(&quot;main_run_status&quot;))) {&#xA;    globalMap.put(&quot;process_email&quot;, true);&#xA;} else {&#xA;    globalMap.put(&quot;process_email&quot;, false);&#xA;}&#xA;"/>
+      <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="String att_file_dir = context.run_tgt_file_location_path +&quot;/&quot;+context.parent_run_id;&#xD;&#xA;String zip_file_path = att_file_dir +&quot;/&quot;+context.run_tgt_file_name +&quot;_&quot;+context.parent_run_id+&quot;.zip&quot;;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;System.out.println(&quot;****************** SENDING EMAIL **********************&quot;);&#xA;System.out.println(&quot;****** RUN STATUS :&quot; + (String) globalMap.get(&quot;main_run_status&quot;));&#xA;&#xA;if (&quot;COMPLETED&quot;.equals((String) globalMap.get(&quot;main_run_status&quot;))) {&#xA;    globalMap.put(&quot;process_email&quot;, true);&#xA;} else {&#xA;    globalMap.put(&quot;process_email&quot;, false);&#xA;}&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;globalMap.put(&quot;att_file_dir&quot;, att_file_dir);&#xD;&#xA;globalMap.put(&quot;zip_file_path&quot;, zip_file_path);&#xA;"/>
       <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
       <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
       <metadata connector="FLOW" name="tJava_2"/>
     </node>
-    <node componentName="tFileDelete" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1280" posY="400">
+    <node componentName="tFileDelete" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1440" posY="920">
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileDelete_1" show="false"/>
       <elementParameter field="FILE" name="FILENAME" value="context.run_tgt_file_location_path +&quot;/&quot;+context.run_tgt_file_name +&quot;_&quot;+context.parent_run_id+&quot;.xlsx&quot;" show="false"/>
       <elementParameter field="DIRECTORY" name="DIRECTORY" value="&quot;/media/glenndael/Backup/01 Data Integration/Talend/Studio/Linux/Talend-Studio-20250226_1030-V8.0.1/workspace/delete_folder&quot;" show="false"/>
-      <elementParameter field="TEXT" name="PATH" value="context.run_tgt_file_location_path +&quot;/&quot;+context.run_tgt_file_name +&quot;_&quot;+context.parent_run_id+&quot;.xlsx&quot;"/>
+      <elementParameter field="TEXT" name="PATH" value="context.run_tgt_file_location_path +&quot;/&quot;+context.parent_run_id +&quot;/&quot;+context.run_tgt_file_name +&quot;_&quot;+context.parent_run_id+&quot;.zip&quot;"/>
       <elementParameter field="CHECK" name="FAILON" value="false"/>
       <elementParameter field="CHECK" name="FOLDER" value="false" show="false"/>
       <elementParameter field="CHECK" name="FOLDER_FILE" value="true"/>
@@ -271,9 +237,271 @@
       <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
       <metadata connector="FLOW" name="tFileDelete_1"/>
     </node>
-    <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tSendMail_1" offsetLabelX="0" offsetLabelY="0" source="tSendMail_1" target="tFileDelete_1">
-      <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk3" show="false"/>
-    </connection>
+    <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="400">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_3" show="false"/>
+      <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+      <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+      <elementParameter field="TEXT" name="HOST" value="context.DQS_Server"/>
+      <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+      <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+      <elementParameter field="TEXT" name="PORT" value="context.DQS_Port"/>
+      <elementParameter field="TEXT" name="DB_SCHEMA" value="context.DQS_Schema"/>
+      <elementParameter field="TEXT" name="DBNAME" value="context.DQS_Database"/>
+      <elementParameter field="TEXT" name="USER" value="context.DQS_Login"/>
+      <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:h3K5kJUWUCoH793YbKP/BKtY03AHMOkLIhbLLEA0WwBfk2H5SYTbQueCW96SZ1K2"/>
+      <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+      <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+      <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+      <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+      <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+      <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xD;&#xA;    pba.business_rule_desc AS [Business Rule],&#xD;&#xA;    dpm.metrics_vl AS [Exception Counts]&#xD;&#xA;FROM DWDQS.dqs_process_metrics dpm&#xD;&#xA;LEFT JOIN DWDQS.dqs_process dp &#xD;&#xA;    ON dp.run_id = dpm.run_id&#xD;&#xA;LEFT JOIN DWDQS.process_br pb &#xD;&#xA;    ON pb.process_id = dp.process_id&#xD;&#xA;LEFT JOIN DWDQS.process_br_attr pba &#xD;&#xA;    ON pb.process_br_grp_id = pba.process_br_grp_id&#xD;&#xA;   AND dp.br_id = pba.br_process_id&#xD;&#xA;WHERE dp.parent_run_id = (&#xD;&#xA; SELECT  TOP 1 parent_run_id&#xD;&#xA;        FROM DWDQS.dqs_process&#xD;&#xA;        WHERE process_id = &quot;+context.process_id+&quot;&#xD;&#xA;          AND run_status = 'COMPLETED'&#xD;&#xA;          AND CAST(run_start_datetime AS DATE) = CAST(GETDATE() AS DATE)&#xD;&#xA;          AND parent_run_id is not Null&#xD;&#xA;        ORDER BY run_end_datetime DESC  &#xD;&#xA;)&quot;"/>
+      <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+      <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+      <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+      <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+      <elementParameter field="TEXT" name="PROPERTIES" value="context.DQS_AdditionalParams"/>
+      <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false" show="false"/>
+      <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+      <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+      <elementParameter field="CHECK" name="ENABLE_ALWAYS_ENCRYPTED" value="false" show="false"/>
+      <elementParameter field="TEXT" name="KEYSTORE_PRINCIPAL_ID" value="" show="false"/>
+      <elementParameter field="PASSWORD" name="KEYSTORE_SECRET" value="" show="false"/>
+      <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+      <elementParameter field="TABLE" name="TRIM_COLUMN">
+        <elementValue elementRef="SCHEMA_COLUMN" value="Business_Rule" id="0"/>
+        <elementValue elementRef="TRIM" value="false" id="1"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="Exception_Counts" id="2"/>
+        <elementValue elementRef="TRIM" value="false" id="3"/>
+      </elementParameter>
+      <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
+      <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" value="30" show="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="Get BR Metrics"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tDBInput_3">
+        <column comment="" key="false" length="-1" name="Business_Rule" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="Exception_Counts" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tHashOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="400">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashOutput_1" show="false"/>
+      <elementParameter field="CHECK" name="LINK_WITH" value="false"/>
+      <elementParameter field="COMPONENT_LIST" name="LIST" value="" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="DATA_WRITE_MODEL" value="MEMORY"/>
+      <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;D:/01 Data Integration/Talend/Studio/Talend-Studio-20250226_1030-V8.0.1/workspace/in.hash&quot;" show="false"/>
+      <elementParameter field="TEXT" name="MEMORY_HEAP_MAX_SIZE" value="2" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="KEYS_MANAGEMENT" value="KEEP_ALL"/>
+      <elementParameter field="CHECK" name="APPEND" value="true"/>
+      <elementParameter field="CHECK" name="HASH_KEY_FROM_INPUT_CONNECTOR" value="false" show="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="run metrics"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tHashOutput_1">
+        <column comment="" key="false" length="-1" name="Business_Rule" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="Exception_Counts" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="840" posY="560">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_1" show="false"/>
+      <elementParameter field="CHECK" name="LINK_WITH" value="true"/>
+      <elementParameter field="COMPONENT_LIST" name="LIST" value="tHashOutput_1"/>
+      <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;D:/01 Data Integration/Talend/Studio/Talend-Studio-20250226_1030-V8.0.1/workspace/in.hash&quot;" show="false"/>
+      <elementParameter field="CHECK" name="RELEASE_CACHE" value="false"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tHashInput_1">
+        <column comment="" key="false" length="-1" name="Business_Rule" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="Exception_Counts" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="560">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_1" show="false"/>
+      <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="String[] rowData = {&#xD;&#xA;&#x9;    input_row.Business_Rule,&#xD;&#xA;&#x9;    String.valueOf(input_row.Exception_Counts)&#xD;&#xA;&#x9;};&#xD;&#xA;&#xD;&#xA;&#x9;routines.HtmlTableBuilder.addRow(rowData);&#xD;&#xA;"/>
+      <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tJavaRow_1"/>
+    </node>
+    <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="560">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_3" show="false"/>
+      <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="String[] headers = {&quot;Business Rules&quot;, &quot;Exception Counts&quot;};&#xD;&#xA;&#xD;&#xA;routines.HtmlTableBuilder.initTable(&#xD;&#xA;    &quot;Exception Summary&quot;,&#xD;&#xA;    &quot;&quot;,&#xD;&#xA;    headers&#xD;&#xA;);&#xD;&#xA;"/>
+      <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tJava_3"/>
+    </node>
+    <node componentName="tSendMail" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="840">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_1" show="false"/>
+      <elementParameter field="TEXT" name="TO" value="(String)globalMap.get(&quot;email&quot;)"/>
+      <elementParameter field="TEXT" name="FROM" value="(String)globalMap.get(&quot;smtp_from_email&quot;)"/>
+      <elementParameter field="CHECK" name="NEED_PERSONAL_NAME" value="false"/>
+      <elementParameter field="TEXT" name="PERSONAL_NAME" value="&quot;sender&quot;" show="false"/>
+      <elementParameter field="TEXT" name="CC" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="BCC" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="SUBJECT" value="&quot;REPORT | &quot; +  context.run_tgt_file_name +&quot; | &quot; + context.flow_name + &quot; | &quot; +  context.parent_run_id "/>
+      <elementParameter field="MEMO_MESSAGE" name="MESSAGE" value="(String)globalMap.get(&quot;emailBody&quot;)"/>
+      <elementParameter field="CHECK" name="CHECK_ATTACHMENT" value="false"/>
+      <elementParameter field="TABLE" name="ATTACHMENTS"/>
+      <elementParameter field="TABLE" name="HEADERS"/>
+      <elementParameter field="TEXT" name="SMTP_HOST" value="(String)globalMap.get(&quot;smtp_host_email&quot;)"/>
+      <elementParameter field="TEXT" name="SMTP_PORT" value="(String)globalMap.get(&quot;smtp_port_email&quot;)"/>
+      <elementParameter field="CHECK" name="SSL" value="false"/>
+      <elementParameter field="CHECK" name="STARTTLS" value="true"/>
+      <elementParameter field="CLOSED_LIST" name="IMPORTANCE" value="Normal"/>
+      <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="BASIC"/>
+      <elementParameter field="TEXT" name="AUTH_USERNAME" value="(String)globalMap.get(&quot;smtp_username_email&quot;)"/>
+      <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="enc:system.encryption.key.v1:zgLi8xuOqifIiD6tF0am7+gFCjL5E1/SWRBDwaPM6pPTpN890LCXjPYrStPoB6Q2lP4DCnYAYBQlSAjupUp/Jyk9c7RFhTxH"/>
+      <elementParameter field="PASSWORD" name="TOKEN" value="enc:system.encryption.key.v1:uv+Wkbn209yi1IUIFBjOrFk6s5UCXBBNzYnFqrFXAqjUqH9oRnI=" show="false"/>
+      <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+      <elementParameter field="CLOSED_LIST" name="TEXT_SUBTYPE" value="html"/>
+      <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+      <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+      <elementParameter field="CHECK" name="SET_LOCALHOST" value="false"/>
+      <elementParameter field="TEXT" name="LOCALHOST" value="&quot;localhost&quot;" show="false"/>
+      <elementParameter field="CHECK" name="USE_TWO_LINE_TOKEN" value="false" show="false"/>
+      <elementParameter field="TABLE" name="CONFIGS"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tSendMail_1">
+        <column comment="" key="false" length="-1" name="Business_Rule" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="Exception_Counts" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1360" posY="560">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_4" show="false"/>
+      <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="String htmlContent = routines.HtmlTableBuilder.getHtmlTable();&#xD;&#xA;&#xD;&#xA;globalMap.put(&quot;EMAIL_HTML&quot;, htmlContent);&#xD;&#xA;"/>
+      <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tJava_4"/>
+    </node>
+    <node componentName="tFileArchive" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="680">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileArchive_1" show="false"/>
+      <elementParameter field="DIRECTORY" name="SOURCE" value="(String)globalMap.get(&quot;att_file_dir&quot;)"/>
+      <elementParameter field="FILE" name="SOURCE_FILE" value="&quot;D:/01 Data Integration/Talend/Studio/Talend-Studio-20250226_1030-V8.0.1/workspace/source.csv&quot;" show="false"/>
+      <elementParameter field="CHECK" name="SUB_DIRECTROY" value="false"/>
+      <elementParameter field="FILE" name="TARGET" value="(String)globalMap.get(&quot;zip_file_path&quot;)"/>
+      <elementParameter field="CHECK" name="MKDIR" value="false"/>
+      <elementParameter field="CLOSED_LIST" name="ARCHIVE_FORMAT" value="zip"/>
+      <elementParameter field="CLOSED_LIST" name="LEVEL" value="4"/>
+      <elementParameter field="CHECK" name="ALL_FILES" value="true"/>
+      <elementParameter field="TABLE" name="MASK" show="false"/>
+      <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+      <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+      <elementParameter field="CHECK" name="OVERWRITE" value="true"/>
+      <elementParameter field="CHECK" name="ENCRYPT_FILES" value="false"/>
+      <elementParameter field="CLOSED_LIST" name="ENCRYPT_METHOD" value="ENC_METHOD_STANDARD" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="AES_KEY_STRENGTH" value="AES_STRENGTH_256" show="false"/>
+      <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:TQrWmFsuG/elWPwIbi2evO4tsyewAf5ehzTQ42vI" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="ZIP64_MODE" value="ASNEEDED"/>
+      <elementParameter field="CHECK" name="USE_SYNC_FLUSH" value="false" show="false"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tFileArchive_1"/>
+    </node>
+    <node componentName="tFileProperties" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="840" posY="680">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileProperties_1" show="false"/>
+      <elementParameter field="FILE" name="FILENAME" value="(String)globalMap.get(&quot;zip_file_path&quot;)"/>
+      <elementParameter field="CHECK" name="MD5" value="false"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tFileProperties_1">
+        <column defaultValue="" key="false" length="255" name="abs_path" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="255" name="dirname" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="255" name="basename" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="10" name="mode_string" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="20" name="size" nullable="true" precision="0" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="20" name="mtime" nullable="true" precision="0" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="20" name="mtime_string" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1080" posY="680">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_2" show="false"/>
+      <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="//Code generated according to input schema and output schema&#xD;&#xA;output_row.abs_path = input_row.abs_path;&#xD;&#xA;output_row.dirname = input_row.dirname;&#xD;&#xA;output_row.basename = input_row.basename;&#xD;&#xA;output_row.mode_string = input_row.mode_string;&#xD;&#xA;&#xD;&#xA;Long filesize = input_row.size;&#xD;&#xA;&#xD;&#xA;output_row.mtime = input_row.mtime;&#xD;&#xA;output_row.mtime_string = input_row.mtime_string;&#xD;&#xA;&#xD;&#xA;if (filesize &lt;= 40960) {&#xD;&#xA;    globalMap.put(&quot;isFileLimit&quot;, false);&#xD;&#xA;} else {&#xD;&#xA;    globalMap.put(&quot;isFileLimit&quot;, true);&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;output_row.size = filesize;"/>
+      <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tJavaRow_2">
+        <column defaultValue="" key="false" length="255" name="abs_path" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="255" name="dirname" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="255" name="basename" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="10" name="mode_string" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="20" name="size" nullable="true" precision="0" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="20" name="mtime" nullable="true" precision="0" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="20" name="mtime_string" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1280" posY="680">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
+      <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+      <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+      <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+      <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+      <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+      <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+      <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
+      <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
+      <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
+      <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
+      <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
+      <elementParameter field="TABLE" name="LENGTHS" show="false">
+        <elementValue elementRef="SCHEMA_COLUMN" value="abs_path" id="0"/>
+        <elementValue elementRef="LENGTH" value="10" id="1"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="dirname" id="2"/>
+        <elementValue elementRef="LENGTH" value="10" id="3"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="basename" id="4"/>
+        <elementValue elementRef="LENGTH" value="10" id="5"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="mode_string" id="6"/>
+        <elementValue elementRef="LENGTH" value="10" id="7"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="size" id="8"/>
+        <elementValue elementRef="LENGTH" value="10" id="9"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="mtime" id="10"/>
+        <elementValue elementRef="LENGTH" value="10" id="11"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="mtime_string" id="12"/>
+        <elementValue elementRef="LENGTH" value="10" id="13"/>
+      </elementParameter>
+      <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+      <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tLogRow_1">
+        <column defaultValue="" key="false" length="255" name="abs_path" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="255" name="dirname" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="255" name="basename" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="10" name="mode_string" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="20" name="size" nullable="true" precision="0" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="20" name="mtime" nullable="true" precision="0" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="20" name="mtime_string" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tSendMail" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="1000">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_2" show="false"/>
+      <elementParameter field="TEXT" name="TO" value="(String)globalMap.get(&quot;email&quot;)"/>
+      <elementParameter field="TEXT" name="FROM" value="(String)globalMap.get(&quot;smtp_from_email&quot;)"/>
+      <elementParameter field="CHECK" name="NEED_PERSONAL_NAME" value="false"/>
+      <elementParameter field="TEXT" name="PERSONAL_NAME" value="&quot;sender&quot;" show="false"/>
+      <elementParameter field="TEXT" name="CC" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="BCC" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="SUBJECT" value="&quot;REPORT | &quot; +  context.run_tgt_file_name +&quot; | &quot; + context.flow_name + &quot; | &quot; +  context.parent_run_id "/>
+      <elementParameter field="MEMO_MESSAGE" name="MESSAGE" value="(String)globalMap.get(&quot;emailBody&quot;)"/>
+      <elementParameter field="CHECK" name="CHECK_ATTACHMENT" value="false"/>
+      <elementParameter field="TABLE" name="ATTACHMENTS">
+        <elementValue elementRef="FILE" value="(String)globalMap.get(&quot;zip_file_path&quot;)" id="0"/>
+        <elementValue elementRef="CONTENT_TRANSFER_ENCODING" value="DEFAULT" id="1"/>
+      </elementParameter>
+      <elementParameter field="TABLE" name="HEADERS"/>
+      <elementParameter field="TEXT" name="SMTP_HOST" value="(String)globalMap.get(&quot;smtp_host_email&quot;)"/>
+      <elementParameter field="TEXT" name="SMTP_PORT" value="(String)globalMap.get(&quot;smtp_port_email&quot;)"/>
+      <elementParameter field="CHECK" name="SSL" value="false"/>
+      <elementParameter field="CHECK" name="STARTTLS" value="true"/>
+      <elementParameter field="CLOSED_LIST" name="IMPORTANCE" value="Normal"/>
+      <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="BASIC"/>
+      <elementParameter field="TEXT" name="AUTH_USERNAME" value="(String)globalMap.get(&quot;smtp_username_email&quot;)"/>
+      <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="enc:system.encryption.key.v1:u8saDCpAV3xxW9LTwnaI91r94RthYvhLDDj4qjY3iTcXdJcbTeiazlISgWmcErvoWNnqBZbMibEZT1Che9FbWAVWM5vGVlo4"/>
+      <elementParameter field="PASSWORD" name="TOKEN" value="enc:system.encryption.key.v1:QzaUkZ3N5zlAqdb2kDlngXHuEB0k5ZBV8JVPWpAQUxFQYlwS4/U=" show="false"/>
+      <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+      <elementParameter field="CLOSED_LIST" name="TEXT_SUBTYPE" value="html"/>
+      <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+      <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+      <elementParameter field="CHECK" name="SET_LOCALHOST" value="false"/>
+      <elementParameter field="TEXT" name="LOCALHOST" value="&quot;localhost&quot;" show="false"/>
+      <elementParameter field="CHECK" name="USE_TWO_LINE_TOKEN" value="false" show="false"/>
+      <elementParameter field="TABLE" name="CONFIGS"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tSendMail_2">
+        <column comment="" key="false" length="-1" name="Business_Rule" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="Exception_Counts" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      </metadata>
+    </node>
     <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="TRIGGER_INPUT_1" offsetLabelX="0" offsetLabelY="0" source="TRIGGER_INPUT_1" target="tJava_2">
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
     </connection>
@@ -298,21 +526,61 @@
       <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
     </connection>
-    <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tJava_1">
+    <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tDBInput_3">
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2" show="false"/>
     </connection>
-    <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tSendMail_1">
-      <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>
+    <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tJava_1" target="tSendMail_1">
+      <elementParameter field="MEMO_JAVA" name="CONDITION" value="(Boolean)globalMap.get(&quot;isFileLimit&quot;)==true"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="If2" show="false"/>
+    </connection>
+    <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tJava_1" target="tSendMail_2">
+      <elementParameter field="MEMO_JAVA" name="CONDITION" value="(Boolean)globalMap.get(&quot;isFileLimit&quot;)==false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="If3" show="false"/>
     </connection>
     <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJava_2" offsetLabelX="0" offsetLabelY="0" source="tJava_2" target="tDBInput_1">
       <elementParameter field="MEMO_JAVA" name="CONDITION" value="&#x9;&#x9;&#x9;  (Boolean)globalMap.get(&quot;process_email&quot;)==true&#xA;"/>
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="If1" show="false"/>
     </connection>
-    <subjob>
-      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_1" show="false"/>
-      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
-      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
-    </subjob>
+    <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tDBInput_3" offsetLabelX="0" offsetLabelY="0" source="tDBInput_3" target="tHashOutput_1">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+    </connection>
+    <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBInput_3" offsetLabelX="0" offsetLabelY="0" source="tDBInput_3" target="tJava_3">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk3" show="false"/>
+    </connection>
+    <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tHashInput_1" offsetLabelX="0" offsetLabelY="0" source="tHashInput_1" target="tJavaRow_1">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
+    </connection>
+    <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJavaRow_1" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_1" target="tJava_4">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk4" show="false"/>
+    </connection>
+    <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_3" offsetLabelX="0" offsetLabelY="0" source="tJava_3" target="tHashInput_1">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>
+    </connection>
+    <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_3" offsetLabelX="0" offsetLabelY="0" source="tJava_3" target="tFileArchive_1">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk4" show="false"/>
+    </connection>
+    <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tSendMail_1" offsetLabelX="0" offsetLabelY="0" source="tSendMail_1" target="tFileDelete_1">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk3" show="false"/>
+    </connection>
+    <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileArchive_1" offsetLabelX="0" offsetLabelY="0" source="tFileArchive_1" target="tFileProperties_1">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk8" show="false"/>
+    </connection>
+    <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tFileProperties_1" offsetLabelX="0" offsetLabelY="0" source="tFileProperties_1" target="tJavaRow_2">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="row5" show="false"/>
+    </connection>
+    <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileProperties_1" offsetLabelX="0" offsetLabelY="0" source="tFileProperties_1" target="tJava_1">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk5" show="false"/>
+    </connection>
+    <connection connectorName="FLOW" label="row6" lineStyle="0" metaname="tJavaRow_2" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_2" target="tLogRow_1">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="row6" show="false"/>
+    </connection>
+    <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tSendMail_2" offsetLabelX="0" offsetLabelY="0" source="tSendMail_2" target="tFileDelete_1">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk7" show="false"/>
+    </connection>
     <subjob>
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="TRIGGER_INPUT_1" show="false"/>
       <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
@@ -340,6 +608,46 @@
     </subjob>
     <subjob>
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileDelete_1" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_3" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHashInput_1" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_3" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_1" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_4" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileArchive_1" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileProperties_1" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_2" show="false"/>
       <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
       <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
     </subjob>

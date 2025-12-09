@@ -1,0 +1,17 @@
+{
+  "itemId" : "_HEcowJLKEfCIM8BXjP7f8w",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_J8hz4NbzEe-4XYPM5vW39g",
+    "parameterList" : [ {
+      "id" : "_J88DkdbzEe-4XYPM5vW39g",
+      "name" : "DQS_Database"
+    }, {
+      "id" : "_J88qpdbzEe-4XYPM5vW39g",
+      "name" : "DQS_Port"
+    }, {
+      "id" : "_J88qpNbzEe-4XYPM5vW39g",
+      "name" : "DQS_Schema"
+    } ]
+  } ]
+}

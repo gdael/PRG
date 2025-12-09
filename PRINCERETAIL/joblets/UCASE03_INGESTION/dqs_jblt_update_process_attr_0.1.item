@@ -108,7 +108,7 @@
       <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
       <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
       <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-      <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#xA;SELECT zone,count(sub.process_id ) as row_count&#xA;FROM (&#xA;    SELECT DISTINCT &#xA;        pc.process_id, &#xA;        bp.process_status,&#xA;        pc.zone,&#xA;        MAX(CAST(bp.process_start_datetime AS DATE)) AS EXTRACT_DATE  &#xA;    FROM DWAUDIT.process_ctrl pc&#xA;    LEFT JOIN DWAUDIT.batch_process bp &#xA;        ON bp.process_grp_id = pc.process_id &#xA;    WHERE pc.active = 1 &#xA;      AND pc.process_grp_id = &quot; + context.process_grp_id + &quot;&#xA;    GROUP BY pc.process_id, bp.process_status, pc.zone&#xA;) sub&#xA;WHERE (process_status IN ('STARTED','FAILED') or  EXTRACT_DATE IS NULL &#xA;   OR EXTRACT_DATE != CAST(GETDATE() AS DATE))&#xA;GROUP by zone&#xA;   ;&#xA;&quot;&#xA;&#xA;&#xA;/*&quot;SELECT zone, count(*) as row_count &#xA;&#x9;FROM DWAUDIT.process_ctrl WHERE active=1 AND process_nm LIKE '%&quot; + context.process_name + &quot;%'&#xA;&#x9;AND process_id IN (Select DISTINCT process_grp_id as process_id from DWAUDIT.batch_process WHERE process_grp_id IS NOT Null AND process_status IN ('STARTED','FAILED') AND CAST(process_start_datetime AS DATE) = CAST(GETDATE() AS DATE))&#xA;&#x9;GROUP BY zone&quot;&#xA;*/&#xA;&#xA;/*&quot;SELECT zone, count(*) as row_count &#xA;&#x9;FROM DWAUDIT.process_ctrl WHERE active=1 AND process_nm LIKE '%&quot; + context.process_name + &quot;%'&#xA;&#x9;GROUP BY zone&quot;&#xA;*/"/>
+      <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;IF EXISTS (&#xD;&#xA;    SELECT 1&#xD;&#xA;    FROM DWAUDIT.batch_process bp&#xD;&#xA;    LEFT JOIN DWAUDIT.process_ctrl pc1 ON bp.process_id = pc1.process_id&#xD;&#xA;    WHERE bp.process_status = 'COMPLETED'&#xD;&#xA;      AND bp.process_start_datetime >= CAST(GETDATE() AS DATE)&#xD;&#xA;      AND bp.process_start_datetime &lt; DATEADD(DAY, 1, CAST(GETDATE() AS DATE))&#xD;&#xA;      AND bp.process_type = 'GROUP'&#xD;&#xA;      AND pc1.process_grp_id = &quot;+context.process_grp_id+&quot;&#xD;&#xA;      AND pc1.active=1&#xD;&#xA;)&#xD;&#xA;BEGIN&#xD;&#xA;    SELECT pc1.[zone] , count(pc1.process_id) as row_count&#xD;&#xA;    FROM DWAUDIT.batch_process bp&#xD;&#xA;    LEFT JOIN DWAUDIT.process_ctrl pc1 ON bp.process_id = pc1.process_id&#xD;&#xA;    WHERE bp.process_status != 'COMPLETED'&#xD;&#xA;      AND bp.process_start_datetime >= CAST(GETDATE() AS DATE)&#xD;&#xA;      AND bp.process_start_datetime &lt; DATEADD(DAY, 1, CAST(GETDATE() AS DATE))&#xD;&#xA;      AND bp.process_type = 'GROUP'&#xD;&#xA;      AND pc1.process_grp_id = &quot;+context.process_grp_id+&quot;&#xD;&#xA;&#x9;  AND pc1.active=1&#xD;&#xA;&#x9;GROUP BY pc1.[zone];&#xD;&#xA;END&#xD;&#xA;ELSE&#xD;&#xA;BEGIN&#xD;&#xA;    SELECT pc.[zone] , count(pc.process_id) as row_count&#xD;&#xA;    FROM DWAUDIT.process_ctrl pc&#xD;&#xA;&#x9;WHERE pc.process_grp_id=&quot;+context.process_grp_id+&quot;&#xD;&#xA;&#x9;AND pc.active=1&#xD;&#xA;&#x9;GROUP BY pc.[zone];&#xD;&#xA;END;&quot;&#xD;&#xA;"/>
       <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
       <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
       <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -138,7 +138,7 @@
     </node>
     <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="360" posY="440">
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
-      <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="System.out.println(&quot;*********List: &quot; + ((Integer)globalMap.get(&quot;tDBInput_1_NB_LINE&quot;)));&#xA;globalMap.put(&quot;process_list&quot;,((Integer)globalMap.get(&quot;tDBInput_1_NB_LINE&quot;)));"/>
+      <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="Integer rec_count = ((Integer)globalMap.get(&quot;tDBInput_1_NB_LINE&quot;));&#xD;&#xA;&#xD;&#xA;if (rec_count >=0){&#xD;&#xA;System.out.println(&quot;*********Today's processing is still in progress, so the max data isn't available yet*********&quot;);&#xD;&#xA;log.info(&quot;*********Today's processing is still in progress, so the max data isn't available yet*********&quot;);&#xD;&#xA;}else {&#xD;&#xA;&#xD;&#xA;System.out.println(&quot;*********List: &quot; + rec_count);&#xD;&#xA;&#x9;&#xD;&#xA;}&#xD;&#xA;globalMap.put(&quot;process_list&quot;,rec_count);"/>
       <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
       <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
       <metadata connector="FLOW" name="tJava_1"/>
@@ -530,6 +530,9 @@
       <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="row10" show="false"/>
     </connection>
+    <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="TRIGGER_OUTPUT_1">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2" show="false"/>
+    </connection>
     <subjob>
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="TRIGGER_INPUT_1" show="false"/>
       <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
@@ -565,10 +568,24 @@
       <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
       <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
     </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="TRIGGER_OUTPUT_1" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+    </subjob>
     <jobletNodes componentName="TRIGGER_INPUT" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="160" posY="200" input="true" trigger="true">
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="TRIGGER_INPUT_1"/>
       <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
       <elementParameter field="CHECK" name="START" value="true" show="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+      <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+      <elementParameter field="MEMO" name="COMMENT" value=""/>
+    </jobletNodes>
+    <jobletNodes componentName="TRIGGER_OUTPUT" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="2280" posY="960" trigger="true">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="TRIGGER_OUTPUT_1"/>
+      <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+      <elementParameter field="CHECK" name="START" value="false" show="false"/>
       <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
       <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
       <elementParameter field="CHECK" name="INFORMATION" value="false"/>

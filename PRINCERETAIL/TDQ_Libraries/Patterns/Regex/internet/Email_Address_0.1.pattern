@@ -17,4 +17,7 @@
   <components xsi:type="dataquality.domain.pattern:RegularExpression" xmi:id="_uGz4sCEmEeOVt5Cai2uv4A" expressionType="REGEXP">
     <expression xmi:id="_uGz4sSEmEeOVt5Cai2uv4A" body="'^[a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$'" language="SQL" modificationDate="2013-09-19 14:26:31"/>
   </components>
+  <components xsi:type="dataquality.domain.pattern:RegularExpression" xmi:id="_lqU9YLoQEfCM0dSg-Wm-kg">
+    <expression xmi:id="_lqU9YboQEfCM0dSg-Wm-kg" body="'^[a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,4}$'" language="Microsoft SQL Server"/>
+  </components>
 </dataquality.domain.pattern:Pattern>

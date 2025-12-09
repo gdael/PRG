@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_IAf_MMBaEfCzrJCpv04n_A" confirmationNeeded="false" hide="false" name="Development">
+    <contextParameter xmi:id="_IAf_McBaEfCzrJCpv04n_A" comment="" name="file_path" prompt="file_path?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="D:\01 Data Integration\Talend\Documents\Training Materials\LBP"/>
+    <contextParameter xmi:id="_IAf_MsBaEfCzrJCpv04n_A" comment="" name="file_name" prompt="file_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="Customer_record_1.csv"/>
+    <contextParameter xmi:id="_IAf_M8BaEfCzrJCpv04n_A" comment="" name="row_seperator" prompt="row_seperator?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="LF(&quot;\n&quot;)"/>
+    <contextParameter xmi:id="_IAf_NMBaEfCzrJCpv04n_A" comment="" name="field_seperator" prompt="field_seperator?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=","/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_IAf_NcBaEfCzrJCpv04n_A" confirmationNeeded="false" hide="false" name="Production">
+    <contextParameter xmi:id="_IAf_NsBaEfCzrJCpv04n_A" comment="" name="file_path" prompt="file_path?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="D:\01 Data Integration\Talend\Documents\Training Materials\LBP\Production"/>
+    <contextParameter xmi:id="_IAf_N8BaEfCzrJCpv04n_A" comment="" name="file_name" prompt="file_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="Customer_record_2.csv"/>
+    <contextParameter xmi:id="_IAf_OMBaEfCzrJCpv04n_A" comment="" name="row_seperator" prompt="row_seperator?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_IAf_OcBaEfCzrJCpv04n_A" comment="" name="field_seperator" prompt="field_seperator?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </talendfile:ContextType>
+</xmi:XMI>
